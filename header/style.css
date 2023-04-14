@@ -1,0 +1,133 @@
+.header {
+  background-color: #ffffff;
+  padding: 3rem 7rem;
+}
+.header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header .img-thumbnail {
+  border: none !important;
+}
+.header-logo {
+  background: transparent;
+}
+.header__menu {
+  display: flex;
+}
+.header__menu li {
+  padding: 0 2rem;
+  border-right: 1px solid #000028;
+  font-size: 16px;
+}
+.header__menu li:last-child {
+  border-right: none;
+}
+.header__menu li a {
+  color: #000028;
+}
+.header__menu li a:active, .header__menu li a:hover {
+  text-decoration: none;
+}
+.header-btn {
+  background-color: #ffffff;
+  width: 234px;
+  height: 60px;
+  border: 1px solid #13c4cd;
+  border-radius: 20px;
+  color: #000028;
+  font-size: 16px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .header {
+    padding: 2rem 5rem;
+  }
+  .header__menu li {
+    font-size: 15px;
+    padding: 0 1rem;
+  }
+  .header__menu li a {
+    color: #000028;
+  }
+  .header__menu li a:hover, .header__menu li a:active {
+    text-decoration: none;
+  }
+  .header-btn {
+    background-color: #ffffff;
+    width: 165px;
+    height: 53px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header .form-inline {
+    display: block;
+    text-align: center;
+  }
+  .header__menu {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .header__menu li {
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 1rem;
+    padding: 0;
+    border: none;
+  }
+  .header-btn {
+    background-color: #ffffff;
+    width: 165px;
+    height: 53px;
+    font-size: 15px;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("./images/menu.png") !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header .form-inline {
+    display: block;
+    text-align: center;
+  }
+  .header__menu {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .header__menu li {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .header-btn {
+    font-size: 15px;
+  }
+}
+@media (max-width: 575.98px) {
+  .header {
+    padding: 1rem;
+  }
+  .header .form-inline {
+    display: block;
+    text-align: center;
+  }
+  .header__menu {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .header__menu li {
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 1rem;
+    padding: 0;
+    border: none;
+  }
+  .header-btn {
+    width: auto;
+    height: 45px;
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

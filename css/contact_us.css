@@ -1,0 +1,7 @@
+@charset "ISO-8859-1";
+
+@media ( min-width : 413px) and (max-width: 415px ) {
+	.fix-font{
+		font-size: 1.2em !important;
+	}
+}

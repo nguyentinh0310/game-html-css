@@ -1,0 +1,188 @@
+@charset "ISO-8859-1";
+
+.howto-play-main hr{
+	border-top: 1px solid rgba(0,0,0);
+}
+
+.howto-play-main h2 a {
+	color: #666666;
+	text-decoration : underline;
+}
+
+.howto-play-highline{
+	background: #e4e4e4;
+}
+
+.howto-play-main img{
+	max-width: 50%;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+
+.howto-play-main #user-registration .row,.howto-play-main #game-play .row,.howto-play-main #deposit-FCC .row,.howto-play-main #withdraw-FCC .row{
+	text-align: center;
+}
+
+#user-registration h2 ,  #game-play h2 ,#deposit-FCC h2 ,#withdraw-FCC h2{
+	    margin: 10px 0px 10px 0px;
+}
+
+#user-registration .fa ,  #game-play .fa ,#deposit-FCC .fa ,#withdraw-FCC .fa{
+	margin-right: 6px;
+}
+.howto-play-main .howto-text-fix{
+	margin-top: 15px;	
+}
+
+.howto-play-main .fix-height{
+	/* height: 65px; */
+}
+
+.howto-play-main #game-play .fix-text-prize-1{
+	position: absolute;
+	margin: 70% auto;
+}
+
+.howto-play-main #game-play .fix-text-prize-2{
+	position: absolute;
+	margin: 125% auto;
+}
+
+span.text-red  {
+	color: red !important;
+}
+
+.pc-only{
+	display: inline-block;
+}
+.sp-only{
+	display: none;	
+}
+
+@media screen and (max-width: 1199px) {
+	.howto-play-main #game-play .fix-text-prize-1{
+		margin: 87% auto;
+	}
+	
+	.howto-play-main #game-play .fix-text-prize-2{
+		margin: 130% auto;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.howto-play-main #game-play .fix-text-prize-1{
+		margin: 69% auto;
+	}
+	
+	.howto-play-main #game-play .fix-text-prize-2{
+		margin: 105% auto;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.pc-only{
+		display: none;
+	}
+	.sp-only{
+		display: inline-block;	
+	}
+ 	.howto-play-main img{
+		max-width: 80%;
+		margin: 0 auto;
+		/* margin-bottom: 65px; */
+	}
+	
+	.howto-play-main .fix-image-sp img{
+		margin-bottom: 80px; 
+	}
+
+	#user-registration p .howto-text-fix{
+		margin-top: 10px;	
+	}
+	
+	.howto-play-main #game-play .fix-text-prize-1{
+		font-size: 15.5px;
+		margin: 164% auto;
+		margin-left: 10%;
+	}
+	
+	.howto-play-main #game-play .fix-text-prize-2{
+		font-size: 15.5px;
+		margin: 176% auto;
+		margin-left: 15%;
+	}
+	
+	
+}
+
+@media screen and (max-width: 530px) {
+	
+	.howto-play-main #game-play .fix-text-prize-1{
+		font-size: 1.4em;;
+		margin: 130% auto;
+		margin-left: 10%;
+		max-width: 70%
+	}
+	
+	.howto-play-main #game-play .fix-text-prize-2{
+		font-size: 1.4em;;
+		margin: 142% auto;
+		margin-left: 15%;
+	}
+}
+
+@media screen and (max-width: 445px) {
+	
+	.howto-play-main #game-play .fix-text-prize-1{
+		font-size: 16px;
+		margin: 155% auto;
+		margin-left: 10%;
+		max-width: 70%
+	}
+	
+	.howto-play-main #game-play .fix-text-prize-2{
+		font-size: 16px;
+		margin: 168% auto;
+		margin-left: 15%;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	
+	.howto-play-main #game-play .fix-text-prize-1{
+		font-size: 14.5px;
+	}
+	
+	.howto-play-main #game-play .fix-text-prize-2{
+		font-size: 14.5px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	
+	.howto-play-main #game-play .fix-text-prize-1{
+		font-size: 14.5px;
+	}
+	
+	.howto-play-main #game-play .fix-text-prize-2{
+		font-size: 14.5px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	
+	.howto-play-main #game-play .fix-text-prize-1{
+		font-size: 13.5px;;
+		margin: 121% auto;
+		margin-left: 10%;
+		max-width: 70%
+	}
+	
+	.howto-play-main #game-play .fix-text-prize-2{
+		font-size: 13.5px;;
+		margin: 131% auto;
+		margin-left: 15%;
+	}
+	
+}
