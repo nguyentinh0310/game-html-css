@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
+.reset-password {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/common/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20rem;
+  position: relative;
+}
+.reset-password ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+.reset-password ul li {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #707070;
+}
+.reset-password label {
+  margin: 0;
+  font-size: 20px;
+  color: #707070;
+}
+.reset-password .img-thumbnail {
+  border: none !important;
+}
+.reset-password .link {
+  color: #0056b3;
+}
+.reset-password__img-hourglass {
+  background: transparent;
+  position: absolute;
+  top: 2%;
+  right: 19%;
+}
+.reset-password__img-gift {
+  background: transparent;
+  position: absolute;
+  top: 2%;
+  left: 15%;
+}
+.reset-password__img-icon-1 {
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  right: 1%;
+}
+.reset-password__header {
+  text-align: center;
+  color: #ffffff;
+  padding: 13rem 0 7rem 0;
+}
+.reset-password__header-title {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 88px;
+}
+.reset-password__header-title-second {
+  font-family: "Raleway", sans-serif;
+  font-size: 37px;
+  font-weight: 400;
+}
+.reset-password-container {
+  background-color: #ffffff;
+  width: 1468px;
+  margin: auto;
+  padding: 90px 130px 68px 130px;
+  border-radius: 2rem;
+}
+.reset-password__form-group {
+  margin-bottom: 2rem;
+}
+.reset-password__form .col-form-label {
+  display: flex;
+  align-items: center;
+}
+.reset-password__form-control {
+  height: calc(3.25rem + 2px) !important;
+  font-size: 1.5rem;
+}
+.reset-password__form-button {
+  background-color: #f59154;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 0.5rem 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1919.98px) {
+  .reset-password__img-hourglass {
+    width: 13%;
+    top: 11%;
+    right: 11%;
+  }
+  .reset-password__img-gift {
+    width: 13%;
+    top: 11%;
+    left: 11%;
+  }
+  .reset-password__img-icon-1 {
+    width: 8%;
+    top: 50%;
+    right: -1%;
+  }
+  .reset-password__header {
+    padding: 11rem 0 7rem 0;
+  }
+  .reset-password-container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .reset-password ul li {
+    font-size: 18px;
+  }
+  .reset-password label {
+    font-size: 18px;
+  }
+  .reset-password__img-hourglass {
+    width: 13%;
+    top: 12%;
+    right: 3%;
+  }
+  .reset-password__img-gift {
+    width: 13%;
+    top: 12%;
+    left: 3%;
+  }
+  .reset-password__img-icon-1 {
+    width: 8%;
+    top: 40%;
+    right: -3%;
+  }
+  .reset-password-container {
+    max-width: 90%;
+  }
+  .reset-password__form-group {
+    margin-bottom: 1.5rem;
+  }
+  .reset-password__form .col-form-label {
+    padding: 0;
+  }
+  .reset-password__form-control {
+    padding: 0;
+  }
+  .reset-password__form-button {
+    font-size: 20px;
+    padding: 0.5rem 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .reset-password ul li {
+    font-size: 17px;
+  }
+  .reset-password label {
+    font-size: 17px;
+  }
+  .reset-password__img-icon-1 {
+    width: 9%;
+    top: 40%;
+    right: -4%;
+  }
+  .reset-password__img-hourglass {
+    width: 14%;
+    top: 9%;
+    right: 4%;
+  }
+  .reset-password__img-gift {
+    width: 14%;
+    top: 9%;
+    left: 4%;
+  }
+  .reset-password__header {
+    padding: 10rem 0 4rem 0;
+  }
+  .reset-password__header-title {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 70px;
+  }
+  .reset-password__header-title-second {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .reset-password-container {
+    max-width: 90%;
+    padding: 50px;
+  }
+  .reset-password__form-group {
+    margin-bottom: 1.5rem;
+  }
+  .reset-password__form .col-form-label {
+    padding: 0;
+  }
+  .reset-password__form-control {
+    padding: 0;
+    font-size: 17px;
+  }
+  .reset-password__form-button {
+    font-size: 19px;
+    padding: 0.5rem 2rem;
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .reset-password ul li {
+    font-size: 17px;
+  }
+  .reset-password label {
+    font-size: 17px;
+  }
+  .reset-password__img-icon-1 {
+    display: none;
+  }
+  .reset-password__img-hourglass {
+    display: none;
+  }
+  .reset-password__img-gift {
+    display: none;
+  }
+  .reset-password__header {
+    padding: 3rem 0;
+  }
+  .reset-password__header-title {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 5rem;
+  }
+  .reset-password__header-title-second {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .reset-password-container {
+    max-width: 85%;
+    padding: 35px;
+  }
+  .reset-password__form-group {
+    margin-bottom: 1rem;
+  }
+  .reset-password__form-control {
+    font-size: 16px;
+  }
+  .reset-password__form-button {
+    font-size: 19px;
+    padding: 0.5rem 2rem;
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .reset-password ul {
+    margin-bottom: 2rem;
+  }
+  .reset-password ul li {
+    font-size: 14px;
+  }
+  .reset-password label {
+    font-size: 14px;
+  }
+  .reset-password__img-icon-1 {
+    display: none;
+  }
+  .reset-password__img-hourglass {
+    display: none;
+  }
+  .reset-password__img-gift {
+    display: none;
+  }
+  .reset-password__header {
+    padding: 3rem 0;
+  }
+  .reset-password__header-title {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 5rem;
+  }
+  .reset-password__header-title-second {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .reset-password-container {
+    max-width: 85%;
+    padding: 35px;
+  }
+  .reset-password__form-group {
+    margin-bottom: 1rem;
+  }
+  .reset-password__form-control {
+    font-size: 13px;
+  }
+  .reset-password__form-checkbox {
+    margin-top: 2rem;
+  }
+  .reset-password__form-check {
+    padding: 1rem 2rem;
+  }
+  .reset-password__form-button {
+    font-size: 15px;
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reset-password ul {
+    margin-bottom: 2rem;
+  }
+  .reset-password ul li {
+    font-size: 13px;
+  }
+  .reset-password label {
+    font-size: 13px;
+  }
+  .reset-password__header {
+    padding: 3rem 0;
+  }
+  .reset-password__header-title {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  .reset-password__header-title-second {
+    font-size: 1.5rem;
+  }
+  .reset-password-container {
+    max-width: 95%;
+    padding: 25px;
+  }
+  .reset-password__form-group {
+    margin-bottom: 1rem;
+  }
+  .reset-password__form-control {
+    font-size: 12px;
+  }
+  .reset-password__form-checkbox {
+    margin-top: 2rem;
+  }
+  .reset-password__form-check {
+    padding: 1rem;
+  }
+  .reset-password__form-button {
+    font-size: 14px;
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

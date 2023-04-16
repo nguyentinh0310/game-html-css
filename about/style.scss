@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
+$pink-color: #e82a75;
+$orange-color: #f59154;
+$gray-text-primary: #707070;
+$gray-text: #b3b3b3;
+$red-text: #b10606;
+$red-text-normal: #ff5555;
+$white-color: #ffffff;
+
+.about-minspo {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/common/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20rem;
+  position: relative;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      font-size: 27px;
+      line-height: 1.5;
+      color: $gray-text-primary;
+    }
+  }
+  label {
+    margin: 0;
+  }
+
+  .img-thumbnail {
+    border: none !important;
+  }
+
+  &__img-hourglass {
+    background: transparent;
+    position: absolute;
+    top: 2%;
+    right: 19%;
+  }
+  &__img-gift {
+    background: transparent;
+    position: absolute;
+    top: 2%;
+    left: 15%;
+  }
+  &__img-icon-1 {
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+  }
+  &__img-idcard {
+    position: absolute;
+    top: 218px;
+    right: -8.5%;
+  }
+  &__header {
+    text-align: center;
+    color: $white-color;
+    padding: 13rem 0 7rem 0;
+    &-title {
+      font-family: "Raleway", sans-serif;
+      font-style: italic;
+      text-transform: uppercase;
+      font-size: 88px;
+    }
+    &-title-second {
+      font-family: "Raleway", sans-serif;
+      font-size: 37px;
+      font-weight: 400;
+    }
+  }
+
+  &-container {
+    background-color: $white-color;
+    width: 1468px;
+    margin: auto;
+    padding: 90px 130px 68px 130px;
+    border-radius: 2rem;
+  }
+ 
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1919.98px) {
+  .about-minspo {
+    &__img-hourglass {
+      width: 13%;
+      top: 11%;
+      right: 11%;
+    }
+    &__img-gift {
+      width: 13%;
+      top: 11%;
+      left: 11%;
+    }
+    &__img-icon-1 {
+      width: 8%;
+      top: 50%;
+      right: -1%;
+    }
+    &__header {
+      padding: 11rem 0 7rem 0;
+    }
+    &-container {
+      max-width: 1140px;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about-minspo {
+    &__img-hourglass {
+      width: 13%;
+      top: 12%;
+      right: 3%;
+    }
+    &__img-gift {
+      width: 13%;
+      top: 12%;
+      left: 3%;
+    }
+    &__img-icon-1 {
+      width: 8%;
+      top: 40%;
+      right: -3%;
+    }
+    &-container {
+      max-width: 90%;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-minspo {
+    ul {
+      li {
+        font-size: 19px;
+      }
+    }
+    .kyc-icon-ban {
+      font-size: 4rem;
+      font-weight: bold;
+      color: $red-text;
+    }
+    &__img-icon-1 {
+      width: 9%;
+      top: 40%;
+      right: -4%;
+    }
+    &__img-hourglass {
+      width: 14%;
+      top: 9%;
+      right: 4%;
+    }
+    &__img-gift {
+      width: 14%;
+      top: 9%;
+      left: 4%;
+    }
+    &__header {
+      padding: 10rem 0 4rem 0;
+      &-title {
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 70px;
+      }
+      &-title-second {
+        font-size: 30px;
+        font-weight: 400;
+      }
+    }
+    &-container {
+      max-width: 90%;
+      padding: 50px;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .about-minspo {
+    ul {
+      li {
+        font-size: 15px;
+      }
+    }
+    &__img-icon-1 {
+        display: none;
+    }
+    &__img-hourglass {
+        display: none;
+    }
+    &__img-gift {
+        display: none;
+    }
+    &__header {
+      padding: 3rem 0;
+      &-title {
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 5rem;
+      }
+      &-title-second {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+    &-container {
+      max-width: 85%;
+      padding: 35px;
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .about-minspo {
+    ul {
+      li {
+        font-size: 15px;
+      }
+    }
+    &__header {
+      padding: 3rem 0;
+      &-title {
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 5rem;
+      }
+      &-title-second {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+
+    &-container {
+      max-width: 85%;
+      padding: 35px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-minspo {
+    ul {
+      li {
+        font-size: 14px;
+      }
+    }
+    &__header {
+      padding: 3rem 0;
+      &-title {
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 3rem;
+      }
+      &-title-second {
+        font-size: 1.5rem;
+      }
+    }
+    &-container {
+      max-width: 95%;
+      padding: 25px;
+    }
+  }
+}

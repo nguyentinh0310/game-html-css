@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
 $pink-color: #e82a75;
 $orange-color: #f59154;
 $gray-text-primary: #707070;
@@ -9,7 +10,7 @@ $white-color: #ffffff;
 .kyc-explanation {
   width: 100%;
   min-height: 100vh;
-  background-image: url("./IDcard/bg.png");
+  background-image: url("../images/common/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 20rem;
@@ -39,6 +40,7 @@ $white-color: #ffffff;
     text-decoration: underline;
   }
   .kyc-icon-ban {
+    font-family: "FontAwesome";
     font-size: 6rem;
     font-weight: bold;
     color: $red-text;
@@ -56,36 +58,37 @@ $white-color: #ffffff;
     border: none !important;
   }
 
-  &-img-hourglass {
+  &__img-hourglass {
     background: transparent;
     position: absolute;
     top: 2%;
     right: 19%;
   }
-  &-img-gilf {
+  &__img-gift {
     background: transparent;
     position: absolute;
     top: 2%;
     left: 15%;
   }
-  &-img-toy-1 {
+  &__img-icon-1 {
     background: transparent;
     position: absolute;
     top: 12%;
     right: 1%;
   }
-  &-img-toy-2 {
+  &__img-icon-2 {
     background: transparent;
     position: absolute;
     top: 30%;
     right: 1%;
   }
-  &-img-idcard {
+  &__img-idcard {
     position: absolute;
     top: 218px;
     right: -8.5%;
   }
   &__header {
+    font-family: "Raleway", sans-serif;
     text-align: center;
     color: $white-color;
     padding: 13rem 0 7rem 0;
@@ -174,6 +177,7 @@ $white-color: #ffffff;
       color: $gray-text-primary;
       padding: 0 4rem 1rem 4rem;
       h4 {
+        font-family: "FontAwesome";
         font-size: 35px;
       }
     }
@@ -235,26 +239,26 @@ $white-color: #ffffff;
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) and (max-width: 1919.98px) {
   .kyc-explanation {
-    &-img-idcard {
+    &__img-idcard {
       top: 11rem;
-      right: -14%;
+      right: -10%;
     }
-    &-img-hourglass {
+    &__img-hourglass {
       width: 15%;
-      top: 2%;
+      top: 1.5%;
       right: 15%;
     }
-    &-img-gilf {
+    &__img-gift {
       width: 15%;
-      top: 2%;
+      top: 1.5%;
       left: 15%;
     }
-    &-img-toy-1 {
+    &__img-icon-1 {
       width: 8%;
       top: 12%;
       right: -1%;
     }
-    &-img-toy-2 {
+    &__img-icon-2 {
       width: 8%;
       top: 30%;
       right: -1%;
@@ -294,33 +298,33 @@ $white-color: #ffffff;
       font-weight: bold;
       color: $red-text;
     }
-    &-img-hourglass {
+    &__img-hourglass {
       width: 15%;
       top: 2.5%;
       right: 10%;
     }
-    &-img-gilf {
+    &__img-gift {
       width: 15%;
       top: 2.5%;
       left: 10%;
     }
-    &-img-toy-1 {
+    &__img-icon-1 {
       width: 8%;
       top: 10%;
       right: -3%;
     }
-    &-img-toy-2 {
+    &__img-icon-2 {
       width: 8%;
       top: 28%;
       right: -3%;
     }
-    &-img-idcard {
+    &__img-idcard {
       top: 13rem;
       right: -16%;
     }
 
     &-container {
-      max-width: 960px;
+      max-width: 90%;
     }
     &__rule {
       width: 60rem;
@@ -359,27 +363,27 @@ $white-color: #ffffff;
       font-weight: bold;
       color: $red-text;
     }
-    &-img-toy-1 {
+    &__img-icon-1 {
       width: 9%;
       top: 10%;
       right: -4%;
     }
-    &-img-toy-2 {
+    &__img-icon-2 {
       width: 9%;
       top: 26%;
       right: -4%;
     }
-    &-img-hourglass {
+    &__img-hourglass {
       width: 15%;
       top: 3%;
       right: 12%;
     }
-    &-img-gilf {
+    &__img-gift {
       width: 15%;
       top: 3%;
       left: 12%;
     }
-    &-img-idcard {
+    &__img-idcard {
       display: none;
     }
     .text-red-normal {
@@ -387,7 +391,7 @@ $white-color: #ffffff;
       font-size: 19px;
     }
     &__header {
-      padding: 10rem 0 7rem 0;
+      padding: 10rem 0 4rem 0;
       &-title {
         font-style: italic;
         text-transform: uppercase;
@@ -399,11 +403,11 @@ $white-color: #ffffff;
       }
     }
     &-container {
-      max-width: 720px;
+      max-width: 90%;
       padding: 50px;
     }
     &__rule {
-      width: 46rem;
+      width: 85%;
       height: 55px;
       margin: 1rem auto;
       &-3 {
@@ -471,15 +475,6 @@ $white-color: #ffffff;
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
   .kyc-explanation {
-    &-container {
-      max-width: 540px;
-    }
-  }
-}
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  .kyc-explanation {
     ul {
       li {
         font-size: 15px;
@@ -490,27 +485,27 @@ $white-color: #ffffff;
       font-weight: bold;
       color: $red-text;
     }
-    &-img-toy-1 {
+    &__img-icon-1 {
       width: 11%;
       top: 10%;
       right: -2%;
     }
-    &-img-toy-2 {
+    &__img-icon-2 {
       width: 11%;
       top: 26%;
       right: -2%;
     }
-    &-img-hourglass {
+    &__img-hourglass {
       width: 15%;
       top: 1%;
       right: 10%;
     }
-    &-img-gilf {
+    &__img-gift {
       width: 15%;
       top: 1%;
       left: 10%;
     }
-    &-img-idcard {
+    &__img-idcard {
       display: none;
     }
     .text-red-normal {
@@ -534,7 +529,130 @@ $white-color: #ffffff;
       padding: 35px;
     }
     &__rule {
-      width: 33rem;
+      width: 85%;
+      height: 45px;
+      margin: 1.5rem auto;
+      &-3 {
+        margin-top: 8rem;
+      }
+    }
+
+    &__text-heading {
+      font-size: 24px;
+    }
+    &__content {
+      margin: 3rem 2rem;
+      &-text {
+        font-size: 15px;
+        line-height: 1.25;
+      }
+    }
+    &__card {
+      margin-bottom: 6.5rem;
+      &-header {
+        height: 50px;
+      }
+      &-body {
+        padding: 30px 50px 15px 50px;
+      }
+    }
+    &__box {
+      padding: 1rem;
+      margin-bottom: 2rem;
+      &-header {
+        justify-content: center;
+      }
+      &-title {
+        font-size: 22px;
+      }
+    }
+    &__accordion {
+      &-header,
+      &-header-2 {
+        color: $gray-text-primary;
+        padding: 0 2rem;
+        h4 {
+          font-size: 22px;
+        }
+      }
+      &-header-2 {
+        padding-top: 2rem;
+      }
+      &-box {
+        padding: 2rem 4rem;
+      }
+      .Label::before {
+        content: "▼";
+        font-size: 22px;
+      }
+      .Label {
+        font-size: 22px;
+      }
+      .toggle:checked + .Label + .content {
+        padding: 2rem 0;
+      }
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .kyc-explanation {
+    ul {
+      li {
+        font-size: 15px;
+      }
+    }
+    .kyc-icon-ban {
+      font-size: 4rem;
+      font-weight: bold;
+      color: $red-text;
+    }
+    &__img-icon-1 {
+      width: 11%;
+      top: 10%;
+      right: -2%;
+    }
+    &__img-icon-2 {
+      width: 11%;
+      top: 26%;
+      right: -2%;
+    }
+    &__img-hourglass {
+      width: 15%;
+      top: 1%;
+      right: 10%;
+    }
+    &__img-gift {
+      width: 15%;
+      top: 1%;
+      left: 10%;
+    }
+    &__img-idcard {
+      display: none;
+    }
+    .text-red-normal {
+      color: $red-text-normal;
+      font-size: 15px;
+    }
+    &__header {
+      padding: 3rem 0;
+      &-title {
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 5rem;
+      }
+      &-title-second {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+    &-container {
+      max-width: 85%;
+      padding: 35px;
+    }
+    &__rule {
+      width: 82%;
       height: 45px;
       margin: 1.5rem auto;
       &-3 {
@@ -615,12 +733,12 @@ $white-color: #ffffff;
       color: $red-text-normal;
       font-size: 14px;
     }
-    &-img-toy-1 {
+    &__img-icon-1 {
       width: 10%;
       top: 10%;
       right: -5%;
     }
-    &-img-toy-2 {
+    &__img-icon-2 {
       width: 10%;
       top: 26%;
       right: -5%;
@@ -641,7 +759,7 @@ $white-color: #ffffff;
       padding: 25px;
     }
     &__rule {
-      width: 26rem;
+      width: 81%;
       height: 38px;
       margin: 1.5rem auto;
       &-3 {

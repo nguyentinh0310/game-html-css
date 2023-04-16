@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
+.about-minspo {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/common/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20rem;
+  position: relative;
+}
+.about-minspo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.about-minspo ul li {
+  font-size: 27px;
+  line-height: 1.5;
+  color: #707070;
+}
+.about-minspo label {
+  margin: 0;
+}
+.about-minspo .img-thumbnail {
+  border: none !important;
+}
+.about-minspo__img-hourglass {
+  background: transparent;
+  position: absolute;
+  top: 2%;
+  right: 19%;
+}
+.about-minspo__img-gift {
+  background: transparent;
+  position: absolute;
+  top: 2%;
+  left: 15%;
+}
+.about-minspo__img-icon-1 {
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  right: 1%;
+}
+.about-minspo__img-idcard {
+  position: absolute;
+  top: 218px;
+  right: -8.5%;
+}
+.about-minspo__header {
+  text-align: center;
+  color: #ffffff;
+  padding: 13rem 0 7rem 0;
+}
+.about-minspo__header-title {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 88px;
+}
+.about-minspo__header-title-second {
+  font-family: "Raleway", sans-serif;
+  font-size: 37px;
+  font-weight: 400;
+}
+.about-minspo-container {
+  background-color: #ffffff;
+  width: 1468px;
+  margin: auto;
+  padding: 90px 130px 68px 130px;
+  border-radius: 2rem;
+}
+
+@media (min-width: 1200px) and (max-width: 1919.98px) {
+  .about-minspo__img-hourglass {
+    width: 13%;
+    top: 11%;
+    right: 11%;
+  }
+  .about-minspo__img-gift {
+    width: 13%;
+    top: 11%;
+    left: 11%;
+  }
+  .about-minspo__img-icon-1 {
+    width: 8%;
+    top: 50%;
+    right: -1%;
+  }
+  .about-minspo__header {
+    padding: 11rem 0 7rem 0;
+  }
+  .about-minspo-container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about-minspo__img-hourglass {
+    width: 13%;
+    top: 12%;
+    right: 3%;
+  }
+  .about-minspo__img-gift {
+    width: 13%;
+    top: 12%;
+    left: 3%;
+  }
+  .about-minspo__img-icon-1 {
+    width: 8%;
+    top: 40%;
+    right: -3%;
+  }
+  .about-minspo-container {
+    max-width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-minspo ul li {
+    font-size: 19px;
+  }
+  .about-minspo .kyc-icon-ban {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #b10606;
+  }
+  .about-minspo__img-icon-1 {
+    width: 9%;
+    top: 40%;
+    right: -4%;
+  }
+  .about-minspo__img-hourglass {
+    width: 14%;
+    top: 9%;
+    right: 4%;
+  }
+  .about-minspo__img-gift {
+    width: 14%;
+    top: 9%;
+    left: 4%;
+  }
+  .about-minspo__header {
+    padding: 10rem 0 7rem 0;
+  }
+  .about-minspo__header-title {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 70px;
+  }
+  .about-minspo__header-title-second {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .about-minspo-container {
+    max-width: 90%;
+    padding: 50px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .about-minspo ul li {
+    font-size: 15px;
+  }
+  .about-minspo__img-icon-1 {
+    display: none;
+  }
+  .about-minspo__img-hourglass {
+    display: none;
+  }
+  .about-minspo__img-gift {
+    display: none;
+  }
+  .about-minspo__header {
+    padding: 3rem 0;
+  }
+  .about-minspo__header-title {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 5rem;
+  }
+  .about-minspo__header-title-second {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .about-minspo-container {
+    max-width: 85%;
+    padding: 35px;
+  }
+}
+@media (max-width: 575.98px) {
+  .about-minspo ul li {
+    font-size: 15px;
+  }
+  .about-minspo__header {
+    padding: 3rem 0;
+  }
+  .about-minspo__header-title {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 5rem;
+  }
+  .about-minspo__header-title-second {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .about-minspo-container {
+    max-width: 85%;
+    padding: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-minspo ul li {
+    font-size: 14px;
+  }
+  .about-minspo__header {
+    padding: 3rem 0;
+  }
+  .about-minspo__header-title {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  .about-minspo__header-title-second {
+    font-size: 1.5rem;
+  }
+  .about-minspo-container {
+    max-width: 95%;
+    padding: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

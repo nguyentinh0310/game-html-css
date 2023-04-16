@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
+$pink-color: #e82a75;
+$orange-color: #f59154;
+$gray-text-primary: #707070;
+$gray-text: #b3b3b3;
+$red-text: #b10606;
+$red-text-normal: #ff5555;
+$white-color: #ffffff;
+
+.registration {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/common/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20rem;
+  position: relative;
+
+  label {
+    margin: 0;
+    font-size: 20px;
+    color: $gray-text-primary;
+  }
+
+  .img-thumbnail {
+    border: none !important;
+  }
+
+  .link {
+    color: #0056b3;
+  }
+  &__img-hourglass {
+    background: transparent;
+    position: absolute;
+    top: 2%;
+    right: 19%;
+  }
+  &__img-gift {
+    background: transparent;
+    position: absolute;
+    top: 2%;
+    left: 15%;
+  }
+  &__img-icon-1 {
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+  }
+  &__img-idcard {
+    position: absolute;
+    top: 218px;
+    right: -8.5%;
+  }
+  &__header {
+    text-align: center;
+    color: $white-color;
+    padding: 13rem 0 7rem 0;
+    &-title {
+      font-family: "Raleway", sans-serif;
+      font-style: italic;
+      text-transform: uppercase;
+      font-size: 88px;
+    }
+    &-title-second {
+      font-family: "Raleway", sans-serif;
+      font-size: 37px;
+      font-weight: 400;
+    }
+  }
+
+  &-container {
+    background-color: $white-color;
+    width: 1468px;
+    margin: auto;
+    padding: 90px 130px 68px 130px;
+    border-radius: 2rem;
+  }
+  &__form {
+    &-group {
+      margin-bottom: 2rem;
+    }
+    .col-form-label {
+      display: flex;
+      align-items: center;
+    }
+    &-control {
+      height: calc(3.25rem + 2px) !important;
+      font-size: 1.5rem;
+    }
+    &-checkbox {
+      margin-top: 5rem;
+    }
+    &-check {
+      display: flex;
+      align-items: center;
+      padding: 1rem 15rem;
+      &-input {
+        width: 2rem;
+        height: 2rem;
+      }
+      &-label {
+        margin-left: 2rem !important;
+      }
+    }
+    &-button {
+      background-color: $orange-color;
+      color: $white-color;
+      font-size: 22px;
+      padding: 0.5rem 2rem;
+      margin-top: 5rem;
+    }
+  }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1919.98px) {
+  .registration {
+    &__img-hourglass {
+      width: 13%;
+      top: 11%;
+      right: 11%;
+    }
+    &__img-gift {
+      width: 13%;
+      top: 11%;
+      left: 11%;
+    }
+    &__img-icon-1 {
+      width: 8%;
+      top: 50%;
+      right: -1%;
+    }
+    &__header {
+      padding: 11rem 0 7rem 0;
+    }
+    &-container {
+      max-width: 1140px;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .registration {
+    label {
+      font-size: 18px;
+    }
+    &__img-hourglass {
+      width: 13%;
+      top: 12%;
+      right: 3%;
+    }
+    &__img-gift {
+      width: 13%;
+      top: 12%;
+      left: 3%;
+    }
+    &__img-icon-1 {
+      width: 8%;
+      top: 40%;
+      right: -3%;
+    }
+    &-container {
+      max-width: 90%;
+    }
+    &__form {
+      &-group {
+        margin-bottom: 1.5rem;
+      }
+      .col-form-label {
+        padding: 0;
+      }
+      &-control {
+        padding: 0;
+      }
+      &-check {
+        padding: 1rem 8rem;
+      }
+      &-button {
+        font-size: 20px;
+        padding: 0.5rem 2rem;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .registration {
+    label {
+      font-size: 17px;
+    }
+    &__img-icon-1 {
+      width: 9%;
+      top: 40%;
+      right: -4%;
+    }
+    &__img-hourglass {
+      width: 14%;
+      top: 9%;
+      right: 4%;
+    }
+    &__img-gift {
+      width: 14%;
+      top: 9%;
+      left: 4%;
+    }
+    &__header {
+      padding: 10rem 0 4rem 0;
+      &-title {
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 70px;
+      }
+      &-title-second {
+        font-size: 30px;
+        font-weight: 400;
+      }
+    }
+    &-container {
+      max-width: 90%;
+      padding: 50px;
+    }
+    &__form {
+      &-group {
+        margin-bottom: 1.5rem;
+      }
+      .col-form-label {
+        padding: 0;
+      }
+      &-control {
+        padding: 0;
+        font-size: 17px;
+      }
+      &-checkbox {
+        margin-top: 4rem;
+      }
+      &-check {
+        padding: 1rem 6rem;
+      }
+      &-button {
+        font-size: 19px;
+        padding: 0.5rem 2rem;
+        margin-top: 4rem;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .registration {
+    label {
+      font-size: 17px;
+    }
+    &__img-icon-1 {
+      display: none;
+    }
+    &__img-hourglass {
+      display: none;
+    }
+    &__img-gift {
+      display: none;
+    }
+    &__header {
+      padding: 3rem 0;
+      &-title {
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 5rem;
+      }
+      &-title-second {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+    &-container {
+      max-width: 85%;
+      padding: 35px;
+    }
+    &__form {
+      &-group {
+        margin-bottom: 1rem;
+      }
+      &-control {
+        font-size: 16px;
+      }
+      &-checkbox {
+        margin-top: 4rem;
+      }
+      &-check {
+        padding: 1rem 3rem;
+      }
+      &-button {
+        font-size: 19px;
+        padding: 0.5rem 2rem;
+        margin-top: 4rem;
+      }
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .registration {
+    label {
+      font-size: 14px;
+    }
+    &__img-icon-1 {
+      display: none;
+    }
+    &__img-hourglass {
+      display: none;
+    }
+    &__img-gift {
+      display: none;
+    }
+    &__header {
+      padding: 3rem 0;
+      &-title {
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 5rem;
+      }
+      &-title-second {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+
+    &-container {
+      max-width: 85%;
+      padding: 35px;
+    }
+    &__form {
+      &-group {
+        margin-bottom: 1rem;
+      }
+      &-control {
+        font-size: 13px;
+      }
+      &-checkbox {
+        margin-top: 2rem;
+      }
+      &-check {
+        padding: 1rem 2rem;
+      }
+      &-button {
+        font-size: 15px;
+        padding: 0.5rem 2rem;
+        margin-top: 2rem;
+
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .registration {
+    label {
+      font-size: 13px;
+    }
+    &__header {
+      padding: 3rem 0;
+      &-title {
+        font-style: italic;
+        text-transform: uppercase;
+        font-size: 3rem;
+      }
+      &-title-second {
+        font-size: 1.5rem;
+      }
+    }
+    &-container {
+      max-width: 95%;
+      padding: 25px;
+    }
+    &__form {
+      &-group {
+        margin-bottom: 1rem;
+      }
+      &-control {
+        font-size: 12px;
+      }
+      &-checkbox {
+        margin-top: 2rem;
+      }
+      &-check {
+        padding: 1rem;
+      }
+      &-button {
+        font-size: 14px;
+        padding: 0.5rem 2rem;
+        margin-top: 2rem;
+
+      }
+    }
+  }
+}
