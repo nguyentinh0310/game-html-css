@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
+.result {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/common/bg.png");
+  font-family: "Noto Sans JP", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20rem;
+  position: relative;
+}
+.result label {
+  margin: 0;
+}
+.result .active {
+  background-color: #edf700;
+  color: #000000;
+}
+.result .img-thumbnail {
+  border: none !important;
+}
+.result__img-hourglass {
+  background: transparent;
+  position: absolute;
+  top: 2%;
+  right: 19%;
+}
+.result__img-gift {
+  background: transparent;
+  position: absolute;
+  top: 2%;
+  left: 15%;
+}
+.result__img-icon-1 {
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  right: 1%;
+}
+.result__img-idcard {
+  position: absolute;
+  top: 218px;
+  right: -8.5%;
+}
+.result__header {
+  text-align: center;
+  color: #ffffff;
+  padding: 13rem 0 7rem 0;
+}
+.result__header-title {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  font-size: 88px;
+}
+.result__header-title-second {
+  font-family: "Raleway", sans-serif;
+  font-size: 37px;
+  font-weight: 400;
+}
+.result-container {
+  width: 1468px;
+  margin: auto;
+  border-radius: 2rem;
+}
+.result-select {
+  width: 60%;
+  margin: auto;
+  height: calc(3.25rem + 2px);
+  font-size: 20px;
+  padding: 0.375rem 2rem;
+}
+.result-slick {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.result-date {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 2rem;
+  font-size: 20px;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+}
+.result-date:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 1200px) and (max-width: 1919.98px) {
+  .result__img-hourglass {
+    width: 13%;
+    top: 11%;
+    right: 11%;
+  }
+  .result__img-gift {
+    width: 13%;
+    top: 11%;
+    left: 11%;
+  }
+  .result__img-icon-1 {
+    width: 8%;
+    top: 50%;
+    right: -1%;
+  }
+  .result__header {
+    padding: 11rem 0 7rem 0;
+  }
+  .result-container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .result__img-hourglass {
+    width: 13%;
+    top: 12%;
+    right: 3%;
+  }
+  .result__img-gift {
+    width: 13%;
+    top: 12%;
+    left: 3%;
+  }
+  .result__img-icon-1 {
+    width: 8%;
+    top: 40%;
+    right: -3%;
+  }
+  .result-container {
+    max-width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .result__img-icon-1 {
+    width: 9%;
+    top: 40%;
+    right: -4%;
+  }
+  .result__img-hourglass {
+    width: 14%;
+    top: 9%;
+    right: 4%;
+  }
+  .result__img-gift {
+    width: 14%;
+    top: 9%;
+    left: 4%;
+  }
+  .result__header {
+    padding: 10rem 0 4rem 0;
+  }
+  .result__header-title {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 70px;
+  }
+  .result__header-title-second {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .result-container {
+    max-width: 90%;
+    padding: 50px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .result__img-icon-1 {
+    display: none;
+  }
+  .result__img-hourglass {
+    display: none;
+  }
+  .result__img-gift {
+    display: none;
+  }
+  .result__header {
+    padding: 3rem 0;
+  }
+  .result__header-title {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 5rem;
+  }
+  .result__header-title-second {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .result-container {
+    max-width: 85%;
+    padding: 35px;
+  }
+}
+@media (max-width: 575.98px) {
+  .result__header {
+    padding: 3rem 0;
+  }
+  .result__header-title {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 5rem;
+  }
+  .result__header-title-second {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .result-container {
+    max-width: 85%;
+    padding: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .result__header {
+    padding: 3rem 0;
+  }
+  .result__header-title {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  .result__header-title-second {
+    font-size: 1.5rem;
+  }
+  .result-container {
+    max-width: 95%;
+    padding: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
