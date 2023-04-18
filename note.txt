@@ -15,3 +15,7 @@
 
 
 
+Extra large desktops: font-size: 16px; h3: 32px; h2: 38px; span: 21px, title-2: 24px, button: 20px
+Large desktops: font-size: 16px; h3: 32px; h2: 38px; span: 18px
+Small devices: font-size: 14.5px; h3: 24px; h2: 25px; span: 22.5px; button: 17px
+Extra Small devices: font-size: 13px; h3: 24px; h2: 25px; span: 22.5px; button: 15px
