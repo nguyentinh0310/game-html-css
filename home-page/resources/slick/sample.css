@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.back {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+#sample, .sample {
+	width: 400px;
+	margin: 0 auto 50px;
+}
+#sample div {
+	height: 200px;
+}
+.sample .contents span {
+	display: block;
+	height: 200px;
+	margin: 0 10px;
+}
+.sample .nav span {
+	display: block;
+	margin: 0 10px;
+}
+#sample div:nth-child(1), .contents01 span, .nav01 span {
+	background: #E74C3C;
+}
+#sample div:nth-child(2), .contents02 span, .nav02 span {
+	background: #3498DB;
+}
+#sample div:nth-child(3), .contents03 span, .nav03 span {
+	background: #2ECC71;
+}
+#sample div:nth-child(4), .contents04 span, .nav04 span {
+	background: #9B59B6;
+}
+#sample div:nth-child(5), .contents05 span, .nav05 span {
+	background: #34495e;
+}
+.contents06 span, .nav06 span {
+	background: #f1c40f;
+}
+.contents07 span, .nav07 span {
+	background: #ecf0f1;
+}
+.contents08 span, .nav08 span {
+	background: #95a5a6;
+}
+.contents09 span, .nav09 span {
+	background: #e67e22;
+}
+.contents10 span, .nav10 span {
+	background: #16a085;
+}
+.slick-prev::before, .slick-next::before {
+	color: #000000;
+}
+
+#sample03 {
+	margin-bottom: 20px;
+}
+#sample04-arrow {
+	position: relative;
+	width: 400px;
+	margin: -30px auto 80px;
+	text-align: center;
+}
+#sample04-arrow div {
+	display: inline-block;
+	margin: 0 10px;
+}
+#sample05 {
+	width: 250px;
+}
+#sample05 .contents span {
+	height: 100px;
+}
+#sample06 {
+	max-width: 1200px;
+	width: auto;
+}
+#sample06 .slick-prev {
+	left: 10px;
+}
+#sample06 .slick-next {
+	right: 10px;
+}
+#sample07 {
+	max-width: 800px;
+	width: auto;
+}
+#sample07 .contents {
+	width: 200px;
+}
+#sample07 .slick-prev {
+	left: 10px;
+}
+#sample07 .slick-next {
+	right: 10px;
+}
+#sample08 {
+	max-width: 960px;
+	width: auto;
+}
+#sample08 .slick-prev {
+	left: 10px;
+}
+#sample08 .slick-next {
+	right: 10px;
+}
