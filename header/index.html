@@ -1,14 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Mikado Game - Home</title>
-
-    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/ico" />
-
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="../plugins/bootstrap-4.1.3/css/bootstrap.min.css"
@@ -17,54 +13,73 @@
       rel="stylesheet"
       href="../plugins/font-awesome/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="../plugins/swiper-slide/css/swiper.min.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="./style.css" />
+    <script
+      type="text/javascript"
+      src="resources/js/jquery-3.6.0.min.js"
+    ></script>
+    <script src="../js/common.js"></script>
+    <script src="resources/slick/slick.min.js"></script>
+    <script type="text/javascript" src="resources/js/config.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light header">
-      <a class="navbar-brand header-left" href="#">
-        <img
-          src="./images/logo.png"
-          class="img-thumbnail header-logo"
-          alt="logo-header"
-        />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <header>
+      <a href="#" class="head_logo"
+        ><h1><img src="resources/images/logo.png" alt="みんすぽ " /></h1
+      ></a>
+      <div class="language language-desktop"></div>
 
-      <div
-        class="collapse navbar-collapse"
-        id="navbarSupportedContent"
-      >
-        <div class="navbar-nav mr-auto"></div>
-        <div class="form-inline my-2 my-lg-0">
-          <ul class="header__menu">
-            <li><a href="#">無料練習プレイ</a></li>
-            <li><a href="#">トーナメント</a></li>
-            <li><a href="#">キャンペーン</a></li>
-            <li><a href="#">プレイ方法</a></li>
+      <nav>
+
+        <ul class="btn">
+          <li class="sky"><a href="">新規登録</a></li>
+          <li class="pink"><a href="">ログイン</a></li>
+          <li class="white">
+            <a href=""
+              ><img
+                src="resources/images/head_mail.png"
+                alt="メール"
+                class="only_pc"
+              />お問い合わせ</a
+            >
+          </li>
+        </ul>
+        <div class="main">
+          <div class="header only_smart_f">
+            <a href="" class="head_logo"
+              ><h1><img src="resources/images/logo.png" alt="みんすぽ " /></h1
+            ></a>
+          </div>
+          <ul>
+            <li><a href="">無料練習ゲーム</a></li>
+            <li><a href="">トーナメント</a></li>
+            <li><a href="">キャンペーン</a></li>
+            <li class="noline"><a href="">プレイ方法</a></li>
+            <li class="noline lang">
+              <ul>
+                <li>
+                  <a href=""
+                    ><img src="resources/images/lang_en.png" alt="英語"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="resources/images/lang_th.png" alt="タイ語"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="resources/images/lang_jp.png" alt="日本語"
+                  /></a>
+                </li>
+              </ul>
+            </li>
           </ul>
-          <button class="header-btn btn">
-            <img src="./images/mail.png" alt="" />
-            お問い合わせ
-          </button>
         </div>
-      </div>
-    </nav>
-    <script src="../plugins/jquery/jquery-3.3.1.min.js"></script>
-    <script src="../plugins/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+      </nav>
 
-    <script src="../plugins/swiper-slide/js/swiper.min.js"></script>
-    <script src="../js/common.js"></script>
+      <div id="btnmenu" class="only_smart"><span></span></div>
+    </header>
   </body>
 </html>

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap');
+
 $pink-color: #e82a75;
 $orange-color: #f59154;
 $gray-text-primary: #707070;
@@ -8,21 +10,23 @@ $red-text-normal: #ff5555;
 $white-color: #ffffff;
 
 .kyc-explanation {
+  position: relative;
+	font-family: 'Noto Sans JP', sans-serif;
   width: 100%;
   min-height: 100vh;
   background-image: url("../images/common/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 20rem;
-  position: relative;
+
 
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
     li {
-      font-size: 27px;
-      line-height: 1.5;
+      font-size: 16px;
+      line-height: 1.8;
       color: $gray-text-primary;
     }
   }
@@ -32,7 +36,7 @@ $white-color: #ffffff;
 
   .text-red-normal {
     color: $red-text-normal;
-    font-size: 27px;
+    font-size: 16px;
   }
 
   .kyc-link {
@@ -51,7 +55,7 @@ $white-color: #ffffff;
 
   .gray-text-primary {
     color: $gray-text-primary;
-    font-size: 27px;
+    font-size: 16px;
   }
 
   .img-thumbnail {
@@ -91,14 +95,14 @@ $white-color: #ffffff;
     font-family: "Raleway", sans-serif;
     text-align: center;
     color: $white-color;
-    padding: 13rem 0 7rem 0;
+    padding: 14rem 0 7rem 0;
     &-title {
       font-style: italic;
-      text-transform: uppercase;
-      font-size: 88px;
+      font-size: 65px;
+      font-weight: bold;
     }
     &-title-second {
-      font-size: 37px;
+      font-size: 32px;
       font-weight: 400;
     }
   }
@@ -112,11 +116,11 @@ $white-color: #ffffff;
   }
   &__rule {
     width: 978px;
-    height: 74px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem auto;
+    margin: 1rem auto;
     background-color: $pink-color;
     &-3 {
       margin-top: 10rem;
@@ -126,15 +130,15 @@ $white-color: #ffffff;
   &__text-heading {
     color: $white-color;
     text-align: center;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 400;
     margin: 0;
   }
   &__content {
-    margin: 5rem 4rem;
+    margin: 4rem;
     color: $gray-text-primary;
     &-text {
-      font-size: 27px;
+      font-size: 16px;
       line-height: 1.25;
       color: $gray-text-primary;
     }
@@ -147,11 +151,11 @@ $white-color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 94px;
+      height: 80px;
       background-color: $orange-color;
     }
     &-body {
-      padding: 64px 165px 28px 165px;
+      padding: 40px 130px 28px 130px;
       ul {
         color: $gray-text-primary;
       }
@@ -166,7 +170,7 @@ $white-color: #ffffff;
       margin-bottom: 2rem;
     }
     &-title {
-      font-size: 34px;
+      font-size: 32px;
       color: #6a6a6a;
     }
   }
@@ -175,17 +179,17 @@ $white-color: #ffffff;
     &-header,
     &-header-2 {
       color: $gray-text-primary;
-      padding: 0 4rem 1rem 4rem;
+      padding: 0 4rem;
       h4 {
         font-family: "FontAwesome";
-        font-size: 35px;
+        font-size: 24px;
       }
     }
     &-header-2 {
       padding-top: 2rem;
     }
     &-box {
-      padding: 3rem 11rem;
+      padding: 1rem 7rem;
     }
 
     .toggle {
@@ -195,14 +199,14 @@ $white-color: #ffffff;
       display: block;
       background: #ffffff;
       color: $gray-text-primary;
-      font-size: 35px;
+      font-size: 24px;
       cursor: pointer;
     }
     .Label::before {
       content: "▼";
       position: absolute;
       right: 10px;
-      font-size: 35px;
+      font-size: 24px;
       transition: all 0.3s;
     }
     .Label,
@@ -264,21 +268,23 @@ $white-color: #ffffff;
       right: -1%;
     }
     &__header {
-      padding: 11rem 0 7rem 0;
+      padding: 10rem 0 7rem 0;
+    }
+    &__content {
+      margin: 4rem 3rem;
     }
     &-container {
       max-width: 1140px;
     }
     &__rule {
-      width: 70rem;
+      width: 65rem;
     }
     &__card {
       &-header {
-        height: 94px;
         background-color: $orange-color;
       }
       &-body {
-        padding: 50px 125px 28px 125px;
+        padding: 40px 100px 28px 100px
       }
     }
     &__box {
@@ -294,18 +300,18 @@ $white-color: #ffffff;
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .kyc-explanation {
     .kyc-icon-ban {
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: bold;
       color: $red-text;
     }
     &__img-hourglass {
       width: 15%;
-      top: 2.5%;
+      top: 2%;
       right: 10%;
     }
     &__img-gift {
       width: 15%;
-      top: 2.5%;
+      top: 2%;
       left: 10%;
     }
     &__img-icon-1 {
@@ -319,33 +325,46 @@ $white-color: #ffffff;
       right: -3%;
     }
     &__img-idcard {
-      top: 13rem;
+      top: 10rem;
       right: -16%;
+    }
+    &__header {
+      padding: 10rem 0 7rem 0;
+    }
+    &__content {
+      margin: 4rem 2.5rem;
     }
 
     &-container {
       max-width: 90%;
     }
     &__rule {
-      width: 60rem;
+      width: 48rem;
     }
     &__card {
+      margin-bottom: 8rem;
       &-header {
-        height: 94px;
         background-color: $orange-color;
       }
       &-body {
-        padding: 45px 100px 28px 100px;
+        padding: 40px 85px 28px 85px;
       }
     }
     &__box {
-      padding: 0.5rem 1rem;
+      padding: 1rem;
       &-title {
-        font-size: 31px;
+        font-size: 28px;
       }
     }
-    &__accordion-box {
-      padding: 3rem 7rem;
+    &__accordion {
+      &-header,
+      &-header-2 {
+        color: $gray-text-primary;
+        padding: 0 3rem;
+      }
+      &-box {
+        padding: 1rem 5rem;
+      }
     }
   }
 }
@@ -355,32 +374,32 @@ $white-color: #ffffff;
   .kyc-explanation {
     ul {
       li {
-        font-size: 19px;
+        font-size: 15px;
       }
     }
     .kyc-icon-ban {
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-weight: bold;
       color: $red-text;
     }
     &__img-icon-1 {
       width: 9%;
       top: 10%;
-      right: -4%;
+      right: -2%;
     }
     &__img-icon-2 {
       width: 9%;
       top: 26%;
-      right: -4%;
+      right: -2%;
     }
     &__img-hourglass {
       width: 15%;
-      top: 3%;
+      top: 1.5%;
       right: 12%;
     }
     &__img-gift {
       width: 15%;
-      top: 3%;
+      top: 1.5%;
       left: 12%;
     }
     &__img-idcard {
@@ -388,17 +407,14 @@ $white-color: #ffffff;
     }
     .text-red-normal {
       color: $red-text-normal;
-      font-size: 19px;
+      font-size: 15px;
     }
     &__header {
-      padding: 10rem 0 4rem 0;
+      padding: 5rem 0 4rem 0;
       &-title {
         font-style: italic;
-        text-transform: uppercase;
-        font-size: 70px;
       }
       &-title-second {
-        font-size: 30px;
         font-weight: 400;
       }
     }
@@ -408,7 +424,7 @@ $white-color: #ffffff;
     }
     &__rule {
       width: 85%;
-      height: 55px;
+      height: 50px;
       margin: 1rem auto;
       &-3 {
         margin-top: 8rem;
@@ -421,7 +437,7 @@ $white-color: #ffffff;
     &__content {
       margin: 4rem 2rem;
       &-text {
-        font-size: 19px;
+        font-size: 15px;
         line-height: 1.25;
       }
     }
@@ -440,7 +456,7 @@ $white-color: #ffffff;
         justify-content: flex-start;
       }
       &-title {
-        font-size: 22px;
+        font-size: 18px;
       }
     }
     &__accordion {
@@ -449,21 +465,21 @@ $white-color: #ffffff;
         color: $gray-text-primary;
         padding: 0 2rem;
         h4 {
-          font-size: 27px;
+          font-size: 22.5px;
         }
       }
       &-header-2 {
         padding-top: 2rem;
       }
       &-box {
-        padding: 2rem 5rem;
+        padding: 1rem 4rem;
       }
       .Label::before {
         content: "▼";
-        font-size: 27px;
+        font-size: 22.5px;
       }
       .Label {
-        font-size: 27px;
+        font-size: 22.5px;
       }
       .toggle:checked + .Label + .content {
         padding: 2rem 0;
@@ -477,7 +493,7 @@ $white-color: #ffffff;
   .kyc-explanation {
     ul {
       li {
-        font-size: 15px;
+        font-size: 14.5px;
       }
     }
     .kyc-icon-ban {
@@ -497,12 +513,12 @@ $white-color: #ffffff;
     }
     &__img-hourglass {
       width: 15%;
-      top: 1%;
+      top: 0.65%;
       right: 10%;
     }
     &__img-gift {
       width: 15%;
-      top: 1%;
+      top: 0.65%;
       left: 10%;
     }
     &__img-idcard {
@@ -510,14 +526,13 @@ $white-color: #ffffff;
     }
     .text-red-normal {
       color: $red-text-normal;
-      font-size: 15px;
+      font-size: 14.5px;
     }
     &__header {
-      padding: 3rem 0;
+      padding: 4rem 0 2rem 0;
       &-title {
         font-style: italic;
-        text-transform: uppercase;
-        font-size: 5rem;
+        font-size: 45px;
       }
       &-title-second {
         font-size: 2rem;
@@ -529,7 +544,7 @@ $white-color: #ffffff;
       padding: 35px;
     }
     &__rule {
-      width: 85%;
+      width: 80%;
       height: 45px;
       margin: 1.5rem auto;
       &-3 {
@@ -538,17 +553,17 @@ $white-color: #ffffff;
     }
 
     &__text-heading {
-      font-size: 24px;
+      font-size: 22.5px;
     }
     &__content {
       margin: 3rem 2rem;
       &-text {
-        font-size: 15px;
+        font-size: 14.5px;
         line-height: 1.25;
       }
     }
     &__card {
-      margin-bottom: 6.5rem;
+      margin-bottom: 5rem;
       &-header {
         height: 50px;
       }
@@ -563,7 +578,7 @@ $white-color: #ffffff;
         justify-content: center;
       }
       &-title {
-        font-size: 22px;
+        font-size: 22.5px;
       }
     }
     &__accordion {
@@ -572,21 +587,21 @@ $white-color: #ffffff;
         color: $gray-text-primary;
         padding: 0 2rem;
         h4 {
-          font-size: 22px;
+          font-size: 20px;
         }
       }
       &-header-2 {
         padding-top: 2rem;
       }
       &-box {
-        padding: 2rem 4rem;
+        padding: 0.5rem 4rem;
       }
       .Label::before {
         content: "▼";
-        font-size: 22px;
+        font-size: 20px;
       }
       .Label {
-        font-size: 22px;
+        font-size: 20px;
       }
       .toggle:checked + .Label + .content {
         padding: 2rem 0;
@@ -600,11 +615,11 @@ $white-color: #ffffff;
   .kyc-explanation {
     ul {
       li {
-        font-size: 15px;
+        font-size: 14.5px;
       }
     }
     .kyc-icon-ban {
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-weight: bold;
       color: $red-text;
     }
@@ -619,13 +634,13 @@ $white-color: #ffffff;
       right: -2%;
     }
     &__img-hourglass {
-      width: 15%;
-      top: 1%;
+      width: 17%;
+      top: 0.65%;
       right: 10%;
     }
     &__img-gift {
-      width: 15%;
-      top: 1%;
+      width: 17%;
+      top: 0.65%;
       left: 10%;
     }
     &__img-idcard {
@@ -633,13 +648,12 @@ $white-color: #ffffff;
     }
     .text-red-normal {
       color: $red-text-normal;
-      font-size: 15px;
+      font-size: 14.5px;
     }
     &__header {
       padding: 3rem 0;
       &-title {
         font-style: italic;
-        text-transform: uppercase;
         font-size: 5rem;
       }
       &-title-second {
@@ -656,17 +670,17 @@ $white-color: #ffffff;
       height: 45px;
       margin: 1.5rem auto;
       &-3 {
-        margin-top: 8rem;
+        margin-top: 5rem;
       }
     }
 
     &__text-heading {
-      font-size: 24px;
+      font-size: 21px;
     }
     &__content {
       margin: 3rem 2rem;
       &-text {
-        font-size: 15px;
+        font-size: 14.5px;
         line-height: 1.25;
       }
     }
@@ -676,7 +690,7 @@ $white-color: #ffffff;
         height: 50px;
       }
       &-body {
-        padding: 30px 50px 15px 50px;
+        padding: 30px 45px 15px 45px;
       }
     }
     &__box {
@@ -686,7 +700,7 @@ $white-color: #ffffff;
         justify-content: center;
       }
       &-title {
-        font-size: 22px;
+        font-size: 21px;
       }
     }
     &__accordion {
@@ -695,21 +709,21 @@ $white-color: #ffffff;
         color: $gray-text-primary;
         padding: 0 2rem;
         h4 {
-          font-size: 22px;
+          font-size: 18px;
         }
       }
       &-header-2 {
         padding-top: 2rem;
       }
       &-box {
-        padding: 2rem 4rem;
+        padding: 0.25rem 3rem;
       }
       .Label::before {
         content: "▼";
-        font-size: 22px;
+        font-size: 18px;
       }
       .Label {
-        font-size: 22px;
+        font-size: 18px;
       }
       .toggle:checked + .Label + .content {
         padding: 2rem 0;
@@ -721,7 +735,7 @@ $white-color: #ffffff;
   .kyc-explanation {
     ul {
       li {
-        font-size: 14px;
+        font-size: 13.5px;
       }
     }
     .kyc-icon-ban {
@@ -731,7 +745,7 @@ $white-color: #ffffff;
     }
     .text-red-normal {
       color: $red-text-normal;
-      font-size: 14px;
+      font-size: 13.5px;
     }
     &__img-icon-1 {
       width: 10%;
@@ -747,11 +761,10 @@ $white-color: #ffffff;
       padding: 3rem 0;
       &-title {
         font-style: italic;
-        text-transform: uppercase;
         font-size: 3rem;
       }
       &-title-second {
-        font-size: 1.5rem;
+        font-size: 1.35rem;
       }
     }
     &-container {
@@ -773,7 +786,7 @@ $white-color: #ffffff;
     &__content {
       margin: 2rem;
       &-text {
-        font-size: 14px;
+        font-size: 13.5px;
         line-height: 1.25;
       }
     }
@@ -802,21 +815,21 @@ $white-color: #ffffff;
         color: $gray-text-primary;
         padding: 0 2rem;
         h4 {
-          font-size: 18px;
+          font-size: 17px;
         }
       }
       &-header-2 {
         padding-top: 2rem;
       }
       &-box {
-        padding: 0.5rem 3rem;
+        padding: 0.25rem 3rem;
       }
       .Label::before {
         content: "▼";
-        font-size: 18px;
+        font-size: 17px;
       }
       .Label {
-        font-size: 18px;
+        font-size: 17px;
       }
       .toggle:checked + .Label + .content {
         padding: 2rem 0;
