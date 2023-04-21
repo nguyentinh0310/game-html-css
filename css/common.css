@@ -80,8 +80,8 @@ a {
 
 .btn-logout {
 	color: #fff;
-	background-color: #1cb562;
-	border-color: #1cb562;
+    background-color: #13c4cd;
+    border: 1px solid #13c4cd;
 	font-size: 1em !important;
 	padding: 3px 10px !important;
 }

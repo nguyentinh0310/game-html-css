@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap");
+
 $pink-color: #e82a75;
 $orange-color: #f59154;
 $gray-text-primary: #707070;
@@ -8,21 +10,22 @@ $red-text-normal: #ff5555;
 $white-color: #ffffff;
 
 .about-minspo {
+  position: relative;
+  font-family: "Noto Sans JP", sans-serif;
   width: 100%;
   min-height: 100vh;
   background-image: url("../images/common/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 20rem;
-  position: relative;
+  font-size: 16px;
 
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
     li {
-      font-size: 27px;
-      line-height: 1.5;
+      line-height: 1.8;
       color: $gray-text-primary;
     }
   }
@@ -37,13 +40,13 @@ $white-color: #ffffff;
   &__img-hourglass {
     background: transparent;
     position: absolute;
-    top: 2%;
+    top: 10%;
     right: 19%;
   }
   &__img-gift {
     background: transparent;
     position: absolute;
-    top: 2%;
+    top: 10%;
     left: 15%;
   }
   &__img-icon-1 {
@@ -60,16 +63,16 @@ $white-color: #ffffff;
   &__header {
     text-align: center;
     color: $white-color;
-    padding: 13rem 0 7rem 0;
+    padding: 14rem 0 7rem 0;
     &-title {
       font-family: "Raleway", sans-serif;
       font-style: italic;
-      text-transform: uppercase;
-      font-size: 88px;
+      font-size: 65px;
+      font-weight: bold;
     }
     &-title-second {
       font-family: "Raleway", sans-serif;
-      font-size: 37px;
+      font-size: 32px;
       font-weight: 400;
     }
   }
@@ -78,10 +81,9 @@ $white-color: #ffffff;
     background-color: $white-color;
     width: 1468px;
     margin: auto;
-    padding: 90px 130px 68px 130px;
+    padding: 70px 130px;
     border-radius: 2rem;
   }
- 
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) and (max-width: 1919.98px) {
@@ -102,7 +104,7 @@ $white-color: #ffffff;
       right: -1%;
     }
     &__header {
-      padding: 11rem 0 7rem 0;
+      padding: 10rem 0 7rem 0;
     }
     &-container {
       max-width: 1140px;
@@ -114,19 +116,22 @@ $white-color: #ffffff;
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .about-minspo {
     &__img-hourglass {
-      width: 13%;
-      top: 12%;
-      right: 3%;
+      width: 15%;
+      top: 10%;
+      right: 8%;
     }
     &__img-gift {
-      width: 13%;
-      top: 12%;
-      left: 3%;
+      width: 15%;
+      top: 10%;
+      left: 8%;
     }
     &__img-icon-1 {
       width: 8%;
       top: 40%;
       right: -3%;
+    }
+    &__header {
+      padding: 10rem 0 7rem 0;
     }
     &-container {
       max-width: 90%;
@@ -137,42 +142,24 @@ $white-color: #ffffff;
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
   .about-minspo {
-    ul {
-      li {
-        font-size: 19px;
-      }
-    }
-    .kyc-icon-ban {
-      font-size: 4rem;
-      font-weight: bold;
-      color: $red-text;
-    }
+    font-size: 15px;
     &__img-icon-1 {
       width: 9%;
       top: 40%;
       right: -4%;
     }
     &__img-hourglass {
-      width: 14%;
-      top: 9%;
-      right: 4%;
+      width: 15%;
+      top: 8%;
+      right: 6%;
     }
     &__img-gift {
-      width: 14%;
-      top: 9%;
-      left: 4%;
+      width: 15%;
+      top: 8%;
+      left: 6%;
     }
     &__header {
-      padding: 10rem 0 4rem 0;
-      &-title {
-        font-style: italic;
-        text-transform: uppercase;
-        font-size: 70px;
-      }
-      &-title-second {
-        font-size: 30px;
-        font-weight: 400;
-      }
+      padding: 5rem 0 4rem 0;
     }
     &-container {
       max-width: 90%;
@@ -184,26 +171,25 @@ $white-color: #ffffff;
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
   .about-minspo {
-    ul {
-      li {
-        font-size: 15px;
-      }
-    }
+    font-size: 14.5px;
     &__img-icon-1 {
-        display: none;
+      display: none;
     }
     &__img-hourglass {
-        display: none;
+      width: 17%;
+      top: 4%;
+      right: 7%;
     }
     &__img-gift {
-        display: none;
+      width: 19%;
+      top: 4%;
+      left: 7%;
     }
     &__header {
-      padding: 3rem 0;
+      padding: 4rem 0 2rem 0;
       &-title {
         font-style: italic;
-        text-transform: uppercase;
-        font-size: 5rem;
+        font-size: 45px;
       }
       &-title-second {
         font-size: 2rem;
@@ -220,20 +206,28 @@ $white-color: #ffffff;
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   .about-minspo {
-    ul {
-      li {
-        font-size: 15px;
-      }
+    font-size: 15px;
+    &__img-icon-1 {
+      display: none;
+    }
+    &__img-hourglass {
+      width: 17%;
+      top: 5%;
+      right: 7%;
+    }
+    &__img-gift {
+      width: 17%;
+      top: 5%;
+      left: 7%;
     }
     &__header {
-      padding: 3rem 0;
+      padding: 4rem 0;
       &-title {
         font-style: italic;
-        text-transform: uppercase;
-        font-size: 5rem;
+        font-size: 3.5rem;
       }
       &-title-second {
-        font-size: 2rem;
+        font-size: 21px;
         font-weight: 400;
       }
     }
@@ -246,16 +240,21 @@ $white-color: #ffffff;
 }
 @media screen and (max-width: 480px) {
   .about-minspo {
-    ul {
-      li {
-        font-size: 14px;
-      }
+    font-size: 13.5px;
+    &__img-hourglass {
+      width: 17%;
+      top: 5%;
+      right: 4%;
+    }
+    &__img-gift {
+      width: 17%;
+      top: 5%;
+      left: 4%;
     }
     &__header {
       padding: 3rem 0;
       &-title {
         font-style: italic;
-        text-transform: uppercase;
         font-size: 3rem;
       }
       &-title-second {
@@ -267,4 +266,8 @@ $white-color: #ffffff;
       padding: 25px;
     }
   }
+}
+// Galaxy Fold
+@media (max-width: 320px) {
+  
 }
