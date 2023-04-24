@@ -9,7 +9,7 @@ $red-text: #b10606;
 $red-text-normal: #ff5555;
 $white-color: #ffffff;
 
-.about-minspo {
+.policy {
   position: relative;
   font-family: "Noto Sans JP", sans-serif;
   width: 100%;
@@ -26,6 +26,7 @@ $white-color: #ffffff;
     margin: 0;
     li {
       line-height: 1.8;
+      margin-bottom: 1.5rem;
       color: $gray-text-primary;
     }
   }
@@ -40,19 +41,19 @@ $white-color: #ffffff;
   &__img-hourglass {
     background: transparent;
     position: absolute;
-    top: 10%;
+    top: 1%;
     right: 19%;
   }
   &__img-gift {
     background: transparent;
     position: absolute;
-    top: 10%;
+    top: 1%;
     left: 15%;
   }
   &__img-icon-1 {
     background: transparent;
     position: absolute;
-    top: 50%;
+    top: 30%;
     right: 1%;
   }
   &__img-idcard {
@@ -84,23 +85,52 @@ $white-color: #ffffff;
     padding: 70px 130px;
     border-radius: 2rem;
   }
+  &-privacy {
+    padding-bottom: 3rem;
+    &:last-child {
+      padding-bottom: 0;
+    }
+    &__subject {
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    &__table {
+      color: $gray-text-primary;
+      th {
+        width: 33.333333% !important;
+      }
+      td {
+        line-height: 1.8;
+      }
+      ul {
+        list-style: disc;
+        padding: 0 2rem;
+        li {
+          line-height: 1.5;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+    }
+  }
 }
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) and (max-width: 1919.98px) {
-  .about-minspo {
+  .policy {
     &__img-hourglass {
       width: 13%;
-      top: 11%;
+      top: 1%;
       right: 11%;
     }
     &__img-gift {
       width: 13%;
-      top: 11%;
+      top: 1%;
       left: 11%;
     }
     &__img-icon-1 {
       width: 8%;
-      top: 50%;
+      top: 30%;
       right: -1%;
     }
     &__header {
@@ -114,20 +144,20 @@ $white-color: #ffffff;
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .about-minspo {
+  .policy {
     &__img-hourglass {
-      width: 15%;
-      top: 10%;
+      width: 13%;
+      top: 1%;
       right: 8%;
     }
     &__img-gift {
-      width: 15%;
-      top: 10%;
+      width: 13%;
+      top: 1%;
       left: 8%;
     }
     &__img-icon-1 {
       width: 8%;
-      top: 40%;
+      top: 30%;
       right: -3%;
     }
     &__header {
@@ -141,22 +171,27 @@ $white-color: #ffffff;
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .about-minspo {
+  .policy {
     font-size: 15px;
+    ul {
+      li {
+        margin-bottom: 1.25rem;
+      }
+    }
     &__img-icon-1 {
       width: 9%;
-      top: 40%;
+      top: 30%;
       right: -4%;
     }
     &__img-hourglass {
       width: 15%;
-      top: 8%;
-      right: 6%;
+      top: 0.65%;
+      right: 4%;
     }
     &__img-gift {
       width: 15%;
-      top: 8%;
-      left: 6%;
+      top: 0.65%;
+      left: 4%;
     }
     &__header {
       padding: 6rem 0 4rem 0;
@@ -165,25 +200,37 @@ $white-color: #ffffff;
       max-width: 90%;
       padding: 50px;
     }
+    &-privacy {
+      padding-bottom: 2.5rem;
+      &__subject {
+        margin-bottom: 1.25rem;
+        font-size: 15px;
+      }
+    }
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .about-minspo {
+  .policy {
     font-size: 14.5px;
+    ul {
+      li {
+        margin-bottom: 1.2rem;
+      }
+    }
     &__img-icon-1 {
       display: none;
     }
     &__img-hourglass {
-      width: 19%;
-      top: 4%;
-      right: 7%;
+      width: 15%;
+      top: 0.5%;
+      right: 4%;
     }
     &__img-gift {
-      width: 19%;
-      top: 4%;
-      left: 7%;
+      width: 15%;
+      top: 0.5%;
+      left: 4%;
     }
     &__header {
       padding: 5rem 0 2rem 0;
@@ -200,34 +247,42 @@ $white-color: #ffffff;
       max-width: 85%;
       padding: 35px;
     }
+    &-privacy {
+      padding-bottom: 2.25rem;
+      &__subject {
+        margin-bottom: 1.2rem;
+        font-size: 14.5px;
+      }
+    }
   }
 }
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-  .about-minspo {
-    font-size: 15px;
+  .policy {
+    font-size: 14.5px;
+    ul {
+      li {
+        margin-bottom: 1rem;
+      }
+    }
     &__img-icon-1 {
       display: none;
     }
     &__img-hourglass {
-      width: 17%;
-      top: 5%;
-      right: 7%;
+      display: none;
     }
     &__img-gift {
-      width: 17%;
-      top: 5%;
-      left: 7%;
+      display: none;
     }
     &__header {
-      padding: 4rem 0;
+      padding: 4rem 0 2rem 0;
       &-title {
         font-style: italic;
-        font-size: 3.5rem;
+        font-size: 5rem;
       }
       &-title-second {
-        font-size: 21px;
+        font-size: 2rem;
         font-weight: 400;
       }
     }
@@ -236,25 +291,32 @@ $white-color: #ffffff;
       max-width: 85%;
       padding: 35px;
     }
+    &-privacy {
+      padding-bottom: 2rem;
+      &__subject {
+        margin-bottom: 1rem;
+        font-size: 14.5px;
+      }
+    }
   }
 }
 @media screen and (max-width: 480px) {
-  .about-minspo {
+  .policy {
     font-size: 13.5px;
+    &__img-icon-1 {
+      display: none;
+    }
     &__img-hourglass {
-      width: 17%;
-      top: 5%;
-      right: 4%;
+      display: none;
     }
     &__img-gift {
-      width: 17%;
-      top: 5%;
-      left: 4%;
+      display: none;
     }
     &__header {
       padding: 3rem 0;
       &-title {
         font-style: italic;
+
         font-size: 3rem;
       }
       &-title-second {
@@ -267,7 +329,45 @@ $white-color: #ffffff;
     }
   }
 }
-// Galaxy Fold
-@media (max-width: 320px) {
-  
+
+@media screen and (max-width: 320px) {
+  .policy {
+    font-size: 12px;
+    ul {
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+    &__img-icon-1 {
+      display: none;
+    }
+    &__img-hourglass {
+      display: none;
+    }
+    &__img-gift {
+      display: none;
+    }
+    &__header {
+      padding: 3rem 0;
+      &-title {
+        font-style: italic;
+
+        font-size: 3rem;
+      }
+      &-title-second {
+        font-size: 1.5rem;
+      }
+    }
+    &-container {
+      max-width: 95%;
+      padding: 25px;
+    }
+    &-privacy {
+      padding-bottom: 1rem;
+      &__subject {
+        margin-bottom: 1rem;
+        font-size: 12px;
+      }
+    }
+  }
 }

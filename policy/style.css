@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap");
-.terms {
+.policy {
   position: relative;
   font-family: "Noto Sans JP", sans-serif;
   width: 100%;
@@ -11,307 +11,324 @@
   padding-bottom: 20rem;
   font-size: 16px;
 }
-.terms ul {
+.policy ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.terms ul li {
+.policy ul li {
   line-height: 1.8;
   margin-bottom: 1.5rem;
   color: #707070;
 }
-.terms label {
+.policy label {
   margin: 0;
 }
-.terms .img-thumbnail {
+.policy .img-thumbnail {
   border: none !important;
 }
-.terms__img-hourglass {
+.policy__img-hourglass {
   background: transparent;
   position: absolute;
   top: 1%;
   right: 19%;
 }
-.terms__img-gift {
+.policy__img-gift {
   background: transparent;
   position: absolute;
   top: 1%;
   left: 15%;
 }
-.terms__img-icon-1 {
+.policy__img-icon-1 {
   background: transparent;
   position: absolute;
   top: 30%;
   right: 1%;
 }
-.terms__img-idcard {
+.policy__img-idcard {
   position: absolute;
   top: 218px;
   right: -8.5%;
 }
-.terms__header {
+.policy__header {
   text-align: center;
   color: #ffffff;
   padding: 14rem 0 7rem 0;
 }
-.terms__header-title {
+.policy__header-title {
   font-family: "Raleway", sans-serif;
   font-style: italic;
   font-size: 65px;
   font-weight: bold;
 }
-.terms__header-title-second {
+.policy__header-title-second {
   font-family: "Raleway", sans-serif;
   font-size: 32px;
   font-weight: 400;
 }
-.terms-container {
+.policy-container {
   background-color: #ffffff;
   width: 1468px;
   margin: auto;
   padding: 70px 130px;
   border-radius: 2rem;
 }
-.terms-service {
+.policy-privacy {
   padding-bottom: 3rem;
 }
-.terms-service:last-child {
+.policy-privacy:last-child {
   padding-bottom: 0;
 }
-.terms-service__subject {
+.policy-privacy__subject {
   margin-bottom: 1.5rem;
   font-weight: bold;
   font-size: 16px;
 }
+.policy-privacy__table {
+  color: #707070;
+}
+.policy-privacy__table th {
+  width: 33.333333% !important;
+}
+.policy-privacy__table td {
+  line-height: 1.8;
+}
+.policy-privacy__table ul {
+  list-style: disc;
+  padding: 0 2rem;
+}
+.policy-privacy__table ul li {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
 
 @media (min-width: 1200px) and (max-width: 1919.98px) {
-  .terms__img-hourglass {
+  .policy__img-hourglass {
     width: 13%;
     top: 1%;
     right: 11%;
   }
-  .terms__img-gift {
+  .policy__img-gift {
     width: 13%;
     top: 1%;
     left: 11%;
   }
-  .terms__img-icon-1 {
+  .policy__img-icon-1 {
     width: 8%;
     top: 30%;
     right: -1%;
   }
-  .terms__header {
+  .policy__header {
     padding: 10rem 0 7rem 0;
   }
-  .terms-container {
+  .policy-container {
     max-width: 1140px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .terms__img-hourglass {
+  .policy__img-hourglass {
     width: 13%;
     top: 1%;
     right: 8%;
   }
-  .terms__img-gift {
+  .policy__img-gift {
     width: 13%;
     top: 1%;
     left: 8%;
   }
-  .terms__img-icon-1 {
+  .policy__img-icon-1 {
     width: 8%;
     top: 30%;
     right: -3%;
   }
-  .terms__header {
+  .policy__header {
     padding: 10rem 0 7rem 0;
   }
-  .terms-container {
+  .policy-container {
     max-width: 90%;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .terms {
+  .policy {
     font-size: 15px;
   }
-  .terms ul li {
+  .policy ul li {
     margin-bottom: 1.25rem;
   }
-  .terms__img-icon-1 {
+  .policy__img-icon-1 {
     width: 9%;
     top: 30%;
     right: -4%;
   }
-  .terms__img-hourglass {
+  .policy__img-hourglass {
     width: 15%;
     top: 0.65%;
     right: 4%;
   }
-  .terms__img-gift {
+  .policy__img-gift {
     width: 15%;
     top: 0.65%;
     left: 4%;
   }
-  .terms__header {
+  .policy__header {
     padding: 6rem 0 4rem 0;
   }
-  .terms-container {
+  .policy-container {
     max-width: 90%;
     padding: 50px;
   }
-  .terms-service {
+  .policy-privacy {
     padding-bottom: 2.5rem;
   }
-  .terms-service__subject {
+  .policy-privacy__subject {
     margin-bottom: 1.25rem;
     font-size: 15px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .terms {
+  .policy {
     font-size: 14.5px;
   }
-  .terms ul li {
+  .policy ul li {
     margin-bottom: 1.2rem;
   }
-  .terms__img-icon-1 {
+  .policy__img-icon-1 {
     display: none;
   }
-  .terms__img-hourglass {
+  .policy__img-hourglass {
     width: 15%;
     top: 0.5%;
     right: 4%;
   }
-  .terms__img-gift {
+  .policy__img-gift {
     width: 15%;
     top: 0.5%;
     left: 4%;
   }
-  .terms__header {
+  .policy__header {
     padding: 5rem 0 2rem 0;
   }
-  .terms__header-title {
+  .policy__header-title {
     font-style: italic;
     font-size: 45px;
   }
-  .terms__header-title-second {
+  .policy__header-title-second {
     font-size: 2rem;
     font-weight: 400;
   }
-  .terms-container {
+  .policy-container {
     max-width: 85%;
     padding: 35px;
   }
-  .terms-service {
+  .policy-privacy {
     padding-bottom: 2.25rem;
   }
-  .terms-service__subject {
+  .policy-privacy__subject {
     margin-bottom: 1.2rem;
     font-size: 14.5px;
   }
 }
 @media (max-width: 575.98px) {
-  .terms {
+  .policy {
     font-size: 14.5px;
   }
-  .terms ul li {
+  .policy ul li {
     margin-bottom: 1rem;
   }
-  .terms__img-icon-1 {
+  .policy__img-icon-1 {
     display: none;
   }
-  .terms__img-hourglass {
+  .policy__img-hourglass {
     display: none;
   }
-  .terms__img-gift {
+  .policy__img-gift {
     display: none;
   }
-  .terms__header {
+  .policy__header {
     padding: 4rem 0 2rem 0;
   }
-  .terms__header-title {
+  .policy__header-title {
     font-style: italic;
     font-size: 5rem;
   }
-  .terms__header-title-second {
+  .policy__header-title-second {
     font-size: 2rem;
     font-weight: 400;
   }
-  .terms-container {
+  .policy-container {
     max-width: 85%;
     padding: 35px;
   }
-  .terms-service {
+  .policy-privacy {
     padding-bottom: 2rem;
   }
-  .terms-service__subject {
+  .policy-privacy__subject {
     margin-bottom: 1rem;
     font-size: 14.5px;
   }
 }
 @media screen and (max-width: 480px) {
-  .terms {
+  .policy {
     font-size: 13.5px;
   }
-  .terms__img-icon-1 {
+  .policy__img-icon-1 {
     display: none;
   }
-  .terms__img-hourglass {
+  .policy__img-hourglass {
     display: none;
   }
-  .terms__img-gift {
+  .policy__img-gift {
     display: none;
   }
-  .terms__header {
+  .policy__header {
     padding: 3rem 0;
   }
-  .terms__header-title {
+  .policy__header-title {
     font-style: italic;
     font-size: 3rem;
   }
-  .terms__header-title-second {
+  .policy__header-title-second {
     font-size: 1.5rem;
   }
-  .terms-container {
+  .policy-container {
     max-width: 95%;
     padding: 25px;
   }
 }
 @media screen and (max-width: 320px) {
-  .terms {
+  .policy {
     font-size: 12px;
   }
-  .terms ul li {
+  .policy ul li {
     margin-bottom: 1rem;
   }
-  .terms__img-icon-1 {
+  .policy__img-icon-1 {
     display: none;
   }
-  .terms__img-hourglass {
+  .policy__img-hourglass {
     display: none;
   }
-  .terms__img-gift {
+  .policy__img-gift {
     display: none;
   }
-  .terms__header {
+  .policy__header {
     padding: 3rem 0;
   }
-  .terms__header-title {
+  .policy__header-title {
     font-style: italic;
     font-size: 3rem;
   }
-  .terms__header-title-second {
+  .policy__header-title-second {
     font-size: 1.5rem;
   }
-  .terms-container {
+  .policy-container {
     max-width: 95%;
     padding: 25px;
   }
-  .terms-service {
+  .policy-privacy {
     padding-bottom: 1rem;
   }
-  .terms-service__subject {
+  .policy-privacy__subject {
     margin-bottom: 1rem;
     font-size: 12px;
   }
