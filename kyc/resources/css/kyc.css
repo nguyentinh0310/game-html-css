@@ -470,7 +470,7 @@ input[type="checkbox"]:checked + span:after {
 	left: 5px;
 	border-right: 3px solid #f00;
 	border-bottom: 3px solid #f00;
-	content: '' !impo3tant;
+	content: '' !important;
 	-webkit-transform: rotate(45deg) !important;
 	-ms-transform: rotate(45deg) !important;
 	transform: rotate(45deg) !important;

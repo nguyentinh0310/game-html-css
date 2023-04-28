@@ -1,14 +1,13 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap");
 .kyc-explanation {
   position: relative;
   font-family: "Noto Sans JP", sans-serif;
   width: 100%;
   min-height: 100vh;
-  background-image: url("../images/common/bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../images/common/bg_kyc.png) no-repeat center 140px, url(../images/common/bg1.png) repeat-y center top;
+  background-size: 1474px auto, auto;
   padding-bottom: 20rem;
 }
 .kyc-explanation ul {
@@ -32,12 +31,6 @@
   color: #0b4dff;
   text-decoration: underline;
 }
-.kyc-explanation .kyc-icon-ban {
-  font-family: "FontAwesome";
-  font-size: 6rem;
-  font-weight: bold;
-  color: #b10606;
-}
 .kyc-explanation .border-accordion {
   border: 1px solid #707070;
 }
@@ -48,78 +41,51 @@
 .kyc-explanation .img-thumbnail {
   border: none !important;
 }
-.kyc-explanation__img-hourglass {
-  background: transparent;
-  position: absolute;
-  top: 2%;
-  right: 19%;
-}
-.kyc-explanation__img-gift {
-  background: transparent;
-  position: absolute;
-  top: 2%;
-  left: 15%;
-}
-.kyc-explanation__img-icon-1 {
-  background: transparent;
-  position: absolute;
-  top: 12%;
-  right: 1%;
-}
-.kyc-explanation__img-icon-2 {
-  background: transparent;
-  position: absolute;
-  top: 30%;
-  right: 1%;
-}
-.kyc-explanation__img-idcard {
-  position: absolute;
-  top: 218px;
-  right: -8.5%;
-}
 .kyc-explanation__header {
-  font-family: "Raleway", sans-serif;
   text-align: center;
   color: #ffffff;
-  padding: 14rem 0 7rem 0;
+  padding: 180px 0 50px 0;
 }
 .kyc-explanation__header-title {
+  font-family: "Raleway", sans-serif;
   font-style: italic;
-  font-size: 65px;
-  font-weight: bold;
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 .kyc-explanation__header-title-second {
-  font-size: 32px;
-  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 .kyc-explanation-container {
-  background-color: #ffffff;
-  width: 1468px;
+  max-width: 980px;
+  width: 90%;
   margin: auto;
-  padding: 90px;
-  border-radius: 2rem;
+  padding: 60px;
+  background-color: #fff;
+  border-radius: 1rem;
 }
 .kyc-explanation__rule {
-  width: 978px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem auto;
+  max-width: 655px;
+  width: 84%;
+  margin: auto;
   background-color: #e82a75;
 }
 .kyc-explanation__rule-3 {
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 .kyc-explanation__text-heading {
+  line-height: 2;
   color: #ffffff;
   text-align: center;
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 600;
   margin: 0;
 }
 .kyc-explanation__content {
-  margin: 4rem;
+  margin: 3rem;
   color: #707070;
 }
 .kyc-explanation__content-text {
@@ -129,41 +95,39 @@
 }
 .kyc-explanation__card {
   border: 2px solid #f59154;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 .kyc-explanation__card-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 55px;
   background-color: #f59154;
 }
 .kyc-explanation__card-body {
-  padding: 40px 130px 28px 130px;
+  padding: 35px 100px 28px 100px;
 }
 .kyc-explanation__card-body ul {
   color: #707070;
 }
-.kyc-explanation__box {
-  padding: 2rem 4rem;
+.kyc-explanation__card-body ul li:last-child {
+  color: #ff5555;
 }
-.kyc-explanation__box-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
+.kyc-explanation__card-pc {
+  display: block;
 }
-.kyc-explanation__box-title {
-  font-size: 32px;
-  color: #6a6a6a;
+.kyc-explanation__card-sp {
+  display: none;
 }
 .kyc-explanation__accordion-header, .kyc-explanation__accordion-header-2 {
   color: #707070;
   padding: 0 4rem;
 }
 .kyc-explanation__accordion-header h4, .kyc-explanation__accordion-header-2 h4 {
-  font-family: "FontAwesome";
   font-size: 24px;
+}
+.kyc-explanation__accordion-header h4::before, .kyc-explanation__accordion-header-2 h4::before {
+  content: "▶";
 }
 .kyc-explanation__accordion-header-2 {
   padding-top: 2rem;
@@ -218,97 +182,21 @@
   transition: all 0.3s;
 }
 
-@media (min-width: 1200px) and (max-width: 1919.98px) {
-  .kyc-explanation__img-idcard {
-    top: 11rem;
-    right: -10%;
-  }
-  .kyc-explanation__img-hourglass {
-    width: 15%;
-    top: 1.5%;
-    right: 15%;
-  }
-  .kyc-explanation__img-gift {
-    width: 15%;
-    top: 1.5%;
-    left: 15%;
-  }
-  .kyc-explanation__img-icon-1 {
-    width: 8%;
-    top: 12%;
-    right: -1%;
-  }
-  .kyc-explanation__img-icon-2 {
-    width: 8%;
-    top: 30%;
-    right: -1%;
+@media screen and (max-width: 1024px) {
+  .kyc-explanation {
+    background-size: 140% auto, 1280px auto;
   }
   .kyc-explanation__header {
-    padding: 10rem 0 7rem 0;
+    padding: 18vw 0 5vw 0;
   }
-  .kyc-explanation__content {
-    margin: 4rem 3rem;
+  .kyc-explanation__header-title {
+    font-size: 50px;
   }
-  .kyc-explanation-container {
-    max-width: 1140px;
+  .kyc-explanation__header-title-second {
+    font-size: 21px;
   }
-  .kyc-explanation__rule {
-    width: 65rem;
-  }
-  .kyc-explanation__card-header {
-    background-color: #f59154;
-  }
-  .kyc-explanation__card-body {
-    padding: 40px 100px 28px 100px;
-  }
-  .kyc-explanation__box {
-    padding: 1rem 2rem;
-  }
-  .kyc-explanation__box-title {
-    font-size: 31px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .kyc-explanation .kyc-icon-ban {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #b10606;
-  }
-  .kyc-explanation__img-hourglass {
-    width: 15%;
-    top: 2%;
-    right: 10%;
-  }
-  .kyc-explanation__img-gift {
-    width: 15%;
-    top: 2%;
-    left: 10%;
-  }
-  .kyc-explanation__img-icon-1 {
-    width: 8%;
-    top: 10%;
-    right: -3%;
-  }
-  .kyc-explanation__img-icon-2 {
-    width: 8%;
-    top: 28%;
-    right: -3%;
-  }
-  .kyc-explanation__img-idcard {
-    top: 10rem;
-    right: -16%;
-  }
-  .kyc-explanation__header {
-    padding: 10rem 0 7rem 0;
-  }
-  .kyc-explanation__content {
-    margin: 4rem 2.5rem;
-  }
-  .kyc-explanation-container {
-    max-width: 90%;
-  }
-  .kyc-explanation__rule {
-    width: 48rem;
+  .kyc-explanation__text-heading {
+    font-size: 2.6vw;
   }
   .kyc-explanation__card {
     margin-bottom: 8rem;
@@ -319,552 +207,112 @@
   .kyc-explanation__card-body {
     padding: 40px 85px 28px 85px;
   }
-  .kyc-explanation__box {
-    padding: 1rem;
-  }
-  .kyc-explanation__box-title {
-    font-size: 28px;
-  }
   .kyc-explanation__accordion-header, .kyc-explanation__accordion-header-2 {
     color: #707070;
     padding: 0 3rem;
   }
+  .kyc-explanation__accordion-header h4, .kyc-explanation__accordion-header-2 h4 {
+    font-size: 2.4vw;
+  }
   .kyc-explanation__accordion-box {
     padding: 1rem 5rem;
   }
+  .kyc-explanation__accordion .Label {
+    font-size: 2.4vw;
+  }
+  .kyc-explanation__accordion .Label::before {
+    font-size: 2.4vw;
+  }
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (max-width: 768px) {
+  .kyc-explanation {
+    background: url(../images/common/bg_kyc_s.png) no-repeat center 50px, url(../images/common/bg1.png) repeat-y center top;
+    background-size: 100% auto;
+  }
   .kyc-explanation ul li {
-    font-size: 15px;
-  }
-  .kyc-explanation .kyc-icon-ban {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #b10606;
-  }
-  .kyc-explanation__img-icon-1 {
-    width: 9%;
-    top: 10%;
-    right: -2%;
-  }
-  .kyc-explanation__img-icon-2 {
-    width: 9%;
-    top: 26%;
-    right: -2%;
-  }
-  .kyc-explanation__img-hourglass {
-    width: 15%;
-    top: 1.5%;
-    right: 12%;
-  }
-  .kyc-explanation__img-gift {
-    width: 15%;
-    top: 1.5%;
-    left: 12%;
-  }
-  .kyc-explanation__img-idcard {
-    display: none;
+    font-size: 3.5vw;
+    line-height: 1.5;
   }
   .kyc-explanation .text-red-normal {
     color: #ff5555;
-    font-size: 15px;
+    font-size: 3.5vw;
   }
   .kyc-explanation__header {
-    padding: 5rem 0 4rem 0;
+    padding: 15vw 0 4vw 0;
   }
   .kyc-explanation__header-title {
-    font-style: italic;
+    font-size: 11vw;
   }
   .kyc-explanation__header-title-second {
-    font-weight: 400;
+    font-size: 4vw;
   }
   .kyc-explanation-container {
     max-width: 90%;
-    padding: 50px;
-  }
-  .kyc-explanation__rule {
-    width: 85%;
-    height: 50px;
-    margin: 1rem auto;
+    padding: 10% 5%;
   }
   .kyc-explanation__rule-3 {
-    margin-top: 8rem;
+    margin-top: 12vw;
   }
   .kyc-explanation__text-heading {
-    font-size: 27px;
+    font-size: 4.2vw;
   }
   .kyc-explanation__content {
-    margin: 4rem 2rem;
+    margin: 5vw 3vw;
   }
   .kyc-explanation__content-text {
-    font-size: 15px;
+    font-size: 3.5vw;
     line-height: 1.25;
   }
   .kyc-explanation__card {
-    margin-bottom: 6.5rem;
+    margin-bottom: 11vw;
   }
   .kyc-explanation__card-header {
     height: 60px;
   }
   .kyc-explanation__card-body {
-    padding: 40px 90px 20px 90px;
+    padding: 5vw 8vw 2vw 8vw;
   }
-  .kyc-explanation__box {
-    padding: 1rem;
-  }
-  .kyc-explanation__box-header {
-    justify-content: flex-start;
-  }
-  .kyc-explanation__box-title {
-    font-size: 18px;
-  }
-  .kyc-explanation__accordion-header, .kyc-explanation__accordion-header-2 {
-    color: #707070;
-    padding: 0 2rem;
-  }
-  .kyc-explanation__accordion-header h4, .kyc-explanation__accordion-header-2 h4 {
-    font-size: 22.5px;
-  }
-  .kyc-explanation__accordion-header-2 {
-    padding-top: 2rem;
-  }
-  .kyc-explanation__accordion-box {
-    padding: 1rem 4rem;
-  }
-  .kyc-explanation__accordion .Label::before {
-    content: "▼";
-    font-size: 22.5px;
-  }
-  .kyc-explanation__accordion .Label {
-    font-size: 22.5px;
-  }
-  .kyc-explanation__accordion .toggle:checked + .Label + .content {
-    padding: 2rem 0;
-  }
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .kyc-explanation ul li {
-    font-size: 14.5px;
-  }
-  .kyc-explanation .kyc-icon-ban {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #b10606;
-  }
-  .kyc-explanation__img-icon-1 {
-    width: 11%;
-    top: 10%;
-    right: -2%;
-  }
-  .kyc-explanation__img-icon-2 {
-    width: 11%;
-    top: 26%;
-    right: -2%;
-  }
-  .kyc-explanation__img-hourglass {
-    width: 15%;
-    top: 0.65%;
-    right: 10%;
-  }
-  .kyc-explanation__img-gift {
-    width: 15%;
-    top: 0.65%;
-    left: 10%;
-  }
-  .kyc-explanation__img-idcard {
+  .kyc-explanation__card-pc {
     display: none;
   }
-  .kyc-explanation .text-red-normal {
-    color: #ff5555;
-    font-size: 14.5px;
-  }
-  .kyc-explanation__header {
-    padding: 4rem 0 2rem 0;
-  }
-  .kyc-explanation__header-title {
-    font-style: italic;
-    font-size: 45px;
-  }
-  .kyc-explanation__header-title-second {
-    font-size: 2rem;
-    font-weight: 400;
-  }
-  .kyc-explanation-container {
-    max-width: 85%;
-    padding: 35px;
-  }
-  .kyc-explanation__rule {
-    width: 80%;
-    height: 45px;
-    margin: 1.5rem auto;
-  }
-  .kyc-explanation__rule-3 {
-    margin-top: 8rem;
-  }
-  .kyc-explanation__text-heading {
-    font-size: 22.5px;
-  }
-  .kyc-explanation__content {
-    margin: 3rem 2rem;
-  }
-  .kyc-explanation__content-text {
-    font-size: 14.5px;
-    line-height: 1.25;
-  }
-  .kyc-explanation__card {
-    margin-bottom: 5rem;
-  }
-  .kyc-explanation__card-header {
-    height: 50px;
-  }
-  .kyc-explanation__card-body {
-    padding: 30px 50px 15px 50px;
-  }
-  .kyc-explanation__box {
-    padding: 1rem;
-    margin-bottom: 2rem;
-  }
-  .kyc-explanation__box-header {
-    justify-content: center;
-  }
-  .kyc-explanation__box-title {
-    font-size: 22.5px;
+  .kyc-explanation__card-sp {
+    display: block;
   }
   .kyc-explanation__accordion-header, .kyc-explanation__accordion-header-2 {
     color: #707070;
-    padding: 0 2rem;
+    padding: 0 2vw;
   }
   .kyc-explanation__accordion-header h4, .kyc-explanation__accordion-header-2 h4 {
-    font-size: 20px;
+    font-size: 4.2vw;
   }
   .kyc-explanation__accordion-header-2 {
-    padding-top: 2rem;
+    padding-top: 2vw;
   }
   .kyc-explanation__accordion-box {
-    padding: 0.5rem 4rem;
+    padding: 2vw 5vw;
   }
   .kyc-explanation__accordion .Label::before {
     content: "▼";
-    font-size: 20px;
+    font-size: 4.2vw;
   }
   .kyc-explanation__accordion .Label {
-    font-size: 20px;
+    font-size: 4.2vw;
   }
   .kyc-explanation__accordion .toggle:checked + .Label + .content {
-    padding: 2rem 0;
+    padding: 3vw 0;
   }
-}
-@media (max-width: 575.98px) {
-  .kyc-explanation ul li {
-    font-size: 14.5px;
-  }
-  .kyc-explanation .kyc-icon-ban {
-    font-size: 3.5rem;
-    font-weight: bold;
-    color: #b10606;
-  }
-  .kyc-explanation__img-icon-1 {
-    width: 11%;
-    top: 10%;
-    right: -2%;
-  }
-  .kyc-explanation__img-icon-2 {
-    width: 11%;
-    top: 26%;
-    right: -2%;
-  }
-  .kyc-explanation__img-hourglass {
-    width: 19%;
-    top: 1%;
-    right: 10%;
-  }
-  .kyc-explanation__img-gift {
-    width: 19%;
-    top: 1%;
-    left: 10%;
-  }
-  .kyc-explanation__img-idcard {
-    display: none;
-  }
-  .kyc-explanation .text-red-normal {
-    color: #ff5555;
-    font-size: 14.5px;
-  }
-  .kyc-explanation__header {
-    padding: 4rem 0 2rem 0;
-  }
-  .kyc-explanation__header-title {
-    font-style: italic;
-    font-size: 3.5rem;
-  }
-  .kyc-explanation__header-title-second {
-    font-size: 21px;
-    font-weight: 400;
-  }
-  .kyc-explanation-container {
-    max-width: 85%;
-    padding: 35px;
-  }
-  .kyc-explanation__rule {
-    width: 82%;
-    height: 45px;
-    margin: 1.5rem auto;
-  }
-  .kyc-explanation__rule-3 {
-    margin-top: 5rem;
-  }
-  .kyc-explanation__text-heading {
-    font-size: 21px;
-  }
-  .kyc-explanation__content {
-    margin: 3rem 2rem;
-  }
-  .kyc-explanation__content-text {
-    font-size: 14.5px;
-    line-height: 1.25;
-  }
-  .kyc-explanation__card {
-    margin-bottom: 6.5rem;
-  }
-  .kyc-explanation__card-header {
-    height: 50px;
-  }
-  .kyc-explanation__card-body {
-    padding: 30px 45px 15px 45px;
-  }
-  .kyc-explanation__box {
-    padding: 1rem;
-    margin-bottom: 2rem;
-  }
-  .kyc-explanation__box-header {
-    justify-content: center;
-  }
-  .kyc-explanation__box-title {
-    font-size: 21px;
-  }
-  .kyc-explanation__accordion-header, .kyc-explanation__accordion-header-2 {
-    color: #707070;
-    padding: 0 2rem;
-  }
-  .kyc-explanation__accordion-header h4, .kyc-explanation__accordion-header-2 h4 {
-    font-size: 18px;
-  }
-  .kyc-explanation__accordion-header-2 {
-    padding-top: 2rem;
-  }
-  .kyc-explanation__accordion-box {
-    padding: 0.25rem 3rem;
-  }
-  .kyc-explanation__accordion .Label::before {
-    content: "▼";
-    font-size: 18px;
-  }
-  .kyc-explanation__accordion .Label {
-    font-size: 18px;
-  }
-  .kyc-explanation__accordion .toggle:checked + .Label + .content {
-    padding: 2rem 0;
+  .kyc-explanation__accordion .border-accordion {
+    margin: 1vw 0;
   }
 }
 @media screen and (max-width: 480px) {
-  .kyc-explanation ul li {
-    font-size: 13.5px;
-  }
-  .kyc-explanation .kyc-icon-ban {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #b10606;
-  }
-  .kyc-explanation .text-red-normal {
-    color: #ff5555;
-    font-size: 13.5px;
-  }
-  .kyc-explanation__img-icon-1 {
-    width: 10%;
-    top: 10%;
-    right: -5%;
-  }
-  .kyc-explanation__img-icon-2 {
-    width: 10%;
-    top: 26%;
-    right: -5%;
-  }
   .kyc-explanation__header {
-    padding: 3rem 0 2rem 0;
-  }
-  .kyc-explanation__header-title {
-    font-style: italic;
-    font-size: 3rem;
-  }
-  .kyc-explanation__header-title-second {
-    font-size: 1.35rem;
-  }
-  .kyc-explanation-container {
-    max-width: 95%;
-    padding: 25px;
-  }
-  .kyc-explanation__rule {
-    width: 81%;
-    height: 38px;
-    margin: 1.5rem auto;
-  }
-  .kyc-explanation__rule-3 {
-    margin-top: 5rem;
-  }
-  .kyc-explanation__text-heading {
-    font-size: 18px;
-  }
-  .kyc-explanation__content {
-    margin: 2rem;
-  }
-  .kyc-explanation__content-text {
-    font-size: 13.5px;
-    line-height: 1.25;
-  }
-  .kyc-explanation__card {
-    margin-bottom: 4.5rem;
-  }
-  .kyc-explanation__card-header {
-    height: 40px;
-  }
-  .kyc-explanation__card-body {
-    padding: 20px 25px 15px 25px;
-  }
-  .kyc-explanation__box {
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  .kyc-explanation__box-header {
-    justify-content: center;
-  }
-  .kyc-explanation__box-title {
-    font-size: 18px;
-  }
-  .kyc-explanation__accordion-header, .kyc-explanation__accordion-header-2 {
-    color: #707070;
-    padding: 0 2rem;
-  }
-  .kyc-explanation__accordion-header h4, .kyc-explanation__accordion-header-2 h4 {
-    font-size: 17px;
-  }
-  .kyc-explanation__accordion-header-2 {
-    padding-top: 2rem;
-  }
-  .kyc-explanation__accordion-box {
-    padding: 0.25rem 3rem;
-  }
-  .kyc-explanation__accordion .Label::before {
-    content: "▼";
-    font-size: 17px;
-  }
-  .kyc-explanation__accordion .Label {
-    font-size: 17px;
-  }
-  .kyc-explanation__accordion .toggle:checked + .Label + .content {
-    padding: 2rem 0;
+    padding: 20vw 0 4vw 0;
   }
 }
-@media (max-width: 320px) {
-  .kyc-explanation ul li {
-    font-size: 9px;
-  }
-  .kyc-explanation .kyc-icon-ban {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #b10606;
-  }
-  .kyc-explanation__img-gift {
-    width: 22%;
-    top: 1%;
-    left: 6%;
-  }
-  .kyc-explanation__img-hourglass {
-    width: 22%;
-    top: 1%;
-    right: 6%;
-  }
-  .kyc-explanation .text-red-normal {
-    color: #ff5555;
-    font-size: 9px;
-    margin-left: 1rem !important;
-  }
+@media screen and (max-width: 320px) {
   .kyc-explanation__header {
-    padding: 3rem 0 2rem 0;
-  }
-  .kyc-explanation__header-title {
-    font-style: italic;
-    font-size: 2.5rem;
-  }
-  .kyc-explanation__header-title-second {
-    font-size: 12px;
-  }
-  .kyc-explanation-container {
-    max-width: 95%;
-    padding: 25px;
-  }
-  .kyc-explanation__rule {
-    width: 78%;
-    height: 25px;
-    margin: 1rem auto;
-  }
-  .kyc-explanation__rule-3 {
-    margin-top: 5rem;
-  }
-  .kyc-explanation__text-heading {
-    font-size: 12px;
-  }
-  .kyc-explanation__content {
-    margin: 1.5rem 1rem;
-  }
-  .kyc-explanation__content-text {
-    font-size: 9px;
-    line-height: 1.25;
-  }
-  .kyc-explanation__card {
-    margin-bottom: 3rem;
-  }
-  .kyc-explanation__card-header {
-    height: 30px;
-  }
-  .kyc-explanation__card-body {
-    padding: 20px 25px 15px 25px;
-  }
-  .kyc-explanation__box {
-    padding: 1rem;
-    margin-bottom: 0;
-  }
-  .kyc-explanation__box-header {
-    justify-content: center;
-    margin-bottom: 0.5rem;
-  }
-  .kyc-explanation__box-title {
-    font-size: 13px;
-  }
-  .kyc-explanation__accordion-header, .kyc-explanation__accordion-header-2 {
-    color: #707070;
-    padding: 0 2rem;
-  }
-  .kyc-explanation__accordion-header h4, .kyc-explanation__accordion-header-2 h4 {
-    font-size: 13px;
-  }
-  .kyc-explanation__accordion-header-2 {
-    padding-top: 2rem;
-  }
-  .kyc-explanation__accordion-box {
-    padding: 0.25rem 3rem;
-  }
-  .kyc-explanation__accordion .border-accordion {
-    margin: 0.5rem;
-  }
-  .kyc-explanation__accordion .Label::before {
-    content: "▼";
-    font-size: 13px;
-  }
-  .kyc-explanation__accordion .Label {
-    font-size: 13px;
-  }
-  .kyc-explanation__accordion .toggle:checked + .Label + .content {
-    padding: 2rem 0;
+    padding: 25vw 0 4vw 0;
   }
 }
 

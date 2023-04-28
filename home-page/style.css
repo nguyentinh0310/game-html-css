@@ -93,7 +93,7 @@
 /* .cont_wrap1 */
 .cont_wrap1 {
   padding-top: 90px;
-  background: url(./resources/images/bg1.png) repeat-y center top;
+  background: url(../html/resources/images/bg1.png) repeat-y center top;
   background-size: 1280px auto;
 }
 
@@ -102,7 +102,7 @@
   display: block;
   width: 100%;
   padding-top: 224px;
-  background: url(./resources/images/bg_shadow.png) repeat-x center top;
+  background: url(../html/resources/images/bg_shadow.png) repeat-x center top;
   background-size: 50px auto;
   position: absolute;
   top: 0;
@@ -126,7 +126,7 @@
 }
 /* .cont_wrap2 */
 .cont_wrap2 {
-  background: url(./resources/images/bg2.png) repeat-y center top;
+  background: url(../html/resources/images/bg2.png) repeat-y center top;
   background-size: 1280px auto;
 }
 
@@ -372,7 +372,7 @@
 /* #cont1 */
 #cont1 {
   padding: 60px 0 130px;
-  background: url(./resources/images/top/cont1_icon.png) no-repeat center center;
+  background: url(../html/resources/images/top/cont1_icon.png) no-repeat center center;
   background-size: 1300px auto;
   position: relative;
 }
@@ -413,7 +413,7 @@
 #cont2 {
   margin-top: -40px;
   padding: 300px 0 250px;
-  background: url(./resources/images/top/cont2_bg2.png) no-repeat center bottom 30px, url(./resources/images/top/cont2_bg.jpg) no-repeat center center;
+  background: url(../html/resources/images/top/cont2_bg2.png) no-repeat center bottom 30px, url(../html/resources/images/top/cont2_bg.jpg) no-repeat center center;
   background-size: 1300px auto, 1280px auto;
 }
 
@@ -452,7 +452,7 @@
   #cont2 {
     margin-top: 3%;
     padding: 68% 0 55%;
-    background: url(./resources/images/top/cont2_bg_s.png) no-repeat center center;
+    background: url(../html/resources/images/top/cont2_bg_s.png) no-repeat center center;
     background-size: 100% auto;
     position: relative;
     z-index: 1;
@@ -550,7 +550,7 @@
   display: block;
   width: 220px;
   padding-top: 360px;
-  background: url(./resources/images/top/cont4_icon.png) no-repeat center center;
+  background: url(../html/resources/images/top/cont4_icon.png) no-repeat center center;
   background-size: 100% auto;
   position: absolute;
   right: 0;
@@ -580,7 +580,7 @@
     display: block;
     width: 25%;
     padding-top: 42%;
-    background: url(./resources/images/top/cont4_icon.png) no-repeat center center;
+    background: url(../html/resources/images/top/cont4_icon.png) no-repeat center center;
     background-size: 100% auto;
     position: absolute;
     right: 0;
@@ -634,19 +634,19 @@
 }
 
 #cont5 .ranking > div ul li:first-child {
-  background: url(./resources/images/top/cont5_top1.png) no-repeat center center;
+  background: url(../html/resources/images/top/cont5_top1.png) no-repeat center center;
   background-size: 100% auto;
   text-shadow: 0px 0px 2px #b48025, -2px -2px 0px #b48025, 0px -2px 0px #b48025, 2px -2px 0px #b48025, 2px 0px 0px #b48025, 2px 2px 0px #b48025, 0px 2px 0px #b48025, -2px 2px 0px #b48025, -2px 0px 0px #b48025;
 }
 
 #cont5 .ranking > div ul li:nth-child(2) {
-  background: url(./resources/images/top/cont5_top2.png) no-repeat center center;
+  background: url(../html/resources/images/top/cont5_top2.png) no-repeat center center;
   background-size: 100% auto;
   text-shadow: 0px 0px 2px #505050, -2px -2px 0px #505050, 0px -2px 0px #505050, 2px -2px 0px #505050, 2px 0px 0px #505050, 2px 2px 0px #505050, 0px 2px 0px #505050, -2px 2px 0px #505050, -2px 0px 0px #505050;
 }
 
 #cont5 .ranking > div ul li:nth-child(3) {
-  background: url(./resources/images/top/cont5_top3.png) no-repeat center center;
+  background: url(../html/resources/images/top/cont5_top3.png) no-repeat center center;
   background-size: 100% auto;
   text-shadow: 0px 0px 2px #b48025, -2px -2px 0px #b48025, 0px -2px 0px #b48025, 2px -2px 0px #b48025, 2px 0px 0px #b48025, 2px 2px 0px #b48025, 0px 2px 0px #b48025, -2px 2px 0px #b48025, -2px 0px 0px #b48025;
 }
@@ -709,7 +709,7 @@
   display: block;
   width: 284px;
   padding-top: 280px;
-  background: url(./resources/images/top/cont6_icon.png) no-repeat center center;
+  background: url(../html/resources/images/top/cont6_icon.png) no-repeat center center;
   background-size: 100% auto;
   position: absolute;
   left: 0;
@@ -850,7 +850,7 @@
   display: block;
   width: 407px;
   padding-top: 283px;
-  background: url(./resources/images/top/cont7_icon.png) no-repeat center center;
+  background: url(../html/resources/images/top/cont7_icon.png) no-repeat center center;
   background-size: 100% auto;
   position: absolute;
   bottom: 100%;
@@ -992,7 +992,7 @@
 /* #cont8 */
 #cont8 {
   padding: 350px 0 90px;
-  background: rgba(255, 255, 0, 0.6) url(./resources/images/top/bg_top.png) no-repeat center top;
+  background: rgba(255, 255, 0, 0.6) url(../html/resources/images/top/bg_top.png) no-repeat center top;
   background-size: 1280px auto;
 }
 
@@ -1014,7 +1014,7 @@
   display: block;
   width: 485px;
   padding-top: 430px;
-  background: url(./resources/images/top/cont8_icon.png) no-repeat center center;
+  background: url(../html/resources/images/top/cont8_icon.png) no-repeat center center;
   background-size: 100% auto;
   position: absolute;
   bottom: 100%;

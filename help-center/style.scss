@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap");
 $pink-color: #e82a75;
 $orange-color: #f59154;
 $gray-text-primary: #707070;
@@ -7,344 +8,211 @@ $red-text: #b10606;
 $red-text-normal: #ff5555;
 $white-color: #ffffff;
 
-.help-center {
+.help {
+  position: relative;
+  font-family: "Noto Sans JP", sans-serif;
   width: 100%;
   min-height: 100vh;
-  background-image: url("../images/common/bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../images/common/bg_kyc.png) no-repeat center 140px,
+    url(../images/common/bg1.png) repeat-y center top;
+  background-size: 1474px auto, auto;
   padding-bottom: 20rem;
-  position: relative;
+  font-size: 16px;
 
   ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 0;
+    list-style-type: none;
+    padding: 1rem 2rem;
+    margin: 0;
     li {
-      font-size: 20px;
-      line-height: 1.5;
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
       color: $gray-text-primary;
     }
   }
   label {
     margin: 0;
-    font-size: 20px;
-    color: $gray-text-primary;
   }
 
+  hr {
+    margin: 2rem 0;
+  }
   .img-thumbnail {
     border: none !important;
-  }
-
-  .link {
-    color: #0056b3;
-  }
-  &__img-hourglass {
-    background: transparent;
-    position: absolute;
-    top: 2%;
-    right: 19%;
-  }
-  &__img-gift {
-    background: transparent;
-    position: absolute;
-    top: 2%;
-    left: 15%;
-  }
-  &__img-icon-1 {
-    background: transparent;
-    position: absolute;
-    top: 50%;
-    right: 1%;
   }
   &__header {
     text-align: center;
     color: $white-color;
-    padding: 13rem 0 7rem 0;
+    padding: 180px 0 78px 0;
+
     &-title {
       font-family: "Raleway", sans-serif;
       font-style: italic;
-      font-size: 88px;
+      font-size: 60px;
+      font-weight: 600;
+      margin-bottom: 0;
     }
     &-title-second {
       font-family: "Raleway", sans-serif;
-      font-size: 37px;
-      font-weight: 400;
+      font-size: 23px;
+      font-weight: 500;
+      margin-bottom: 0;
     }
   }
 
-  &__text-title {
-    font-size: 22px;
-    text-align: center;
-    color: $gray-text-primary;
-    margin-bottom: 5rem;
-  }
   &-container {
-    background-color: $white-color;
-    width: 1468px;
+    max-width: 980px;
+    width: 90%;
     margin: auto;
-    padding: 90px 130px 68px 130px;
-    border-radius: 2rem;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 1rem;
   }
-
-  &-button {
-    background-color: $orange-color;
-    color: $white-color;
-    font-size: 22px;
-    padding: 0.5rem 2rem;
-    margin-top: 3rem;
-  }
-}
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (max-width: 1919.98px) {
-  .help-center {
-    &__img-hourglass {
-      width: 13%;
-      top: 11%;
-      right: 11%;
+  &-center {
+    padding-bottom: 3rem;
+    &:last-child {
+      padding-bottom: 0;
     }
-    &__img-gift {
-      width: 13%;
-      top: 11%;
-      left: 11%;
+    &__subject {
+      margin-bottom: 1.5rem;
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 2;
+      background-color: $gray-text-primary;
+      color: #fff;
+      padding: 0 2rem;
     }
-    &__img-icon-1 {
-      width: 8%;
-      top: 50%;
-      right: -1%;
-    }
-    &__header {
-      padding: 11rem 0 7rem 0;
-    }
-    &-container {
-      max-width: 1140px;
-    }
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .help-center {
-    ul {
-      li {
-        font-size: 18px;
+    &__content {
+      .question {
+        display: flex;
+        &::before {
+          content: "Q.";
+          line-height: 1;
+          margin-right: 0.15em;
+          font-size: 32px;
+          font-style: italic;
+          font-weight: 600;
+          color: #f45680;
+          transform: translateY(-0.15em);
+        }
+      }
+      .answer {
+        display: flex;
+        &::before {
+          content: "A.";
+          line-height: 1;
+          margin-right: 0.15em;
+          font-size: 32px;
+          font-weight: 600;
+          font-style: italic;
+          color: $orange-color;
+          white-space: nowrap;
+          transform: translateY(-0.15em);
+        }
+        &-normal {
+          padding-left: 3rem;
+        }
       }
     }
-    label {
-      font-size: 18px;
-    }
-    &__img-hourglass {
-      width: 13%;
-      top: 12%;
-      right: 3%;
-    }
-    &__img-gift {
-      width: 13%;
-      top: 12%;
-      left: 3%;
-    }
-    &__img-icon-1 {
-      width: 8%;
-      top: 40%;
-      right: -3%;
-    }
-    &-container {
-      max-width: 90%;
-    }
-    &__text-title {
-      font-size: 20px;
-    }
-    &-button {
-      font-size: 20px;
-      padding: 0.5rem 2rem;
-    }
+  }
+}
+@media screen and (min-width: 1260px) {
+  .help {
+    background-size: 1474px auto, 100% auto;
   }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .help-center {
-    ul {
-      li {
-        font-size: 17px;
-      }
-    }
-    label {
-      font-size: 17px;
-    }
-    &__img-icon-1 {
-      width: 9%;
-      top: 40%;
-      right: -4%;
-    }
-    &__img-hourglass {
-      width: 14%;
-      top: 9%;
-      right: 4%;
-    }
-    &__img-gift {
-      width: 14%;
-      top: 9%;
-      left: 4%;
-    }
+@media screen and (max-width: 1024px) {
+  .help {
+    background-size: 140% auto, 1280px auto;
     &__header {
-      padding: 10rem 0 4rem 0;
+      padding: 18vw 0 7vw 0;
       &-title {
-        font-style: italic;
-        text-transform: uppercase;
-        font-size: 70px;
+        font-size: 50px;
       }
       &-title-second {
-        font-size: 30px;
-        font-weight: 400;
+        font-size: 21px;
+      }
+    }
+    &-center {
+      padding-bottom: 3vw;
+      &__subject {
+        margin-bottom: 2vw;
+        font-weight: bold;
+        font-size: 2.4vw;
+      }
+    
+  
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .help {
+    background: url(../images/common/bg_kyc_s.png) no-repeat center 50px,
+      url(../images/common/bg1.png) repeat-y center top;
+    background-size: 100% auto;
+
+    ul {
+      padding: 1vw 3vw;
+      li {
+        font-size: 3.5vw;
+        line-height: 1.5;
+      }
+    }
+    hr {
+      margin: 5vw 0;
+    }
+    &__header {
+      padding: 15vw 0 7vw 0;
+      &-title {
+        font-size: 11vw;
+      }
+      &-title-second {
+        font-size: 4vw;
       }
     }
     &-container {
       max-width: 90%;
-      padding: 50px;
+      padding: 10% 5%;
     }
-    &__text-title {
-      font-size: 19px;
-      margin-bottom: 4rem;
-    }
-    &-button {
-      font-size: 19px;
-      padding: 0.5rem 2rem;
-      margin-top: 3rem;
+    &-center {
+      padding-bottom: 3vw;
+      &__subject {
+        font-weight: bold;
+        font-size: 4vw;
+      }
+      &__content {
+        .question::before {
+          font-size: 6vw;
+          transform: none;
+        }
+        .answer{
+
+          &::before {
+            font-size: 6vw;
+            transform: none;
+          }
+          &-normal {
+            padding-left: 7vw;
+          }
+        }
+      }
     }
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .help-center {
-    ul {
-      li {
-        font-size: 17px;
-      }
-    }
-    label {
-      font-size: 17px;
-    }
-    &__img-icon-1 {
-      display: none;
-    }
-    &__img-hourglass {
-      display: none;
-    }
-    &__img-gift {
-      display: none;
-    }
-    &__header {
-      padding: 3rem 0;
-      &-title {
-        font-style: italic;
-        text-transform: uppercase;
-        font-size: 5rem;
-      }
-      &-title-second {
-        font-size: 2rem;
-        font-weight: 400;
-      }
-    }
-    &-container {
-      max-width: 85%;
-      padding: 35px;
-    }
-    &__text-title {
-      font-size: 19px;
-    }
-    &-button {
-      font-size: 19px;
-      padding: 0.5rem 2rem;
-      margin-top: 3rem;
-    }
-  }
-}
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  .help-center {
-    ul {
-      margin-bottom: 2rem;
-      li {
-        font-size: 14px;
-      }
-    }
-    label {
-      font-size: 14px;
-    }
-    &__img-icon-1 {
-      display: none;
-    }
-    &__img-hourglass {
-      display: none;
-    }
-    &__img-gift {
-      display: none;
-    }
-    &__header {
-      padding: 3rem 0;
-      &-title {
-        font-style: italic;
-        text-transform: uppercase;
-        font-size: 5rem;
-      }
-      &-title-second {
-        font-size: 2rem;
-        font-weight: 400;
-      }
-    }
-
-    &-container {
-      max-width: 85%;
-      padding: 35px;
-    }
-    &__text-title {
-      font-size: 15px;
-      margin-bottom: 3rem;
-    }
-    &-button {
-      font-size: 15px;
-      padding: 0.5rem 2rem;
-      margin-top: 2rem;
-    }
-  }
-}
 @media screen and (max-width: 480px) {
-  .help-center {
-    ul {
-      margin-bottom: 2rem;
-      li {
-        font-size: 13px;
-      }
-    }
-    label {
-      font-size: 13px;
-    }
+  .help {
     &__header {
-      padding: 3rem 0;
-      &-title {
-        font-style: italic;
-        text-transform: uppercase;
-        font-size: 3rem;
-      }
-      &-title-second {
-        font-size: 1.5rem;
-      }
+      padding: 20vw 0 8vw 0;
     }
-    &-container {
-      max-width: 95%;
-      padding: 25px;
-    }
-    &__text-title {
-      font-size: 14px;
-      margin-bottom: 2rem;
-    }
-    &-button {
-      font-size: 14px;
-      padding: 0.5rem 2rem;
-      margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .help {
+    &__header {
+      padding: 25vw 0 8vw 0;
     }
   }
 }

@@ -21,38 +21,74 @@
     <link rel="stylesheet" href="../plugins/swiper-slide/css/swiper.min.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="./style.css" />
-
+    <link rel="stylesheet" href="../header/style.css" />
   </head>
 
   <body>
+    <header>
+      <a href="#" class="head_logo"
+        ><h1><img src="../html/resources/images/logo.png" alt="みんすぽ " /></h1
+      ></a>
+      <div class="language language-desktop"></div>
+
+      <nav>
+        <ul class="btn">
+          <li class="sky"><a href="">新規登録</a></li>
+          <li class="pink"><a href="">ログイン</a></li>
+          <li class="white">
+            <a href=""
+              ><img
+                src="../html/resources/images/head_mail.png"
+                alt="メール"
+                class="only_pc"
+              />お問い合わせ</a
+            >
+          </li>
+        </ul>
+        <div class="main">
+          <div class="header only_smart_f">
+            <a href="" class="head_logo"
+              ><h1>
+                <img
+                  src="../html/resources/images/logo.png"
+                  alt="みんすぽ "
+                /></h1
+            ></a>
+          </div>
+          <ul>
+            <li><a href="">無料練習ゲーム</a></li>
+            <li><a href="">トーナメント</a></li>
+            <li><a href="">キャンペーン</a></li>
+            <li class="noline"><a href="">プレイ方法</a></li>
+            <li class="noline lang">
+              <ul>
+                <li>
+                  <a href=""
+                    ><img src="../html/resources/images/lang_en.png" alt="英語"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="../html/resources/images/lang_th.png"
+                      alt="タイ語"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img
+                      src="../html/resources/images/lang_jp.png"
+                      alt="日本語"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
     <section class="kyc-explanation">
-      <div class="img">
-        <img
-          src="../images/IDcard/bg-id-card.png"
-          class="img-thumbnail kyc-explanation__img-idcard"
-          alt=""
-        />
-        <img
-          src="../images/common/gift.png"
-          class="img-thumbnail kyc-explanation__img-gift"
-          alt=""
-        />
-        <img
-          src="../images/common/hourglass.png"
-          class="img-thumbnail kyc-explanation__img-hourglass"
-          alt=""
-        />
-        <img
-          src="../images/common/icon-1.png"
-          class="img-thumbnail kyc-explanation__img-icon-1"
-          alt=""
-        />
-        <img
-          src="../images/common/icon-2.png"
-          class="img-thumbnail kyc-explanation__img-icon-2"
-          alt=""
-        />
-      </div>
       <div class="kyc-explanation__header">
         <h2 class="kyc-explanation__header-title">KYC</h2>
         <h3 class="kyc-explanation__header-title-second">本人確認</h3>
@@ -110,52 +146,8 @@
             <h3 class="kyc-explanation__text-heading">本人確認の手順</h3>
           </div>
           <div class="card-body kyc-explanation__card-body">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-sm-12 kyc-explanation__box">
-                <div class="kyc-explanation__box-header">
-                  <div class="kyc-icon-ban m-2">✖</div>
-                  <div class="kyc-explanation__box-title">ぼやけている</div>
-                </div>
-                <img
-                  src="../images/IDcard/NG/NG-1.jpg"
-                  alt="id-card-img"
-                  class="img-thumbnail"
-                />
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 kyc-explanation__box">
-                <div class="kyc-explanation__box-header">
-                  <div class="kyc-icon-ban m-2">✖</div>
-                  <div class="kyc-explanation__box-title">欠けている</div>
-                </div>
-                <img
-                  src="../images/IDcard/NG/NG-2.jpg"
-                  alt="id-card-img"
-                  class="img-thumbnail"
-                />
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 kyc-explanation__box">
-                <div class="kyc-explanation__box-header">
-                  <div class="kyc-icon-ban m-2">✖</div>
-                  <div class="kyc-explanation__box-title">光が反射している</div>
-                </div>
-                <img
-                  src="../images/IDcard/NG/NG-3.jpg"
-                  alt="id-card-img"
-                  class="img-thumbnail"
-                />
-              </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 kyc-explanation__box">
-                <div class="kyc-explanation__box-header">
-                  <div class="kyc-icon-ban m-2">✖</div>
-                  <div class="kyc-explanation__box-title">影ができている</div>
-                </div>
-                <img
-                  src="../images/IDcard/NG/NG-4.jpg"
-                  alt="id-card-img"
-                  class="img-thumbnail"
-                />
-              </div>
-            </div>
+            <img src="../images/kyc/cont2_1.jpg" class="img-thumbnail kyc-explanation__card-pc" alt="">
+            <img src="../images/kyc/cont2_1_s.jpg" class="img-thumbnail kyc-explanation__card-sp" alt="">
           </div>
         </div>
 
@@ -183,7 +175,7 @@
 
         <div class="accordion kyc-explanation__accordion">
           <div class="kyc-explanation__accordion-header">
-            <h4>▶日本国籍の方</h4>
+            <h4>日本国籍の方</h4>
           </div>
           <hr class="border-accordion" />
           <div class="kyc-explanation__accordion-box">
@@ -438,7 +430,7 @@
 
         <div class="accordion kyc-explanation__accordion my-4">
           <div class="kyc-explanation__accordion-header-2">
-            <h4>▶外国籍の方</h4>
+            <h4>外国籍の方</h4>
           </div>
           <hr class="border-accordion" />
           <div class="kyc-explanation__accordion-box">
@@ -524,14 +516,14 @@
             </li>
             <li>
               ※氏名の表記(かな/カナ/漢字)
-              含め、本人確認書類と一致していない場合もご利用できま せん。
+              含め、本人確認書類と一致していない場合もご利用できません。
             </li>
             <li>※書類全体が写るように撮影してください。</li>
           </ul>
 
           <ul>
             <li class="mt-5">
-              公共料金の請求書 領収書 (電気・ガス・水道のいずれか)
+              公共料金の請求書・領収書 (電気・ガス・水道のいずれか) 
             </li>
             <li>
               ※現住所の建物名や部屋番号等まで正しく記載されている必要があります。現住所一部のみ記載の場合は受け付けられません。
@@ -549,11 +541,11 @@
           <ul>
             <li class="mt-5">住民票</li>
             <li>
-              ※住民票を取得する際には、 個人番号(マイナンバー)
+              ※住民票を取得する際には、個人番号(マイナンバー)
               の記載がないものを準備してください。
             </li>
             <li>
-              ※本籍地、 個人番号(マイナンバー) が記載されている場合、
+              ※本籍地、個人番号(マイナンバー) が記載されている場合、
               紙などで本籍地および個人番号の箇所のみ隠した状態で画像を撮影、
               アップロードしてください。
             </li>
@@ -561,7 +553,6 @@
         </div>
       </div>
     </section>
-
 
     <script src="../plugins/jquery/jquery-3.3.1.min.js"></script>
     <script src="../plugins/bootstrap-4.1.3/js/bootstrap.min.js"></script>

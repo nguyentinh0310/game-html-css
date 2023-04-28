@@ -1,0 +1,20 @@
+.only_smart,
+.only_smart_i,
+.only_smart_f{
+	display:none !important;
+}
+@media screen and (max-width:768px){
+	.only_pc{
+		display:none !important;
+	}
+	.only_smart{
+		display:block !important;
+	}
+	.only_smart_i{
+		display:inline-block !important;
+	}
+	.only_smart_f{
+		display: -webkit-flex !important;
+		display: flex !important;
+	}
+}

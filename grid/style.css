@@ -1,0 +1,23 @@
+.layout-item {
+    height: 500px;
+}
+.layout-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.layout {
+    display: grid;
+    /* grid-template-columns: chia cột */
+    grid-template-columns: 200px 200px 100px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    /* fr = free space */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: grid-row-gap grid-column-gap (khoảng trống)*/
+    grid-column-gap: 40px;
+    grid-row-gap: 20px;
+    grid-gap: 20px 40px;
+    /* track line bắt đầu từ số 1 */
+    /* Số cột 3 --> track line = số cột + 1 */
+
+}

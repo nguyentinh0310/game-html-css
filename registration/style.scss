@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap");
 $pink-color: #e82a75;
 $orange-color: #f59154;
 $gray-text-primary: #707070;
@@ -8,17 +9,18 @@ $red-text-normal: #ff5555;
 $white-color: #ffffff;
 
 .registration {
+  font-family: "Noto Sans JP", sans-serif;
   width: 100%;
   min-height: 100vh;
-  background-image: url("../images/common/bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../images/common/bg_kyc.png) no-repeat center 140px,
+    url(../images/common/bg1.png) repeat-y center top;
+  background-size: 1474px auto, auto;
   padding-bottom: 20rem;
-  position: relative;
+  font-size: 16px;
 
   label {
-    margin: 0;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
     color: $gray-text-primary;
   }
 
@@ -29,369 +31,187 @@ $white-color: #ffffff;
   .link {
     color: #0056b3;
   }
-  &__img-hourglass {
-    background: transparent;
-    position: absolute;
-    top: 2%;
-    right: 19%;
-  }
-  &__img-gift {
-    background: transparent;
-    position: absolute;
-    top: 2%;
-    left: 15%;
-  }
-  &__img-icon-1 {
-    background: transparent;
-    position: absolute;
-    top: 50%;
-    right: 1%;
-  }
-  &__img-idcard {
-    position: absolute;
-    top: 218px;
-    right: -8.5%;
-  }
   &__header {
     text-align: center;
     color: $white-color;
-    padding: 13rem 0 7rem 0;
+    padding: 180px 0 78px 0;
     &-title {
       font-family: "Raleway", sans-serif;
       font-style: italic;
-      text-transform: uppercase;
-      font-size: 88px;
+      font-size: 60px;
+      font-weight: 600;
+      margin-bottom: 0;
     }
     &-title-second {
       font-family: "Raleway", sans-serif;
-      font-size: 37px;
-      font-weight: 400;
+      font-size: 23px;
+      font-weight: 500;
+      margin-bottom: 0;
     }
   }
 
   &-container {
-    background-color: $white-color;
-    width: 1468px;
+    max-width: 980px;
+    width: 90%;
     margin: auto;
-    padding: 90px 130px 68px 130px;
-    border-radius: 2rem;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 1rem;
   }
   &__form {
     &-group {
-      margin-bottom: 2rem;
+      margin-bottom: 40px;
     }
     .col-form-label {
       display: flex;
       align-items: center;
     }
     &-control {
-      height: calc(3.25rem + 2px) !important;
-      font-size: 1.5rem;
+      font-size: 16px;
+      height: 50px !important;
+      border: 1px solid black;
     }
     &-checkbox {
-      margin-top: 5rem;
+      margin-top: 3rem;
     }
     &-check {
       display: flex;
       align-items: center;
-      padding: 1rem 15rem;
+      padding: 0.5rem 20rem;
       &-input {
         width: 2rem;
         height: 2rem;
       }
       &-label {
-        margin-left: 2rem !important;
+        font-size: 16px !important;
+        margin-left: 1.5rem !important;
       }
     }
     &-button {
-      background-color: $orange-color;
-      color: $white-color;
-      font-size: 22px;
-      padding: 0.5rem 2rem;
-      margin-top: 5rem;
-    }
-  }
-}
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (max-width: 1919.98px) {
-  .registration {
-    &__img-hourglass {
-      width: 13%;
-      top: 11%;
-      right: 11%;
-    }
-    &__img-gift {
-      width: 13%;
-      top: 11%;
-      left: 11%;
-    }
-    &__img-icon-1 {
-      width: 8%;
-      top: 50%;
-      right: -1%;
-    }
-    &__header {
-      padding: 11rem 0 7rem 0;
-    }
-    &-container {
-      max-width: 1140px;
+      min-width: 206px;
+      margin: 40px auto 0;
+      padding: 0 2.5em;
+      line-height: 50px;
+      font-size: 21px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #ea701c;
+      border: none;
     }
   }
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media screen and (min-width: 1260px) {
   .registration {
+    background-size: 1474px auto, 100% auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .registration {
+    background-size: 140% auto, 1280px auto;
+    &__header {
+      padding: 18vw 0 7vw 0;
+      &-title {
+        font-size: 50px;
+      }
+      &-title-second {
+        font-size: 21px;
+      }
+    }
+    &__form {
+      &-control {
+        height: calc(3.25rem + 2px) !important;
+      }
+      &-check {
+        padding: 1vw 15vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .registration {
+    background: url(../images/common/bg_kyc_s.png) no-repeat center 50px,
+      url(../images/common/bg1.png) repeat-y center top;
+    background-size: 100% auto;
     label {
-      font-size: 18px;
+      font-size: 3.5vw !important;
     }
-    &__img-hourglass {
-      width: 13%;
-      top: 12%;
-      right: 3%;
-    }
-    &__img-gift {
-      width: 13%;
-      top: 12%;
-      left: 3%;
-    }
-    &__img-icon-1 {
-      width: 8%;
-      top: 40%;
-      right: -3%;
+    &__header {
+      padding: 15vw 0 7vw 0;
+      &-title {
+        font-size: 11vw;
+      }
+      &-title-second {
+        font-size: 4vw;
+      }
     }
     &-container {
       max-width: 90%;
+      padding: 10% 5%;
     }
     &__form {
       &-group {
         margin-bottom: 1.5rem;
       }
-      .col-form-label {
-        padding: 0;
-      }
       &-control {
-        padding: 0;
-      }
-      &-check {
-        padding: 1rem 8rem;
-      }
-      &-button {
-        font-size: 20px;
-        padding: 0.5rem 2rem;
-      }
-    }
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .registration {
-    label {
-      font-size: 17px;
-    }
-    &__img-icon-1 {
-      width: 9%;
-      top: 40%;
-      right: -4%;
-    }
-    &__img-hourglass {
-      width: 14%;
-      top: 9%;
-      right: 4%;
-    }
-    &__img-gift {
-      width: 14%;
-      top: 9%;
-      left: 4%;
-    }
-    &__header {
-      padding: 10rem 0 4rem 0;
-      &-title {
-        font-style: italic;
-        text-transform: uppercase;
-        font-size: 70px;
-      }
-      &-title-second {
-        font-size: 30px;
-        font-weight: 400;
-      }
-    }
-    &-container {
-      max-width: 90%;
-      padding: 50px;
-    }
-    &__form {
-      &-group {
-        margin-bottom: 1.5rem;
-      }
-      .col-form-label {
-        padding: 0;
-      }
-      &-control {
-        padding: 0;
-        font-size: 17px;
+        height: calc(2.25rem + 2px) !important;
       }
       &-checkbox {
-        margin-top: 4rem;
+        margin-top: 7vw;
       }
       &-check {
-        padding: 1rem 6rem;
+        padding: 1vw 2.5vw;
+        &-input {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+        &-label {
+          font-size: 3.5vw !important;
+          margin-left: 1.5vw !important;
+        }
       }
       &-button {
-        font-size: 19px;
-        padding: 0.5rem 2rem;
-        margin-top: 4rem;
+        display: block;
+        min-width: auto;
+        width: 13em;
+        margin: 9% auto 0;
+        padding: 0;
+        line-height: 2.4;
+        font-size: 3.6vw;
       }
     }
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .registration {
-    label {
-      font-size: 17px;
-    }
-    &__img-icon-1 {
-      display: none;
-    }
-    &__img-hourglass {
-      display: none;
-    }
-    &__img-gift {
-      display: none;
-    }
-    &__header {
-      padding: 3rem 0;
-      &-title {
-        font-style: italic;
-        text-transform: uppercase;
-        font-size: 5rem;
-      }
-      &-title-second {
-        font-size: 2rem;
-        font-weight: 400;
-      }
-    }
-    &-container {
-      max-width: 85%;
-      padding: 35px;
-    }
-    &__form {
-      &-group {
-        margin-bottom: 1rem;
-      }
-      &-control {
-        font-size: 16px;
-      }
-      &-checkbox {
-        margin-top: 4rem;
-      }
-      &-check {
-        padding: 1rem 3rem;
-      }
-      &-button {
-        font-size: 19px;
-        padding: 0.5rem 2rem;
-        margin-top: 4rem;
-      }
-    }
-  }
-}
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  .registration {
-    label {
-      font-size: 14px;
-    }
-    &__img-icon-1 {
-      display: none;
-    }
-    &__img-hourglass {
-      display: none;
-    }
-    &__img-gift {
-      display: none;
-    }
-    &__header {
-      padding: 3rem 0;
-      &-title {
-        font-style: italic;
-        text-transform: uppercase;
-        font-size: 5rem;
-      }
-      &-title-second {
-        font-size: 2rem;
-        font-weight: 400;
-      }
-    }
-
-    &-container {
-      max-width: 85%;
-      padding: 35px;
-    }
-    &__form {
-      &-group {
-        margin-bottom: 1rem;
-      }
-      &-control {
-        font-size: 13px;
-      }
-      &-checkbox {
-        margin-top: 2rem;
-      }
-      &-check {
-        padding: 1rem 2rem;
-      }
-      &-button {
-        font-size: 15px;
-        padding: 0.5rem 2rem;
-        margin-top: 2rem;
-
-      }
-    }
-  }
-}
 @media screen and (max-width: 480px) {
   .registration {
-    label {
-      font-size: 13px;
-    }
     &__header {
-      padding: 3rem 0;
-      &-title {
-        font-style: italic;
-        text-transform: uppercase;
-        font-size: 3rem;
-      }
-      &-title-second {
-        font-size: 1.5rem;
-      }
+      padding: 20vw 0 8vw 0;
     }
-    &-container {
-      max-width: 95%;
-      padding: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .registration {
+    &__header {
+      padding: 25vw 0 8vw 0;
+    }
+    label {
+      font-size: 2.5vw !important;
     }
     &__form {
-      &-group {
-        margin-bottom: 1rem;
-      }
-      &-control {
-        font-size: 12px;
-      }
-      &-checkbox {
-        margin-top: 2rem;
-      }
       &-check {
-        padding: 1rem;
-      }
-      &-button {
-        font-size: 14px;
-        padding: 0.5rem 2rem;
-        margin-top: 2rem;
-
+        padding: 0vw 6vw;
+        &-input {
+          width: 1rem;
+          height: 1rem;
+        }
+        &-label {
+          font-size: 2.5vw !important;
+          margin-left: 0.5vw !important;
+        }
       }
     }
   }

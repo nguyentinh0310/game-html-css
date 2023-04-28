@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap");
 
 $pink-color: #e82a75;
@@ -14,9 +14,9 @@ $white-color: #ffffff;
   font-family: "Noto Sans JP", sans-serif;
   width: 100%;
   min-height: 100vh;
-  background-image: url("../images/common/bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../images/common/bg_kyc.png) no-repeat center 140px,
+    url(../images/common/bg1.png) repeat-y center top;
+  background-size: 1474px auto, auto;
   padding-bottom: 20rem;
 
   ul {
@@ -42,12 +42,6 @@ $white-color: #ffffff;
     color: #0b4dff;
     text-decoration: underline;
   }
-  .kyc-icon-ban {
-    font-family: "FontAwesome";
-    font-size: 6rem;
-    font-weight: bold;
-    color: $red-text;
-  }
   .border-accordion {
     border: 1px solid $gray-text-primary;
   }
@@ -61,80 +55,53 @@ $white-color: #ffffff;
     border: none !important;
   }
 
-  &__img-hourglass {
-    background: transparent;
-    position: absolute;
-    top: 2%;
-    right: 19%;
-  }
-  &__img-gift {
-    background: transparent;
-    position: absolute;
-    top: 2%;
-    left: 15%;
-  }
-  &__img-icon-1 {
-    background: transparent;
-    position: absolute;
-    top: 12%;
-    right: 1%;
-  }
-  &__img-icon-2 {
-    background: transparent;
-    position: absolute;
-    top: 30%;
-    right: 1%;
-  }
-  &__img-idcard {
-    position: absolute;
-    top: 218px;
-    right: -8.5%;
-  }
   &__header {
-    font-family: "Raleway", sans-serif;
     text-align: center;
     color: $white-color;
-    padding: 14rem 0 7rem 0;
+    padding: 180px 0 50px 0;
     &-title {
+      font-family: "Raleway", sans-serif;
       font-style: italic;
-      font-size: 65px;
-      font-weight: bold;
+      font-size: 60px;
+      font-weight: 600;
+      margin-bottom: 0;
     }
     &-title-second {
-      font-size: 32px;
-      font-weight: 400;
+      font-family: "Raleway", sans-serif;
+      font-size: 23px;
+      font-weight: 500;
+      margin-bottom: 0;
     }
   }
 
   &-container {
-    background-color: $white-color;
-    width: 1468px;
+    max-width: 980px;
+    width: 90%;
     margin: auto;
-    padding: 90px;
-    border-radius: 2rem;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 1rem;
   }
   &__rule {
-    width: 978px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem auto;
+    max-width: 655px;
+    width: 84%;
+    margin: auto;
     background-color: $pink-color;
     &-3 {
-      margin-top: 10rem;
+      margin-top: 6rem;
     }
   }
 
   &__text-heading {
+    line-height: 2;
     color: $white-color;
     text-align: center;
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 600;
     margin: 0;
   }
   &__content {
-    margin: 4rem;
+    margin: 3rem;
     color: $gray-text-primary;
     &-text {
       font-size: 16px;
@@ -145,43 +112,43 @@ $white-color: #ffffff;
 
   &__card {
     border: 2px solid $orange-color;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
     &-header {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 80px;
+      height: 55px;
       background-color: $orange-color;
     }
     &-body {
-      padding: 40px 130px 28px 130px;
+      padding: 35px 100px 28px 100px;
       ul {
         color: $gray-text-primary;
+        li {
+          &:last-child {
+            color: $red-text-normal;
+          }
+        }
       }
     }
-  }
-  &__box {
-    padding: 2rem 4rem;
-    &-header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 2rem;
+    &-pc {
+      display: block;
     }
-    &-title {
-      font-size: 32px;
-      color: #6a6a6a;
-    }
-  }
 
+    &-sp {
+      display: none;
+    }
+  }
   &__accordion {
     &-header,
     &-header-2 {
       color: $gray-text-primary;
       padding: 0 4rem;
       h4 {
-        font-family: "FontAwesome";
         font-size: 24px;
+        &::before {
+          content: "▶";
+        }
       }
     }
     &-header-2 {
@@ -239,106 +206,21 @@ $white-color: #ffffff;
     }
   }
 }
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (max-width: 1919.98px) {
+
+@media screen and (max-width: 1024px) {
   .kyc-explanation {
-    &__img-idcard {
-      top: 11rem;
-      right: -10%;
-    }
-    &__img-hourglass {
-      width: 15%;
-      top: 1.5%;
-      right: 15%;
-    }
-    &__img-gift {
-      width: 15%;
-      top: 1.5%;
-      left: 15%;
-    }
-    &__img-icon-1 {
-      width: 8%;
-      top: 12%;
-      right: -1%;
-    }
-    &__img-icon-2 {
-      width: 8%;
-      top: 30%;
-      right: -1%;
-    }
+    background-size: 140% auto, 1280px auto;
     &__header {
-      padding: 10rem 0 7rem 0;
-    }
-    &__content {
-      margin: 4rem 3rem;
-    }
-    &-container {
-      max-width: 1140px;
-    }
-    &__rule {
-      width: 65rem;
-    }
-    &__card {
-      &-header {
-        background-color: $orange-color;
-      }
-      &-body {
-        padding: 40px 100px 28px 100px;
-      }
-    }
-    &__box {
-      padding: 1rem 2rem;
+      padding: 18vw 0 5vw 0;
       &-title {
-        font-size: 31px;
+        font-size: 50px;
+      }
+      &-title-second {
+        font-size: 21px;
       }
     }
-  }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .kyc-explanation {
-    .kyc-icon-ban {
-      font-size: 4rem;
-      font-weight: bold;
-      color: $red-text;
-    }
-    &__img-hourglass {
-      width: 15%;
-      top: 2%;
-      right: 10%;
-    }
-    &__img-gift {
-      width: 15%;
-      top: 2%;
-      left: 10%;
-    }
-    &__img-icon-1 {
-      width: 8%;
-      top: 10%;
-      right: -3%;
-    }
-    &__img-icon-2 {
-      width: 8%;
-      top: 28%;
-      right: -3%;
-    }
-    &__img-idcard {
-      top: 10rem;
-      right: -16%;
-    }
-    &__header {
-      padding: 10rem 0 7rem 0;
-    }
-    &__content {
-      margin: 4rem 2.5rem;
-    }
-
-    &-container {
-      max-width: 90%;
-    }
-    &__rule {
-      width: 48rem;
+    &__text-heading {
+      font-size: 2.6vw;
     }
     &__card {
       margin-bottom: 8rem;
@@ -349,602 +231,132 @@ $white-color: #ffffff;
         padding: 40px 85px 28px 85px;
       }
     }
-    &__box {
-      padding: 1rem;
-      &-title {
-        font-size: 28px;
-      }
-    }
     &__accordion {
       &-header,
       &-header-2 {
         color: $gray-text-primary;
         padding: 0 3rem;
+        h4 {
+          font-size: 2.4vw;
+        }
       }
       &-box {
         padding: 1rem 5rem;
       }
+      .Label {
+        font-size: 2.4vw;
+      }
+      .Label::before {
+        font-size: 2.4vw;
+      }
     }
   }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (max-width: 768px) {
   .kyc-explanation {
+    background: url(../images/common/bg_kyc_s.png) no-repeat center 50px,
+      url(../images/common/bg1.png) repeat-y center top;
+    background-size: 100% auto;
+
     ul {
       li {
-        font-size: 15px;
+        font-size: 3.5vw;
+        line-height: 1.5;
       }
-    }
-    .kyc-icon-ban {
-      font-size: 3.5rem;
-      font-weight: bold;
-      color: $red-text;
-    }
-    &__img-icon-1 {
-      width: 9%;
-      top: 10%;
-      right: -2%;
-    }
-    &__img-icon-2 {
-      width: 9%;
-      top: 26%;
-      right: -2%;
-    }
-    &__img-hourglass {
-      width: 15%;
-      top: 1.5%;
-      right: 12%;
-    }
-    &__img-gift {
-      width: 15%;
-      top: 1.5%;
-      left: 12%;
-    }
-    &__img-idcard {
-      display: none;
     }
     .text-red-normal {
       color: $red-text-normal;
-      font-size: 15px;
+      font-size: 3.5vw;
     }
     &__header {
-      padding: 5rem 0 4rem 0;
+      padding: 15vw 0 4vw 0;
       &-title {
-        font-style: italic;
+        font-size: 11vw;
       }
       &-title-second {
-        font-weight: 400;
+        font-size: 4vw;
       }
     }
     &-container {
       max-width: 90%;
-      padding: 50px;
+      padding: 10% 5%;
     }
     &__rule {
-      width: 85%;
-      height: 50px;
-      margin: 1rem auto;
       &-3 {
-        margin-top: 8rem;
+        margin-top: 12vw;
       }
     }
 
     &__text-heading {
-      font-size: 27px;
+      font-size: 4.2vw;
     }
     &__content {
-      margin: 4rem 2rem;
+      margin: 5vw 3vw;
       &-text {
-        font-size: 15px;
+        font-size: 3.5vw;
         line-height: 1.25;
       }
     }
     &__card {
-      margin-bottom: 6.5rem;
+      margin-bottom: 11vw;
       &-header {
         height: 60px;
       }
       &-body {
-        padding: 40px 90px 20px 90px;
+        padding: 5vw 8vw 2vw 8vw;
       }
-    }
-    &__box {
-      padding: 1rem;
-      &-header {
-        justify-content: flex-start;
+      &-pc {
+        display: none;
       }
-      &-title {
-        font-size: 18px;
+      &-sp {
+        display: block;
       }
     }
     &__accordion {
       &-header,
       &-header-2 {
         color: $gray-text-primary;
-        padding: 0 2rem;
+        padding: 0 2vw;
         h4 {
-          font-size: 22.5px;
+          font-size: 4.2vw;
         }
       }
       &-header-2 {
-        padding-top: 2rem;
+        padding-top: 2vw;
       }
       &-box {
-        padding: 1rem 4rem;
+        padding: 2vw 5vw;
       }
       .Label::before {
         content: "▼";
-        font-size: 22.5px;
+        font-size: 4.2vw;
       }
       .Label {
-        font-size: 22.5px;
+        font-size: 4.2vw;
       }
       .toggle:checked + .Label + .content {
-        padding: 2rem 0;
+        padding: 3vw 0;
+      }
+      .border-accordion {
+        margin: 1vw 0;
       }
     }
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .kyc-explanation {
-    ul {
-      li {
-        font-size: 14.5px;
-      }
-    }
-    .kyc-icon-ban {
-      font-size: 4rem;
-      font-weight: bold;
-      color: $red-text;
-    }
-    &__img-icon-1 {
-      width: 11%;
-      top: 10%;
-      right: -2%;
-    }
-    &__img-icon-2 {
-      width: 11%;
-      top: 26%;
-      right: -2%;
-    }
-    &__img-hourglass {
-      width: 15%;
-      top: 0.65%;
-      right: 10%;
-    }
-    &__img-gift {
-      width: 15%;
-      top: 0.65%;
-      left: 10%;
-    }
-    &__img-idcard {
-      display: none;
-    }
-    .text-red-normal {
-      color: $red-text-normal;
-      font-size: 14.5px;
-    }
-    &__header {
-      padding: 4rem 0 2rem 0;
-      &-title {
-        font-style: italic;
-        font-size: 45px;
-      }
-      &-title-second {
-        font-size: 2rem;
-        font-weight: 400;
-      }
-    }
-    &-container {
-      max-width: 85%;
-      padding: 35px;
-    }
-    &__rule {
-      width: 80%;
-      height: 45px;
-      margin: 1.5rem auto;
-      &-3 {
-        margin-top: 8rem;
-      }
-    }
-
-    &__text-heading {
-      font-size: 22.5px;
-    }
-    &__content {
-      margin: 3rem 2rem;
-      &-text {
-        font-size: 14.5px;
-        line-height: 1.25;
-      }
-    }
-    &__card {
-      margin-bottom: 5rem;
-      &-header {
-        height: 50px;
-      }
-      &-body {
-        padding: 30px 50px 15px 50px;
-      }
-    }
-    &__box {
-      padding: 1rem;
-      margin-bottom: 2rem;
-      &-header {
-        justify-content: center;
-      }
-      &-title {
-        font-size: 22.5px;
-      }
-    }
-    &__accordion {
-      &-header,
-      &-header-2 {
-        color: $gray-text-primary;
-        padding: 0 2rem;
-        h4 {
-          font-size: 20px;
-        }
-      }
-      &-header-2 {
-        padding-top: 2rem;
-      }
-      &-box {
-        padding: 0.5rem 4rem;
-      }
-      .Label::before {
-        content: "▼";
-        font-size: 20px;
-      }
-      .Label {
-        font-size: 20px;
-      }
-      .toggle:checked + .Label + .content {
-        padding: 2rem 0;
-      }
-    }
-  }
-}
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  .kyc-explanation {
-    ul {
-      li {
-        font-size: 14.5px;
-      }
-    }
-    .kyc-icon-ban {
-      font-size: 3.5rem;
-      font-weight: bold;
-      color: $red-text;
-    }
-    &__img-icon-1 {
-      width: 11%;
-      top: 10%;
-      right: -2%;
-    }
-    &__img-icon-2 {
-      width: 11%;
-      top: 26%;
-      right: -2%;
-    }
-    &__img-hourglass {
-      width: 19%;
-      top: 1%;
-      right: 10%;
-    }
-    &__img-gift {
-      width: 19%;
-      top: 1%;
-      left: 10%;
-    }
-    &__img-idcard {
-      display: none;
-    }
-    .text-red-normal {
-      color: $red-text-normal;
-      font-size: 14.5px;
-    }
-    &__header {
-      padding: 4rem 0 2rem 0;
-      &-title {
-        font-style: italic;
-        font-size: 3.5rem;
-      }
-      &-title-second {
-        font-size: 21px;
-        font-weight: 400;
-      }
-    }
-    &-container {
-      max-width: 85%;
-      padding: 35px;
-    }
-    &__rule {
-      width: 82%;
-      height: 45px;
-      margin: 1.5rem auto;
-      &-3 {
-        margin-top: 5rem;
-      }
-    }
-
-    &__text-heading {
-      font-size: 21px;
-    }
-    &__content {
-      margin: 3rem 2rem;
-      &-text {
-        font-size: 14.5px;
-        line-height: 1.25;
-      }
-    }
-    &__card {
-      margin-bottom: 6.5rem;
-      &-header {
-        height: 50px;
-      }
-      &-body {
-        padding: 30px 45px 15px 45px;
-      }
-    }
-    &__box {
-      padding: 1rem;
-      margin-bottom: 2rem;
-      &-header {
-        justify-content: center;
-      }
-      &-title {
-        font-size: 21px;
-      }
-    }
-    &__accordion {
-      &-header,
-      &-header-2 {
-        color: $gray-text-primary;
-        padding: 0 2rem;
-        h4 {
-          font-size: 18px;
-        }
-      }
-      &-header-2 {
-        padding-top: 2rem;
-      }
-      &-box {
-        padding: 0.25rem 3rem;
-      }
-      .Label::before {
-        content: "▼";
-        font-size: 18px;
-      }
-      .Label {
-        font-size: 18px;
-      }
-      .toggle:checked + .Label + .content {
-        padding: 2rem 0;
-      }
-    }
-  }
-}
 @media screen and (max-width: 480px) {
   .kyc-explanation {
-    ul {
-      li {
-        font-size: 13.5px;
-      }
-    }
-    .kyc-icon-ban {
-      font-size: 3rem;
-      font-weight: bold;
-      color: $red-text;
-    }
-    .text-red-normal {
-      color: $red-text-normal;
-      font-size: 13.5px;
-    }
-    &__img-icon-1 {
-      width: 10%;
-      top: 10%;
-      right: -5%;
-    }
-    &__img-icon-2 {
-      width: 10%;
-      top: 26%;
-      right: -5%;
-    }
     &__header {
-      padding: 3rem 0 2rem 0;
-      &-title {
-        font-style: italic;
-        font-size: 3rem;
-      }
-      &-title-second {
-        font-size: 1.35rem;
-      }
-    }
-    &-container {
-      max-width: 95%;
-      padding: 25px;
-    }
-    &__rule {
-      width: 81%;
-      height: 38px;
-      margin: 1.5rem auto;
-      &-3 {
-        margin-top: 5rem;
-      }
-    }
-
-    &__text-heading {
-      font-size: 18px;
-    }
-    &__content {
-      margin: 2rem;
-      &-text {
-        font-size: 13.5px;
-        line-height: 1.25;
-      }
-    }
-    &__card {
-      margin-bottom: 4.5rem;
-      &-header {
-        height: 40px;
-      }
-      &-body {
-        padding: 20px 25px 15px 25px;
-      }
-    }
-    &__box {
-      padding: 1rem;
-      margin-bottom: 1rem;
-      &-header {
-        justify-content: center;
-      }
-      &-title {
-        font-size: 18px;
-      }
-    }
-    &__accordion {
-      &-header,
-      &-header-2 {
-        color: $gray-text-primary;
-        padding: 0 2rem;
-        h4 {
-          font-size: 17px;
-        }
-      }
-      &-header-2 {
-        padding-top: 2rem;
-      }
-      &-box {
-        padding: 0.25rem 3rem;
-      }
-      .Label::before {
-        content: "▼";
-        font-size: 17px;
-      }
-      .Label {
-        font-size: 17px;
-      }
-      .toggle:checked + .Label + .content {
-        padding: 2rem 0;
-      }
+      padding: 20vw 0 4vw 0;
     }
   }
 }
 
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .kyc-explanation {
-    ul {
-      li {
-        font-size: 9px;
-      }
-    }
-    .kyc-icon-ban {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: $red-text;
-    }
-    &__img-gift {
-      width: 22%;
-      top: 1%;
-      left: 6%;
-    }
-    &__img-hourglass {
-      width: 22%;
-      top: 1%;
-      right: 6%;
-    }
-    .text-red-normal {
-      color: $red-text-normal;
-      font-size: 9px;
-      margin-left: 1rem !important;
-    }
     &__header {
-      padding: 3rem 0 2rem 0;
-      &-title {
-        font-style: italic;
-        font-size: 2.5rem;
-      }
-      &-title-second {
-        font-size: 12px;
-      }
-    }
-    &-container {
-      max-width: 95%;
-      padding: 25px;
-    }
-    &__rule {
-      width: 78%;
-      height: 25px;
-      margin: 1rem auto;
-      &-3 {
-        margin-top: 5rem;
-      }
-    }
-
-    &__text-heading {
-      font-size: 12px;
-    }
-    &__content {
-      margin: 1.5rem 1rem;
-      &-text {
-        font-size: 9px;
-        line-height: 1.25;
-      }
-    }
-    &__card {
-      margin-bottom: 3rem;
-      &-header {
-        height: 30px;
-      }
-      &-body {
-        padding: 20px 25px 15px 25px;
-      }
-    }
-    &__box {
-      padding: 1rem;
-      margin-bottom: 0;
-      &-header {
-        justify-content: center;
-        margin-bottom: 0.5rem;
-      }
-      &-title {
-        font-size: 13px;
-      }
-    }
-    &__accordion {
-      &-header,
-      &-header-2 {
-        color: $gray-text-primary;
-        padding: 0 2rem;
-        h4 {
-          font-size: 13px;
-        }
-      }
-      &-header-2 {
-        padding-top: 2rem;
-      }
-      &-box {
-        padding: 0.25rem 3rem;
-      }
-      .border-accordion{
-        margin: 0.5rem;
-      }
-      .Label::before {
-        content: "▼";
-        font-size: 13px;
-      }
-      .Label {
-        font-size: 13px;
-      }
-      .toggle:checked + .Label + .content {
-        padding: 2rem 0;
-      }
+      padding: 25vw 0 4vw 0;
     }
   }
 }

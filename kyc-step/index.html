@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/sanitize.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="resources/slick/slick.css" />
+    <link rel="stylesheet" href="resources/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../css/display.css" />
+    <link rel="stylesheet" href="./top-btn.css" />
+    <script
+      type="text/javascript"
+      src="resources/js/jquery-3.6.0.min.js"
+    ></script>
+    <script src="resources/slick/slick.min.js"></script>
+    <script type="text/javascript" src="resources/js/config.js"></script>
+  </head>
+  <body>
+    <article class="kyc-page">
+      <h1><img src="../images/kyc/h1.png" alt="本人確認" /></h1>
+
+      <div class="inner">
+        <div id="top_caution" class="first">
+          <p class="red">
+            MINSPOINT（ミンスポイント）の購入にはKYCチェックが必要となります。<br />以下の手順に従って手続きをお願いします。
+          </p>
+
+          <p>
+            こちらの画面から本人確認書類のアップロードと本人確認の申請を行っていただけます。<br />本人確認書類の撮影後、こちらの画面からアップロードをお願いします。<br />使用可能な書類については、<a class="kyc-link" href="">こちら</a>をご確認ください。
+          </p>
+        </div>
+
+        <section id="kyc" class="cont">
+          <h2>本人確認の流れ</h2>
+
+          <figure class="first">
+            <img
+              src="../images/kyc/flow.png"
+              alt="本人確認の流れ"
+              class="only_pc"
+            /><img
+              src="../images/kyc/flow_s.png"
+              alt="本人確認の流れ"
+              class="only_smart"
+            />
+          </figure>
+
+          <section class="first">
+            <h3>ユーザー氏名</h3>
+
+            <form>
+              <dl>
+                <dt>名（First name)</dt>
+                <dd><input type="text" /></dd>
+
+                <dt>氏（Last name)</dt>
+                <dd><input type="text" /></dd>
+              </dl>
+
+              <p class="caution">※必ずユーザー本人のお名前をご入力ください。</p>
+
+              <button type="submit">次へ</button>
+            </form>
+          </section>
+        </section>
+      </div>
+    </article>
+
+    <article class="kyc-page">
+      <h1><img src="../images/kyc/h1.png" alt="本人確認" /></h1>
+
+      <div class="inner">
+        <section id="kyc" class="cont">
+          <div class="first mt0">
+            <h3>本人確認書類</h3>
+
+            <form enctype="multipart/form-data">
+              <dl>
+                <dt>書類タイプ</dt>
+                <dd>
+                  <select>
+                    <option>選択してください</option>
+                    <option>運転免許証</option>
+                    <option>マイナンバーカード</option>
+                    <option>身体障がい者手帳</option>
+                    <option>療育手帳</option>
+                    <option>精神障がい者保健福祉手帳</option>
+                    <option>日本国パスポート</option>
+                    <option>健康保険証</option>
+                    <option>住民基本台帳カード</option>
+                    <option>在留カード</option>
+                    <option>特別永住者証明書</option>
+                  </select>
+                </dd>
+              </dl>
+
+              <ul>
+                <li>※必ず有効期限内のものをご使用ください。</li>
+                <li>
+                  ※不備があった場合は再度アップロードをお願いすることになりますので、<br
+                    class="only_pc"
+                  />事前に必ず<a href="">こちら</a>をご確認ください。
+                </li>
+              </ul>
+
+              <dl class="upload">
+                <dt>1枚目</dt>
+                <dd>
+                  <label>
+                    <input type="file" />
+                    ファイルを選択
+                  </label>
+                  <p>選択されていません</p>
+                </dd>
+
+                <dt>2枚目</dt>
+                <dd>
+                  <label>
+                    <input type="file" />
+                    ファイルを選択
+                  </label>
+                  <p>選択されていません</p>
+                </dd>
+
+                <dt>3枚目</dt>
+                <dd>
+                  <label>
+                    <input type="file" />
+                    ファイルを選択
+                  </label>
+                  <p>選択されていません</p>
+                </dd>
+              </dl>
+
+              <button type="submit">次へ</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <article class="kyc-page">
+      <h1><img src="../images/kyc/h1.png" alt="本人確認" /></h1>
+
+      <div class="inner">
+        <section id="kyc" class="cont">
+          <div class="first mt0">
+            <h3>本人確認書類</h3>
+
+            <form enctype="multipart/form-data">
+              <dl>
+                <dt>書類タイプ</dt>
+                <dd>
+                  <input type="text" value="運転免許証" readonly />
+                </dd>
+              </dl>
+
+              <ul>
+                <li>※必ず有効期限内のものをご使用ください。</li>
+                <li>
+                  ※不備があった場合は再度アップロードをお願いすることになりますので、<br
+                    class="only_pc"
+                  />事前に必ず<a href="">こちら</a>をご確認ください。
+                </li>
+              </ul>
+
+              <dl class="upload2">
+                <dt>1枚目</dt>
+                <dd>
+                  <img
+                    src="../images/kyc/kyc_1.png"
+                    alt=""
+                    id="preview1"
+                  />
+                  <label>
+                    <input type="file" id="file1" />
+                    ファイルを選び直す
+                  </label>
+                </dd>
+
+                <dt>2枚目</dt>
+                <dd>
+                  <img
+                    src="../images/kyc/kyc_2.png"
+                    alt=""
+                    id="preview2"
+                  />
+                  <label>
+                    <input type="file" id="file2" />
+                    ファイルを選び直す
+                  </label>
+                </dd>
+
+                <dt>3枚目</dt>
+                <dd>
+                  <img src="" alt="" id="preview3" />
+                  <label>
+                    <input type="file" id="file3" />
+                    ファイルを選び直す
+                  </label>
+                </dd>
+              </dl>
+
+              <div class="privacy">
+                <ul>
+                  <li>
+                    <label
+                      ><input type="checkbox" /><span
+                        ><a href="">プライバシーポリシー</a>に同意します</span
+                      ></label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      ><input type="checkbox" /><span
+                        ><a href="">アップロードが必要な書類</a
+                        >を確認しました</span
+                      ></label
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <button type="submit">アップロードする</button>
+              <button type="button" class="btn-return">戻る</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </article>
+  
+  	<article class="kyc-page">
+      <h1><img src="../images/kyc/h1.png" alt="本人確認" /></h1>
+      
+      <div class="inner">
+        <section id="kyc" class="cont">
+          <div class="first mt0 thanks">
+            <h3>送信完了</h3>
+            
+            <p>お手続きいただきありがとうございます。<br />審査完了後、メールにてご連絡させていただきます。</p>
+            
+            <a href="#">Topへ戻る</a>
+          </div>
+        </section>
+      </div>
+    </article>
+  </body>
+</html>
+
+
+<%@page import="jp.co.open.gamepf.util.OpenUtils" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="mlm" uri="http://common.open.com" %>

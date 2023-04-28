@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap");
-
 $pink-color: #e82a75;
 $orange-color: #f59154;
 $gray-text-primary: #707070;
@@ -14,9 +13,9 @@ $white-color: #ffffff;
   font-family: "Noto Sans JP", sans-serif;
   width: 100%;
   min-height: 100vh;
-  background-image: url("../images/common/bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../images/common/bg_kyc.png) no-repeat center 140px,
+    url(../images/common/bg1.png) repeat-y center top;
+  background-size: 1474px auto, auto;
   padding-bottom: 20rem;
   font-size: 16px;
 
@@ -37,53 +36,32 @@ $white-color: #ffffff;
   .img-thumbnail {
     border: none !important;
   }
-
-  &__img-hourglass {
-    background: transparent;
-    position: absolute;
-    top: 1%;
-    right: 19%;
-  }
-  &__img-gift {
-    background: transparent;
-    position: absolute;
-    top: 1%;
-    left: 15%;
-  }
-  &__img-icon-1 {
-    background: transparent;
-    position: absolute;
-    top: 30%;
-    right: 1%;
-  }
-  &__img-idcard {
-    position: absolute;
-    top: 218px;
-    right: -8.5%;
-  }
   &__header {
     text-align: center;
     color: $white-color;
-    padding: 14rem 0 7rem 0;
+    padding: 180px 0 78px 0;
     &-title {
       font-family: "Raleway", sans-serif;
       font-style: italic;
-      font-size: 65px;
-      font-weight: bold;
+      font-size: 60px;
+      font-weight: 600;
+      margin-bottom: 0;
     }
     &-title-second {
       font-family: "Raleway", sans-serif;
-      font-size: 32px;
-      font-weight: 400;
+      font-size: 23px;
+      font-weight: 500;
+      margin-bottom: 0;
     }
   }
 
   &-container {
-    background-color: $white-color;
-    width: 1468px;
+    max-width: 980px;
+    width: 90%;
     margin: auto;
-    padding: 70px 130px;
-    border-radius: 2rem;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 1rem;
   }
   &-service {
     padding-bottom: 3rem;
@@ -93,263 +71,133 @@ $white-color: #ffffff;
     &__subject {
       margin-bottom: 1.5rem;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 24px;
     }
-  }
-}
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) and (max-width: 1919.98px) {
-  .terms {
-    &__img-hourglass {
-      width: 13%;
-      top: 1%;
-      right: 11%;
-    }
-    &__img-gift {
-      width: 13%;
-      top: 1%;
-      left: 11%;
-    }
-    &__img-icon-1 {
-      width: 8%;
-      top: 30%;
-      right: -1%;
-    }
-    &__header {
-      padding: 10rem 0 7rem 0;
-    }
-    &-container {
-      max-width: 1140px;
+    &__content {
+      &--note {
+        &-number {
+          list-style: decimal !important;
+          padding-left: 3rem !important;
+          li {
+            margin-bottom: 0.25rem !important;
+          }
+        }
+        &-dash {
+          list-style-type: "- " !important;
+          padding-left: 3rem !important;
+          li {
+            text-indent: 5px;
+            margin-bottom: 0.25rem !important;
+          }
+        }
+        &-circle {
+          list-style: disc !important;
+          padding-left: 3rem !important;
+          li {
+            margin-bottom: 0.25rem !important;
+          }
+        }
+      }
     }
   }
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media screen and (max-width: 1024px) {
   .terms {
-    &__img-hourglass {
-      width: 13%;
-      top: 1%;
-      right: 8%;
+    background-size: 140% auto, 1280px auto;
+    &__header {
+      padding: 18vw 0 7vw 0;
+      &-title {
+        font-size: 50px;
+      }
+      &-title-second {
+        font-size: 21px;
+      }
     }
-    &__img-gift {
-      width: 13%;
-      top: 1%;
-      left: 8%;
+    &-service {
+      padding-bottom: 3vw;
+      &__subject {
+        margin-bottom: 2vw;
+        font-weight: bold;
+        font-size: 2.4vw;
+      }
     }
-    &__img-icon-1 {
-      width: 8%;
-      top: 30%;
-      right: -3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .terms {
+    background: url(../images/common/bg_kyc_s.png) no-repeat center 50px,
+      url(../images/common/bg1.png) repeat-y center top;
+    background-size: 100% auto;
+
+    ul {
+      li {
+        font-size: 3.5vw;
+        line-height: 1.5;
+      }
     }
     &__header {
-      padding: 10rem 0 7rem 0;
+      padding: 15vw 0 7vw 0;
+      &-title {
+        font-size: 11vw;
+      }
+      &-title-second {
+        font-size: 4vw;
+      }
     }
     &-container {
       max-width: 90%;
-    }
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .terms {
-    font-size: 15px;
-    ul {
-      li {
-        margin-bottom: 1.25rem;
-      }
-    }
-    &__img-icon-1 {
-      width: 9%;
-      top: 30%;
-      right: -4%;
-    }
-    &__img-hourglass {
-      width: 15%;
-      top: 0.65%;
-      right: 4%;
-    }
-    &__img-gift {
-      width: 15%;
-      top: 0.65%;
-      left: 4%;
-    }
-    &__header {
-      padding: 6rem 0 4rem 0;
-    }
-    &-container {
-      max-width: 90%;
-      padding: 50px;
+      padding: 10% 5%;
     }
     &-service {
-      padding-bottom: 2.5rem;
+      padding-bottom: 3vw;
       &__subject {
-        margin-bottom: 1.25rem;
-        font-size: 15px;
+        font-weight: bold;
+        font-size: 4vw;
+      }
+      &__content {
+        &--note {
+          &-number {
+            list-style: decimal !important;
+            padding-left: 6vw !important;
+            li {
+              margin-bottom: 0.5vw !important;
+            }
+          }
+          &-dash {
+            list-style-type: "- " !important;
+            padding-left: 6vw !important;
+            li {
+              text-indent: 0vw;
+              margin-bottom: 0.5vw !important;
+            }
+          }
+          &-circle {
+            list-style: disc !important;
+            padding-left: 6vw !important;
+            li {
+              margin-bottom: 0.5vw !important;
+            }
+          }
+        }
       }
     }
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .terms {
-    font-size: 14.5px;
-    ul {
-      li {
-        margin-bottom: 1.2rem;
-      }
-    }
-    &__img-icon-1 {
-      display: none;
-    }
-    &__img-hourglass {
-      width: 15%;
-      top: 0.5%;
-      right: 4%;
-    }
-    &__img-gift {
-      width: 15%;
-      top: 0.5%;
-      left: 4%;
-    }
-    &__header {
-      padding: 5rem 0 2rem 0;
-      &-title {
-        font-style: italic;
-        font-size: 45px;
-      }
-      &-title-second {
-        font-size: 2rem;
-        font-weight: 400;
-      }
-    }
-    &-container {
-      max-width: 85%;
-      padding: 35px;
-    }
-    &-service {
-      padding-bottom: 2.25rem;
-      &__subject {
-        margin-bottom: 1.2rem;
-        font-size: 14.5px;
-      }
-    }
-  }
-}
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  .terms {
-    font-size: 14.5px;
-    ul {
-      li {
-        margin-bottom: 1rem;
-      }
-    }
-    &__img-icon-1 {
-      display: none;
-    }
-    &__img-hourglass {
-      display: none;
-    }
-    &__img-gift {
-      display: none;
-    }
-    &__header {
-      padding: 4rem 0 2rem 0;
-      &-title {
-        font-style: italic;
-        font-size: 5rem;
-      }
-      &-title-second {
-        font-size: 2rem;
-        font-weight: 400;
-      }
-    }
-
-    &-container {
-      max-width: 85%;
-      padding: 35px;
-    }
-    &-service {
-      padding-bottom: 2rem;
-      &__subject {
-        margin-bottom: 1rem;
-        font-size: 14.5px;
-      }
-    }
-  }
-}
 @media screen and (max-width: 480px) {
   .terms {
-    font-size: 13.5px;
-    &__img-icon-1 {
-      display: none;
-    }
-    &__img-hourglass {
-      display: none;
-    }
-    &__img-gift {
-      display: none;
-    }
     &__header {
-      padding: 3rem 0;
-      &-title {
-        font-style: italic;
-
-        font-size: 3rem;
-      }
-      &-title-second {
-        font-size: 1.5rem;
-      }
-    }
-    &-container {
-      max-width: 95%;
-      padding: 25px;
+      padding: 20vw 0 8vw 0;
     }
   }
 }
 
 @media screen and (max-width: 320px) {
   .terms {
-    font-size: 12px;
-    ul {
-      li {
-        margin-bottom: 1rem;
-      }
-    }
-    &__img-icon-1 {
-      display: none;
-    }
-    &__img-hourglass {
-      display: none;
-    }
-    &__img-gift {
-      display: none;
-    }
     &__header {
-      padding: 3rem 0;
-      &-title {
-        font-style: italic;
-
-        font-size: 3rem;
-      }
-      &-title-second {
-        font-size: 1.5rem;
-      }
-    }
-    &-container {
-      max-width: 95%;
-      padding: 25px;
-    }
-    &-service {
-      padding-bottom: 1rem;
-      &__subject {
-        margin-bottom: 1rem;
-        font-size: 12px;
-      }
+      padding: 25vw 0 8vw 0;
     }
   }
 }
