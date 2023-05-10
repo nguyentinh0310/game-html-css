@@ -92,7 +92,7 @@ $yellow-color: #edf700;
       font-size: 23px;
       margin-bottom: 0;
     }
-    &-comming-logo {
+    &-coming-logo {
       position: absolute;
       top: 25%;
       right: 15%;
@@ -316,20 +316,18 @@ $yellow-color: #edf700;
     }
   }
 
-  .up-comming {
-    &__list {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 30px;
-      .card {
-        border: none;
+  .up-coming {
+    .card {
+      border: none;
+      &-item {
         border-radius: 10px;
-        &-img {
-          padding: 1rem;
-        }
-        &-title {
-          text-align: center;
-        }
+      }
+      &-img {
+        padding: 1rem;
+      }
+      &-title {
+        text-align: center;
+        margin-top: 10px;
       }
     }
   }
@@ -503,7 +501,7 @@ $yellow-color: #edf700;
       &-top {
         padding: 18vw 0 7vw 0;
       }
-      &-comming-logo {
+      &-coming-logo {
         right: 0;
         top: 5%;
       }

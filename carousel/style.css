@@ -11,3 +11,54 @@
 .slick-next:before {
   color: black;
 }
+
+
+/* .card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+.card-list .card {
+  border: none;
+  border-radius: 10px;
+}
+.card-list .card-img {
+  padding: 1rem;
+}
+.card-list .card-title {
+  text-align: center;
+} */
+
+
+.slider {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.slick-dots{
+  display: none !important;
+}
+.slider-item {
+  margin-right: -10px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+
+}
+
+.card-item {
+  display: inline-block;
+  /* padding: 0 10px; */
+  vertical-align: top;
+}
+
+
+.card-img {
+  padding: 1rem;
+}
+
+.card-title {
+  text-align: center;
+}

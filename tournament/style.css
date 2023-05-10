@@ -81,7 +81,7 @@
   font-size: 23px;
   margin-bottom: 0;
 }
-.tournament .header-comming-logo {
+.tournament .header-coming-logo {
   position: absolute;
   top: 25%;
   right: 15%;
@@ -282,20 +282,18 @@
   font-family: "Bebas Neue", cursive;
   letter-spacing: 1px;
 }
-.tournament .up-comming__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 30px;
-}
-.tournament .up-comming__list .card {
+.tournament .up-coming .card {
   border: none;
+}
+.tournament .up-coming .card-item {
   border-radius: 10px;
 }
-.tournament .up-comming__list .card-img {
+.tournament .up-coming .card-img {
   padding: 1rem;
 }
-.tournament .up-comming__list .card-title {
+.tournament .up-coming .card-title {
   text-align: center;
+  margin-top: 10px;
 }
 .tournament .result-list {
   display: grid;
@@ -449,7 +447,7 @@
   .tournament .header-top {
     padding: 18vw 0 7vw 0;
   }
-  .tournament .header-comming-logo {
+  .tournament .header-coming-logo {
     right: 0;
     top: 5%;
   }
