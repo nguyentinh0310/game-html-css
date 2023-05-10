@@ -61,9 +61,11 @@ $white-color: #ffffff;
   }
   &__form {
     &-group {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
       margin-bottom: 40px;
-      &:nth-child(2){
-        margin-bottom: 0 ;
+      &:nth-child(2) {
+        margin-bottom: 0;
       }
     }
     .col-form-label {
@@ -157,10 +159,12 @@ $white-color: #ffffff;
     }
     &__form {
       &-group {
-        margin-bottom: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 2vw;
       }
       &-control {
-        height: calc(2.25rem + 2px) !important;
+        height: calc(3.25rem + 2px) !important;
       }
       &-checkbox {
         margin-top: 7vw;
@@ -193,6 +197,11 @@ $white-color: #ffffff;
   .login {
     &__header {
       padding: 20vw 0 8vw 0;
+    }
+    &__form {
+      &-control {
+        height: calc(2.25rem + 2px) !important;
+      }
     }
   }
 }

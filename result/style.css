@@ -6,7 +6,7 @@
   width: 100%;
   min-height: 100vh;
   background: url(../images/common/bg_kyc.png) no-repeat center 140px, url(../images/common/bg1.png) repeat-y center top;
-  background-size: 1474px auto, auto;
+  background-size: 1474px auto, 100% auto;
   padding-bottom: 20rem;
   font-size: 16px;
 }
@@ -21,6 +21,23 @@
 }
 .result label {
   margin: 0;
+}
+.result span {
+  color: inherit;
+}
+.result select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6'%3E%3Cpath d='M0 0l6 6 6-6z'/%3E%3C/svg%3E");
+  background-position: right 3rem center;
+  background-repeat: no-repeat;
+  background-size: 12px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
 }
 .result .img-thumbnail {
   border: none !important;
@@ -43,11 +60,18 @@
   font-weight: 500;
   margin-bottom: 0;
 }
+.result-select {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 21px !important;
+  padding: 5px 3rem;
+  height: 50px;
+  cursor: pointer;
+}
 .result-container {
   max-width: 980px;
   width: 90%;
   margin: auto;
-  padding: 60px;
   border-radius: 1rem;
 }
 .result-slick {
@@ -58,10 +82,10 @@
 }
 .result-date {
   background-color: #292929;
-  color: #ffffff;
-  font-size: 18px;
+  color: #ffffff !important;
+  font-size: 20px;
   border-radius: 3rem;
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   margin-right: 1rem;
 }
 .result-date:last-child {
@@ -69,21 +93,29 @@
 }
 .result-date.active {
   background-color: #edf700;
-  color: #292929;
+  color: #292929 !important;
+}
+.result-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem 15px;
 }
 .result .card {
+  border: none;
   border-radius: 10px;
 }
 .result .card-header {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #292929;
+  font-size: 21px;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
 .result .card-title {
   text-align: center;
+  font-size: 21px;
 }
 .result .card-prize {
   position: relative;
@@ -93,7 +125,7 @@
   border-radius: 10px;
   border: 3px solid #f59700;
   margin: 10px 0;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 .result .card-prize::after {
   content: "Prize";
@@ -101,11 +133,13 @@
   position: absolute;
   left: 0;
   top: 0;
-  font-size: 24px;
-  color: red;
-  transform: translateY(-12px);
+  font-size: x-large;
   font-weight: bold;
+  color: #fff;
+  transform: translateY(-12px);
   z-index: 2;
+  -webkit-text-stroke: 2px #f59700;
+  text-stroke: 2px #f59700;
 }
 .result .card .prize-list {
   font-size: 15px;
@@ -114,13 +148,21 @@
 .result .card .prize-item {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  margin-bottom: 1rem;
+}
+.result .card .prize-item:first-child {
+  color: #fc0a5d;
+}
+.result .card .prize-item:nth-child(2) {
+  color: #0093ff;
+}
+.result .card .prize-item:nth-child(3) {
+  color: #2bb450;
+}
+.result .card .prize-winner {
+  overflow: hidden;
 }
 
-@media screen and (min-width: 1260px) {
-  .result {
-    background-size: 1474px auto, 100% auto;
-  }
-}
 @media screen and (max-width: 1024px) {
   .result {
     background-size: 140% auto, 1280px auto;
@@ -134,15 +176,30 @@
   .result__header-title-second {
     font-size: 21px;
   }
+  .result-date {
+    font-size: 2vw;
+    padding: 1vw 2.2vw;
+    margin-right: 1vw;
+  }
+  .result .card-header {
+    font-size: 2.3vw;
+  }
+  .result .card-title {
+    font-size: 2.3vw;
+  }
 }
 @media screen and (max-width: 768px) {
   .result {
     background: url(../images/common/bg_kyc_s.png) no-repeat center 50px, url(../images/common/bg1.png) repeat-y center top;
     background-size: 100% auto;
+    font-size: 3.5vw;
   }
   .result ul li {
     font-size: 3.5vw;
     line-height: 1.5;
+  }
+  .result select {
+    background-position: right 3vw center;
   }
   .result__header {
     padding: 15vw 0 7vw 0;
@@ -153,16 +210,111 @@
   .result__header-title-second {
     font-size: 4vw;
   }
-  .result-container {
-    max-width: 90%;
-    padding: 10% 5%;
+  .result-select {
+    height: 7vw;
+    padding: 1vw 3vw;
+    font-size: 3.5vw !important;
   }
-  .result-service {
-    padding-bottom: 3vw;
+  .result-slick {
+    margin-top: 6vw;
+    margin-bottom: 6vw;
   }
-  .result-service__subject {
-    font-weight: bold;
-    font-size: 4vw;
+  .result-date {
+    background-color: #292929;
+    color: #ffffff !important;
+    border-radius: 2rem;
+    font-size: 3.5vw;
+    padding: 1vw 2vw;
+    margin-right: 1vw;
+  }
+  .result-date:last-child {
+    margin-right: 0;
+  }
+  .result-date.end-item {
+    display: none;
+  }
+  .result-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4vw 3vw;
+  }
+  .result .card {
+    border-radius: 15px;
+  }
+  .result .card-header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 2vw;
+  }
+  .result .card-title {
+    text-align: center;
+    font-size: 3vw;
+  }
+  .result .card-prize {
+    border-radius: 15px;
+    margin: 4vw 0;
+    padding-top: 15px;
+  }
+  .result .card-prize::after {
+    font-size: 5vw;
+    transform: translateY(-2vw);
+  }
+  .result .card-prize p {
+    margin-bottom: 2.5vw;
+  }
+  .result .card .prize-list {
+    padding: 0 2vw;
+  }
+  .result .card .prize-item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-bottom: 1vw;
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 540px) {
+  .result {
+    font-size: 6vw;
+  }
+  .result select {
+    background-position: right 3vw center;
+  }
+  .result__header {
+    padding: 20vw 0 8vw 0;
+  }
+  .result-select {
+    width: 100%;
+    height: 10vw;
+    padding: 1vw 3vw;
+  }
+  .result-date {
+    font-size: 3.7vw;
+  }
+  .result-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4vw 0;
+  }
+  .result .card-title {
+    text-align: center;
+    font-size: 6vw;
+  }
+  .result .card-prize {
+    margin: 4vw 0;
+    padding-top: 4vw;
+  }
+  .result .card-prize::after {
+    font-size: 8vw;
+    transform: translateY(-3vw);
+  }
+  .result .card-prize p {
+    margin-bottom: 4vw;
+  }
+  .result .card .prize-list {
+    padding: 0 5vw;
+  }
+  .result .card .prize-item {
+    font-size: 5vw;
   }
 }
 @media screen and (max-width: 480px) {

@@ -22,36 +22,19 @@
   </head>
   <body>
     <section class="my-page">
-      <div class="img">
-        <img
-          src="../images/common/gift.png"
-          class="img-thumbnail my-page__img-gift"
-          alt=""
-        />
-        <img
-          src="../images/common/hourglass.png"
-          class="img-thumbnail my-page__img-hourglass"
-          alt=""
-        />
-        <img
-          src="../images/common/icon-1.png"
-          class="img-thumbnail my-page__img-icon-1"
-          alt=""
-        />
-      </div>
       <div class="my-page__header">
         <h2 class="my-page__header-title">My page</h2>
         <h3 class="my-page__header-title-second">マイページ</h3>
       </div>
-      <div class="my-page-information">
-        <a href="#" class="btn btn-personal-info">個人情報</a>
-        <a href="#" class="btn btn-account-info">口座情報</a>
-      </div>
+      <!-- <div class="my-page-information">
+        <a href="#" class="btn btn-information active">個人情報</a>
+        <a href="#" class="btn btn-information">口座情報</a>
+      </div> -->
       <div class="my-page-container">
         <form class="my-page__form">
-          <div class="form-group my-page__form-group row">
-            <label class="col-md-3 col-sm-12 col-form-label">ログインID</label>
-            <div class="col-md-9 col-sm-12">
+          <div class="form-group my-page__form-group">
+            <label class="col-form-label">ログインID</label>
+            <div>
               <input
                 type="text"
                 class="form-control my-page__form-control"
@@ -60,9 +43,9 @@
               />
             </div>
           </div>
-          <div class="form-group my-page__form-group row">
-            <label class="col-md-3 col-sm-12 col-form-label">Eメール</label>
-            <div class="col-md-9 col-sm-12">
+          <div class="form-group my-page__form-group">
+            <label class="col-form-label">Eメール</label>
+            <div>
               <input
                 type="email"
                 class="form-control my-page__form-control"
@@ -71,9 +54,9 @@
               />
             </div>
           </div>
-          <div class="form-group my-page__form-group row">
-            <label class="col-md-3 col-sm-12 col-form-label">ポイント数</label>
-            <div class="col-md-9 col-sm-12">
+          <div class="form-group my-page__form-group">
+            <label class="col-form-label">ポイント数</label>
+            <div>
               <input
                 type="text"
                 class="form-control my-page__form-control"
@@ -84,7 +67,7 @@
           </div>
 
           <div class="d-flex justify-content-center">
-            <button type="submit" class="btn my-page__form-button-personal">
+            <button type="submit" class="btn btn-point-charge">
               ポイントチャージ
             </button>
           </div>
@@ -92,81 +75,66 @@
       </div>
       <div class="my-page-container mt-3">
         <form class="my-page__form">
-          <div class="form-group my-page__form-group row">
-            <label class="col-md-3 col-sm-12 col-form-label"
-              >ニックネーム</label
-            >
-            <div class="col-md-9 col-sm-12">
-              <input
-                type="text"
-                class="form-control my-page__form-control"
-              />
+          <div class="form-group my-page__form-group">
+            <label class="col-form-label">ニックネーム</label>
+            <div>
+              <input type="text" class="form-control my-page__form-control" />
             </div>
           </div>
           <div class="d-flex justify-content-end">
-            <button type="submit" class="btn my-page__form-button-updated">
-                更新
+            <button type="submit" class="btn btn-renew">
+              更新
             </button>
           </div>
         </form>
 
         <form class="my-page__form">
-          <div class="form-group my-page__form-group row">
-            <label class="col-md-3 col-sm-12 col-form-label"
-              >メールアドレス</label
-            >
-            <div class="col-md-9 col-sm-12">
+          <div class="form-group my-page__form-group">
+            <label class="col-form-label">メールアドレス</label>
+            <div>
+              <input type="text" class="form-control my-page__form-control" />
+            </div>
+          </div>
+          <div class="form-group my-page__form-group">
+            <label class="col-form-label">メールアドレス（確認）</label>
+            <div>
+              <input type="text" class="form-control my-page__form-control" />
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-renew">
+              更新
+            </button>
+          </div>
+        </form>
+
+        <form class="my-page__form">
+          <div class="form-group my-page__form-group">
+            <label class="col-form-label">パスワード</label>
+            <div>
               <input
-                type="text"
+                type="password"
                 class="form-control my-page__form-control"
               />
             </div>
           </div>
-          <div class="form-group my-page__form-group row">
-            <label class="col-md-3 col-sm-12 col-form-label">メールアドレス（確認）</label>
-            <div class="col-md-9 col-sm-12">
+          <div class="form-group my-page__form-group">
+            <label class="col-form-label">パスワード（確認）</label>
+            <div>
               <input
-                type="text"
+                type="password"
                 class="form-control my-page__form-control"
               />
             </div>
           </div>
 
           <div class="d-flex justify-content-end">
-            <button type="submit" class="btn my-page__form-button-updated">
-                更新
+            <button type="submit" class="btn btn-renew">
+              更新
             </button>
           </div>
         </form>
-
-        <form class="my-page__form">
-            <div class="form-group my-page__form-group row">
-              <label class="col-md-3 col-sm-12 col-form-label"
-                >パスワード</label
-              >
-              <div class="col-md-9 col-sm-12">
-                <input
-                  type="password"
-                  class="form-control my-page__form-control"
-                />
-              </div>
-            </div>
-            <div class="form-group my-page__form-group row">
-              <label class="col-md-3 col-sm-12 col-form-label">パスワード（確認）</label>
-              <div class="col-md-9 col-sm-12">
-                <input
-                  type="password"
-                  class="form-control my-page__form-control"
-                />
-              </div>
-            </div>
-  
-            <div class="d-flex justify-content-end">
-              <button type="submit" class="btn my-page__form-button-updated">
-                  更新
-              </button>
-            </div>
-          </form>
       </div>
     </section>
 

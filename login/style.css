@@ -48,6 +48,8 @@
   border-radius: 1rem;
 }
 .login__form-group {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   margin-bottom: 40px;
 }
 .login__form-group:nth-child(2) {
@@ -137,10 +139,12 @@
     padding: 10% 5%;
   }
   .login__form-group {
-    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 2vw;
   }
   .login__form-control {
-    height: calc(2.25rem + 2px) !important;
+    height: calc(3.25rem + 2px) !important;
   }
   .login__form-checkbox {
     margin-top: 7vw;
@@ -169,6 +173,9 @@
 @media screen and (max-width: 480px) {
   .login__header {
     padding: 20vw 0 8vw 0;
+  }
+  .login__form-control {
+    height: calc(2.25rem + 2px) !important;
   }
 }
 @media screen and (max-width: 320px) {

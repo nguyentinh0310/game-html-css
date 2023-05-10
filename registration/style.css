@@ -19,6 +19,7 @@
 }
 .registration .link {
   color: #0056b3;
+  text-decoration: underline;
 }
 .registration__header {
   text-align: center;
@@ -47,6 +48,8 @@
   border-radius: 1rem;
 }
 .registration__form-group {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   margin-bottom: 40px;
 }
 .registration__form .col-form-label {
@@ -108,7 +111,7 @@
     height: calc(3.25rem + 2px) !important;
   }
   .registration__form-check {
-    padding: 1vw 15vw;
+    padding: 1vw 0vw 1vw 7vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -133,10 +136,12 @@
     padding: 10% 5%;
   }
   .registration__form-group {
-    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 2vw;
   }
   .registration__form-control {
-    height: calc(2.25rem + 2px) !important;
+    height: calc(3.25rem + 2px) !important;
   }
   .registration__form-checkbox {
     margin-top: 7vw;
@@ -166,13 +171,17 @@
   .registration__header {
     padding: 20vw 0 8vw 0;
   }
+  .registration__form-control {
+    height: calc(2.25rem + 2px) !important;
+  }
+  .registration__form-check-input {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 @media screen and (max-width: 320px) {
   .registration__header {
     padding: 25vw 0 8vw 0;
-  }
-  .registration label {
-    font-size: 2.5vw !important;
   }
   .registration__form-check {
     padding: 0vw 6vw;

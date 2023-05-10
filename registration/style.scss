@@ -30,6 +30,7 @@ $white-color: #ffffff;
 
   .link {
     color: #0056b3;
+    text-decoration: underline;
   }
   &__header {
     text-align: center;
@@ -60,6 +61,8 @@ $white-color: #ffffff;
   }
   &__form {
     &-group {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
       margin-bottom: 40px;
     }
     .col-form-label {
@@ -124,7 +127,7 @@ $white-color: #ffffff;
         height: calc(3.25rem + 2px) !important;
       }
       &-check {
-        padding: 1vw 15vw;
+        padding: 1vw 0vw 1vw 7vw;
       }
     }
   }
@@ -153,10 +156,12 @@ $white-color: #ffffff;
     }
     &__form {
       &-group {
-        margin-bottom: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 2vw;
       }
       &-control {
-        height: calc(2.25rem + 2px) !important;
+        height: calc(3.25rem + 2px) !important;
       }
       &-checkbox {
         margin-top: 7vw;
@@ -190,6 +195,17 @@ $white-color: #ffffff;
     &__header {
       padding: 20vw 0 8vw 0;
     }
+    &__form {
+      &-control {
+        height: calc(2.25rem + 2px) !important;
+      }
+      &-check {
+        &-input {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
   }
 }
 
@@ -198,9 +214,7 @@ $white-color: #ffffff;
     &__header {
       padding: 25vw 0 8vw 0;
     }
-    label {
-      font-size: 2.5vw !important;
-    }
+
     &__form {
       &-check {
         padding: 0vw 6vw;
