@@ -36,7 +36,7 @@
               />
             </div>
           </div>
-          <div class="layout-container">
+          <div class="main-container">
             <div class="row d-flex align-items-center">
               <div class="col-4 text-left">
                 <img
@@ -76,9 +76,9 @@
               />
             </div>
           </div>
-          <div class="container">
-            <div class="on-going__list slider">
-              <div class="card on-going__card">
+          <div class="layout-container">
+            <div class="on-going__list" id="slider-on-going">
+              <div class="card on-going__card mx-2">
                 <div class="ranking-img">
                   <img
                     src="../images/tournament/ranking.png"
@@ -229,12 +229,139 @@
                       </div>
                     </div>
                   </div>
-                  <hr />
-                  <div class="tournament-play">
+                  <hr>
+                  <div class="d-flex justify-content-center">
                     <a href="#" class="btn btn-play">Play</a>
                   </div>
                 </div>
-
+              </div>
+              <div class="card on-going__card mx-2">
+                <div class="ranking-img">
+                  <img
+                    src="../images/tournament/ranking.png"
+                    class="img-thumbnail"
+                    alt="tournament thumbnail"
+                  />
+                </div>
+                <div class="card-body rank-content">
+                  <!-- rank cup -->
+                  <div class="rank-cup-list rank-cup-list--ongoing">
+                    <div class="rank-cup-item rank-cup-item--2nd">
+                      <span class="numerical">2nd</span>
+                      <img
+                        src="../images/tournament/a9.png"
+                        class="img-thumbnail cup-img"
+                        alt="tournament thumbnail"
+                      />
+                      <span class="point">5000pt</span>
+                    </div>
+                    <div class="rank-cup-item rank-cup-item--1st">
+                      <span class="numerical">1st</span>
+                      <img
+                        src="../images/tournament/a8.png"
+                        class="img-thumbnail cup-img"
+                        alt="tournament thumbnail"
+                      />
+                      <span class="point">10000pt</span>
+                    </div>
+                    <div class="rank-cup-item rank-cup-item--3rd">
+                      <span class="numerical">3nd</span>
+                      <img
+                        src="../images/tournament/a10.png"
+                        class="img-thumbnail cup-img"
+                        alt="tournament thumbnail"
+                      />
+                      <span class="point">3000pt</span>
+                    </div>
+                  </div>
+                  <hr class="border-accordion" />
+                  <!-- rank list -->
+                  <div class="rank-tour-list">
+                    <div class="rank-tour-item"></div>
+                    <div class="rank-tour-item"></div>
+                    <div class="rank-tour-item"></div>
+                    <div class="rank-tour-item"></div>
+                    <div class="rank-tour-item"></div>
+                    <div class="rank-tour-item"></div>
+                    <div class="rank-tour-item"></div>
+                  </div>
+                  <hr />
+                  <div class="rank-game-list">
+                    <div class="card rank-game-img">
+                      <div class="card-header title"></div>
+                      <img
+                        src="../images/common/island.png"
+                        class="img-thumbnail"
+                        alt="thumbnail"
+                      />
+                    </div>
+                    <div class="rank-game-item">
+                      <figcaption class="game-year">
+                        2023/06/01 ~ 2023/06/30
+                      </figcaption>
+                      <div class="st-rank">
+                        <img
+                          src="../images/tournament/a44.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
+                        <div class="v-point">
+                          <span>
+                            <img
+                              src="../images/tournament/icon/icon-btc-st.png"
+                              class="img-thumbnail thumbnail-point"
+                              alt="thumbnail"
+                            />
+                          </span>
+                          <span> 100,000 </span>
+                        </div>
+                      </div>
+                      <div class="st-rank">
+                        <img
+                          src="../images/tournament/a55.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
+                        <div class="v-point">
+                          <span>
+                            <img
+                              src="../images/tournament/icon/icon-eth-st.png"
+                              class="img-thumbnail thumbnail-point"
+                              alt="thumbnail"
+                            />
+                          </span>
+                          <span> 10,000 </span>
+                        </div>
+                      </div>
+                      <div class="st-rank">
+                        <img
+                          src="../images/tournament/a66.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
+                        <div class="v-point">
+                          <span>
+                            <img
+                              src="../images/tournament/icon/icon-btc-st.png"
+                              class="img-thumbnail thumbnail-point"
+                              alt="thumbnail"
+                            />
+                          </span>
+                          <span> 20,000 </span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center">
+                        <button class="btn btn-more-rank" id="btn-more">
+                          More
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-play">Play</a>
+                  </div>
+                </div>
                 <div class="rank-prize">
                   <div class="rank-prize-list rank-cup-list--ongoing">
                     <div class="rank-prize-item">
@@ -310,122 +437,114 @@
                         <span class="money-text">12345678</span>
                       </div>
                     </div>
+                    <div class="rank-prize-item">
+                      <div class="number">
+                        <span class="number-text">5th</span>
+                      </div>
+                      <div class="money">
+                        <span>
+                          <img
+                            src="../images/tournament/icon/icon-btc-st.png"
+                            class="img-thumbnail thumbnail-money"
+                            alt="thumbnail"
+                          />
+                        </span>
+                        <span class="money-text">12345678</span>
+                      </div>
+                    </div>
+                    <div class="rank-prize-item">
+                      <div class="number">
+                        <span class="number-text">6th</span>
+                      </div>
+                      <div class="money">
+                        <span>
+                          <img
+                            src="../images/tournament/icon/icon-btc-st.png"
+                            class="img-thumbnail thumbnail-money"
+                            alt="thumbnail"
+                          />
+                        </span>
+                        <span class="money-text">12345678</span>
+                      </div>
+                    </div>
+                    <div class="rank-prize-item">
+                      <div class="number">
+                        <span class="number-text">7th</span>
+                      </div>
+                      <div class="money">
+                        <span>
+                          <img
+                            src="../images/tournament/icon/icon-btc-st.png"
+                            class="img-thumbnail thumbnail-money"
+                            alt="thumbnail"
+                          />
+                        </span>
+                        <span class="money-text">12345678</span>
+                      </div>
+                    </div>
+                    <div class="rank-prize-item">
+                      <div class="number">
+                        <span class="number-text">8th</span>
+                      </div>
+                      <div class="money">
+                        <span>
+                          <img
+                            src="../images/tournament/icon/icon-btc-st.png"
+                            class="img-thumbnail thumbnail-money"
+                            alt="thumbnail"
+                          />
+                        </span>
+                        <span class="money-text">12345678</span>
+                      </div>
+                    </div>
+                    <div class="rank-prize-item">
+                      <div class="number">
+                        <span class="number-text">9th</span>
+                      </div>
+                      <div class="money">
+                        <span>
+                          <img
+                            src="../images/tournament/icon/icon-btc-st.png"
+                            class="img-thumbnail thumbnail-money"
+                            alt="thumbnail"
+                          />
+                        </span>
+                        <span class="money-text">12345678</span>
+                      </div>
+                    </div>
+                    <div class="rank-prize-item">
+                      <div class="number">
+                        <span class="number-text">10th</span>
+                      </div>
+                      <div class="money">
+                        <span>
+                          <img
+                            src="../images/tournament/icon/icon-btc-st.png"
+                            class="img-thumbnail thumbnail-money"
+                            alt="thumbnail"
+                          />
+                        </span>
+                        <span class="money-text">12345678</span>
+                      </div>
+                    </div>
                     <div class="d-flex justify-content-center">
-                      <button class="btn btn-close">More</button>
+                      <button class="btn btn-close" id="btn-close">
+                        Close
+                      </button>
                     </div>
                   </div>
                 </div>
+      
               </div>
-              <div class="card on-going__card">
-                <div class="ranking-img">
-                  <img
-                    src="../images/tournament/ranking.png"
-                    class="img-thumbnail"
-                    alt="tournament thumbnail"
-                  />
-                </div>
-                <div class="card-body rank-content">
-                  <!-- rank cup -->
-                  <div class="rank-cup-list rank-cup-list--ongoing">
-                    <div class="rank-cup-item rank-cup-item--2nd">
-                      <span class="numerical">2nd</span>
-                      <img
-                        src="../images/tournament/a9.png"
-                        class="img-thumbnail cup-img"
-                        alt="tournament thumbnail"
-                      />
-                      <span class="point">5000pt</span>
-                    </div>
-                    <div class="rank-cup-item rank-cup-item--1st">
-                      <span class="numerical">1st</span>
-                      <img
-                        src="../images/tournament/a8.png"
-                        class="img-thumbnail cup-img"
-                        alt="tournament thumbnail"
-                      />
-                      <span class="point">10000pt</span>
-                    </div>
-                    <div class="rank-cup-item rank-cup-item--3rd">
-                      <span class="numerical">3nd</span>
-                      <img
-                        src="../images/tournament/a10.png"
-                        class="img-thumbnail cup-img"
-                        alt="tournament thumbnail"
-                      />
-                      <span class="point">3000pt</span>
-                    </div>
-                  </div>
-                  <hr class="border-accordion" />
-                  <!-- rank list -->
-                  <div class="rank-tour-list">
-                    <div class="rank-tour-item"></div>
-                    <div class="rank-tour-item"></div>
-                    <div class="rank-tour-item"></div>
-                    <div class="rank-tour-item"></div>
-                    <div class="rank-tour-item"></div>
-                    <div class="rank-tour-item"></div>
-                    <div class="rank-tour-item"></div>
-                  </div>
-                  <hr />
-                  <div class="rank-game-list">
-                    <div class="card rank-game-img">
-                      <div class="card-header title"></div>
-                      <img
-                        src="../images/common/island.png"
-                        class="img-thumbnail"
-                        alt="thumbnail"
-                      />
-                    </div>
-                    <div class="rank-game-item">
-                      <figcaption class="game-year">
-                        2023/06/01 ~ 2023/06/30
-                      </figcaption>
-                      <div class="st-rank">
-                        <img
-                          src="../images/tournament/a44.png"
-                          class="img-thumbnail"
-                          alt="thumbnail"
-                        />
-                        <div class="v-point"></div>
-                      </div>
-                      <div class="st-rank">
-                        <img
-                          src="../images/tournament/a55.png"
-                          class="img-thumbnail"
-                          alt="thumbnail"
-                        />
-                        <div class="v-point"></div>
-                      </div>
-                      <div class="st-rank">
-                        <img
-                          src="../images/tournament/a66.png"
-                          class="img-thumbnail"
-                          alt="thumbnail"
-                        />
-                        <div class="v-point"></div>
-                      </div>
-                      <div class="d-flex justify-content-center">
-                        <button class="btn btn-more-rank">More</button>
-                      </div>
-                    </div>
-                  </div>
-                  <hr />
-                  <div class="tournament-play">
-                    <a href="#" class="btn btn-play">Play</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tournament-btn">
-              <a href="#" class="btn btn-see-more">See more</a>
+           
             </div>
           </div>
         </section>
 
         <!-- UP COMMING -->
-        <section class="up-comming">
-          <div class="header">
-            <div class="header-comming-logo">
+        <section class="up-coming">
+          <div class="header header-up-coming">
+            <div class="header-coming-logo">
               <img
                 src="../images/tournament/a1.png"
                 class="img-thumbnail"
@@ -443,7 +562,43 @@
             </div>
           </div>
           <div class="layout-container">
-            <div class="slider">
+            <div class="card-list" id="slider-up-coming">
+              <div class="card card-item mx-2">
+                <div class="card-body">
+                  <img
+                    class="card-img img-thumbnail"
+                    src="../images/common/jungle.png"
+                    alt="thumbnail"
+                  />
+                  <figcaption class="card-title">
+                    2023/06/01 ~ 2023/06/30
+                  </figcaption>
+                </div>
+              </div>
+              <div class="card card-item mx-2">
+                <div class="card-body">
+                  <img
+                    class="card-img img-thumbnail"
+                    src="../images/common/island.png"
+                    alt="thumbnail"
+                  />
+                  <figcaption class="card-title">
+                    2023/06/01 ~ 2023/06/30
+                  </figcaption>
+                </div>
+              </div>
+              <div class="card card-item mx-2">
+                <div class="card-body">
+                  <img
+                    class="card-img img-thumbnail"
+                    src="../images/common/marine.png"
+                    alt="thumbnail"
+                  />
+                  <figcaption class="card-title">
+                    2023/06/01 ~ 2023/06/30
+                  </figcaption>
+                </div>
+              </div>
               <div class="card card-item mx-2">
                 <div class="card-body">
                   <img
@@ -504,7 +659,7 @@
               />
             </div>
           </div>
-          <div class="container">
+          <div class="main-container">
             <div class="result-list">
               <div class="card result-item">
                 <div class="card-body rank-content">
@@ -544,7 +699,7 @@
                             />
                           </span>
                         </span>
-                        <span> 5000pt </span>
+                        <span> 50000pt </span>
                       </span>
                       <span class="point">
                         <span>
@@ -635,57 +790,41 @@
                   <div class="rank-tour-list">
                     <div class="rank-tour-item">
                       <span class="numerical">4</span>
-                      <span class="name">UserName</span>
+                      <span class="name">はははててておお</span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-pt-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
-                        <span> 5000pt </span>
+                        <img
+                          src="../images/tournament/icon/icon-pt-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
+                        <span> 50000pt </span>
                       </span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-usd-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
-                        <span> 5000pt </span>
+                        <img
+                          src="../images/tournament/icon/icon-usd-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
+                        <span> 5.000.000 </span>
                       </span>
                     </div>
                     <div class="rank-tour-item">
                       <span class="numerical">5</span>
                       <span class="name">UserName</span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-pt-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
+                        <img
+                          src="../images/tournament/icon/icon-pt-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
                         <span> 5000pt </span>
                       </span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-usd-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
+                        <img
+                          src="../images/tournament/icon/icon-usd-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
                         <span> 5000pt </span>
                       </span>
                     </div>
@@ -693,27 +832,19 @@
                       <span class="numerical">6</span>
                       <span class="name">UserName</span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-pt-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
-                        <span> 5000pt </span>
+                        <img
+                          src="../images/tournament/icon/icon-pt-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
+                        <span> 50000pt </span>
                       </span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-usd-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
+                        <img
+                          src="../images/tournament/icon/icon-usd-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
                         <span> 5000pt </span>
                       </span>
                     </div>
@@ -721,27 +852,19 @@
                       <span class="numerical">7</span>
                       <span class="name">UserName</span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-pt-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
+                        <img
+                          src="../images/tournament/icon/icon-pt-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
                         <span> 5000pt </span>
                       </span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-usd-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
+                        <img
+                          src="../images/tournament/icon/icon-usd-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
                         <span> 5000pt </span>
                       </span>
                     </div>
@@ -749,27 +872,19 @@
                       <span class="numerical">8</span>
                       <span class="name">UserName</span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-pt-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
+                        <img
+                          src="../images/tournament/icon/icon-pt-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
                         <span> 5000pt </span>
                       </span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-usd-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
+                        <img
+                          src="../images/tournament/icon/icon-usd-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
                         <span> 5000pt </span>
                       </span>
                     </div>
@@ -777,27 +892,19 @@
                       <span class="numerical">9</span>
                       <span class="name">UserName</span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-pt-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
+                        <img
+                          src="../images/tournament/icon/icon-pt-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
                         <span> 5000pt </span>
                       </span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-usd-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
+                        <img
+                          src="../images/tournament/icon/icon-usd-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
                         <span> 5000pt </span>
                       </span>
                     </div>
@@ -805,27 +912,19 @@
                       <span class="numerical">10</span>
                       <span class="name">UserName</span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-pt-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
+                        <img
+                          src="../images/tournament/icon/icon-pt-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
                         <span> 5000pt </span>
                       </span>
                       <span class="point">
-                        <span>
-                          <span>
-                            <img
-                              src="../images/tournament/icon/icon-usd-r.png"
-                              class="img-thumbnail"
-                              alt="thumbnail"
-                            />
-                          </span>
-                        </span>
+                        <img
+                          src="../images/tournament/icon/icon-usd-r.png"
+                          class="img-thumbnail"
+                          alt="thumbnail"
+                        />
                         <span> 5000pt </span>
                       </span>
                     </div>
