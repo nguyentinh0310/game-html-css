@@ -7,7 +7,7 @@
   min-height: 100vh;
   background: url(../images/common/bg_kyc.png) no-repeat center 140px, url(../images/common/bg1.png) repeat-y center top;
   background-size: 1474px auto, auto;
-  padding-bottom: 20rem;
+  padding-bottom: 150px;
   font-size: 16px;
 }
 .verification ul {
@@ -20,6 +20,10 @@
 }
 .verification label {
   margin: 0;
+}
+.verification .link {
+  color: #0056b3;
+  text-decoration: underline;
 }
 .verification .img-thumbnail {
   border: none !important;
@@ -43,12 +47,20 @@
   margin-bottom: 0;
 }
 .verification-container {
+  position: relative;
   max-width: 980px;
   width: 90%;
+  height: 400px;
   margin: auto;
   padding: 60px;
   background-color: #fff;
   border-radius: 1rem;
+}
+.verification-notify {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .verification__text-title {
   color: #707070;
@@ -70,7 +82,7 @@
   font-size: 21px;
   font-weight: bold;
   color: #fff;
-  background-color: #EA701C;
+  background-color: #ea701c;
   text-decoration: none;
 }
 
@@ -78,6 +90,7 @@
   .verification {
     background: url(../images/common/bg_kyc_s.png) no-repeat center 50px, url(../images/common/bg1.png) repeat-y center top;
     background-size: 100% auto;
+    padding: 50px 0 15%;
   }
   .verification ul li {
     font-size: 3.5vw;
@@ -95,6 +108,7 @@
   .verification-container {
     max-width: 90%;
     padding: 10% 5%;
+    height: 45vw;
   }
   .verification-service {
     padding-bottom: 3vw;

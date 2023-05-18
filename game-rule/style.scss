@@ -8,7 +8,7 @@ $red-text: #b10606;
 $red-text-normal: #ff5555;
 $white-color: #ffffff;
 
-.game-rule {
+.verification {
   position: relative;
   font-family: "Noto Sans JP", sans-serif;
   width: 100%;
@@ -16,7 +16,7 @@ $white-color: #ffffff;
   background: url(../images/common/bg_kyc.png) no-repeat center 140px,
     url(../images/common/bg1.png) repeat-y center top;
   background-size: 1474px auto, auto;
-  padding-bottom: 20rem;
+  padding-bottom: 150px;
   font-size: 16px;
 
   ul {
@@ -29,6 +29,10 @@ $white-color: #ffffff;
   }
   label {
     margin: 0;
+  }
+  .link {
+    color: #0056b3;
+    text-decoration: underline;
   }
 
   .img-thumbnail {
@@ -54,12 +58,21 @@ $white-color: #ffffff;
   }
 
   &-container {
+    position: relative;
     max-width: 980px;
     width: 90%;
+    height: 400px;
     margin: auto;
     padding: 60px;
     background-color: #fff;
     border-radius: 1rem;
+  }
+
+  &-notify {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
 
   &__text-title {
@@ -69,7 +82,7 @@ $white-color: #ffffff;
     font-weight: 600;
     margin-top: 20px;
   }
-  &__content{
+  &__content {
     font-size: 21px;
     margin: 50px 0;
   }
@@ -82,16 +95,17 @@ $white-color: #ffffff;
     font-size: 21px;
     font-weight: bold;
     color: #fff;
-    background-color: #EA701C;
+    background-color: #ea701c;
     text-decoration: none;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .game-rule {
+  .verification {
     background: url(../images/common/bg_kyc_s.png) no-repeat center 50px,
       url(../images/common/bg1.png) repeat-y center top;
     background-size: 100% auto;
+    padding: 50px 0 15%;
 
     ul {
       li {
@@ -111,6 +125,7 @@ $white-color: #ffffff;
     &-container {
       max-width: 90%;
       padding: 10% 5%;
+      height: 45vw;
     }
     &-service {
       padding-bottom: 3vw;
@@ -123,7 +138,7 @@ $white-color: #ffffff;
 }
 
 @media screen and (max-width: 480px) {
-  .game-rule {
+  .verification {
     &__header {
       padding: 20vw 0 8vw 0;
     }
@@ -131,7 +146,7 @@ $white-color: #ffffff;
 }
 
 @media screen and (max-width: 320px) {
-  .game-rule {
+  .verification {
     &__header {
       padding: 25vw 0 8vw 0;
     }

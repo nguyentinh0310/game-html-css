@@ -20,7 +20,6 @@ $yellow-color: #edf700;
   &-background {
     &--1 {
       background: url(../images/tournament/bg-noicon-tour.jpg) no-repeat;
-      background-size: cover;
       padding-bottom: 80px;
     }
 
@@ -48,7 +47,10 @@ $yellow-color: #edf700;
   span {
     color: inherit;
   }
-
+  .slick-prev:focus,
+  .slick-next:focus {
+    outline: none;
+  }
   figcaption {
     font-size: 20px;
     font-weight: bold;
@@ -76,10 +78,19 @@ $yellow-color: #edf700;
     text-align: center;
     color: $white-color;
     padding: 80px 0 30px 0;
-
+    user-select: none;
+    &-top {
+      padding: 180px 0 30px 0;
+    }
     &-text {
       position: relative;
       user-select: none;
+    }
+
+    &-tit {
+      max-width: 490px;
+      width: 70%;
+      margin: auto;
     }
 
     &-img {
@@ -104,7 +115,7 @@ $yellow-color: #edf700;
       position: relative;
       z-index: 2;
       font-family: "Bebas Neue", cursive;
-      font-size: 23px;
+      font-size: 25px;
       font-weight: bold;
       margin-bottom: 0;
     }
@@ -164,11 +175,13 @@ $yellow-color: #edf700;
     display: block;
     width: 80%;
     line-height: 40px;
+    margin: 10px 0;
   }
 
   .btn-play {
     width: 60%;
     line-height: 40px;
+    margin: 0.5rem 0;
   }
 
   .btn-more-rank {
@@ -197,25 +210,26 @@ $yellow-color: #edf700;
 
     &__card {
       position: relative;
-      border: 5px solid $pink-color;
+      border: 11px solid $pink-color;
       border-radius: 20px;
-      margin-top: 30px;
+      margin-top: 35px;
 
       .ranking-img {
         position: absolute;
         top: 0%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 320px;
       }
 
       .rank-content {
-        padding: 10px 15px;
+        padding: 0 15px 10px 15px;
 
         .rank-cup {
           &-list {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            min-height: 210px;
+            min-height: 236px;
           }
 
           &-item {
@@ -226,28 +240,26 @@ $yellow-color: #edf700;
 
             &--1st {
               .numerical {
-                font-size: 18px;
+                font-size: 26px;
                 color: #bf9214;
+              }
+              .point {
+                font-size: 22px !important;
               }
             }
 
             &--2nd {
               .numerical {
+                font-size: 20px;
                 color: #787878;
-              }
-
-              img {
-                width: 65%;
-              }
+              } 
             }
 
             &--3rd {
               .numerical {
-                color: #9d684a;
-              }
+                font-size: 18px;
 
-              img {
-                width: 65%;
+                color: #9d684a;
               }
             }
 
@@ -255,13 +267,17 @@ $yellow-color: #edf700;
             .numerical {
               overflow: hidden;
               font-weight: bold;
-              line-height: 1.5;
+              line-height: 1.25;
+            }
+            .name{
+              margin: 4px 0;
             }
 
             .point {
               overflow: hidden;
               color: $pink-color;
-              line-height: 1.5;
+              line-height: 1.25;
+              font-size: 18px;
             }
           }
         }
@@ -319,6 +335,7 @@ $yellow-color: #edf700;
               color: $white-color;
               text-align: center;
               min-height: 35px;
+              padding-top: 8px;
               border-bottom-left-radius: 10px;
               border-bottom-right-radius: 10px;
             }
@@ -346,15 +363,16 @@ $yellow-color: #edf700;
               .v-point {
                 position: absolute;
                 top: 50%;
-                left: 0%;
+                left: 30%;
                 transform: translateY(-50%);
+                text-align: start;
                 color: $white-color;
                 font-size: 18px;
                 font-weight: bold;
 
                 .thumbnail-point {
                   display: inline-block;
-                  width: 12%;
+                  width: 20%;
                 }
               }
             }
@@ -390,8 +408,9 @@ $yellow-color: #edf700;
           grid-template-columns: 30% 70%;
           align-items: center;
           padding: 5px 0;
-          &:not(:last-child) {
-            border-bottom: 1px solid brown;
+          border-bottom: 1px solid brown;
+          &:nth-child(10) {
+            border: none;
           }
 
           .number {
@@ -482,8 +501,8 @@ $yellow-color: #edf700;
           &-list {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            margin-top: -10px;
-            min-height: 235px;
+            margin-top: -15px;
+            min-height: 260px;
             text-align: center;
           }
 
@@ -500,17 +519,20 @@ $yellow-color: #edf700;
             &--2nd,
             &--3rd {
               .cup-img {
-                width: 80%;
+                width: 75%;
               }
             }
 
             .name,
             .numerical {
+              font-size: 14px;
+              margin: 4px 0;
               overflow: hidden;
               font-weight: bold;
             }
 
             .point {
+              font-size: 14px;
               overflow: hidden;
               color: $pink-color;
             }
@@ -525,7 +547,7 @@ $yellow-color: #edf700;
           &-item {
             display: grid;
             grid-template-columns: 10% 40% 25% 25%;
-            align-content: center;
+            align-items: center;
             background-color: $pink-color;
             color: $white-color;
             width: 100%;
@@ -566,6 +588,11 @@ $yellow-color: #edf700;
 
 @media screen and (max-width: 1200px) {
   .tournament {
+    .header {
+      &-coming-logo {
+        right: 0%;
+      }
+    }
     .result {
       &-item {
         .rank-content {
@@ -608,14 +635,33 @@ $yellow-color: #edf700;
         font-size: 21px;
       }
     }
+    .btn-more-rank {
+      margin-top: 5px;
+    }
     .on-going {
       &__card {
         margin-top: 5vw;
+        .rank-content {
+          .rank-game-img {
+            justify-content: center;
+          }
+          .rank-game-list {
+            grid-column-gap: 3px;
+          }
+          .game-year {
+            margin-bottom: 3px;
+          }
+        }
       }
     }
     .result {
       &-item {
         .rank-content {
+          .rank-cup {
+            &-list {
+              min-height: 22vw;
+            }
+          }
           .rank-date {
             .time {
               font-size: 1.7vw;
@@ -623,7 +669,6 @@ $yellow-color: #edf700;
           }
           .rank-tour {
             &-item {
-              min-height: 30px;
               .numerical {
                 text-align: center;
                 font-weight: bold;
@@ -651,11 +696,15 @@ $yellow-color: #edf700;
 
 @media screen and (max-width: 768px) {
   .tournament {
-    background: url(../images/tournament/bg-noicon.jpg);
-    background-size: cover;
+    &-background {
+      &--1 {
+        background: url(../images/tournament/bg_tournament_sm.jpg) no-repeat;
+        background-size: cover;
+      }
+    }
     font-size: 3.5vw;
     figcaption {
-      font-size: 3vw;
+      font-size: 3.5vw;
       line-height: 1.25;
     }
 
@@ -663,10 +712,23 @@ $yellow-color: #edf700;
       border: 1px solid $pink-color;
       margin: 2vw 0;
     }
-
+    .slick-prev {
+      background: url(../images/tournament/btn-icon-prev.png) no-repeat;
+      background-size: 100% auto;
+      min-height: 95px;
+    }
+    .slick-next {
+      background: url(../images/tournament/btn-icon-next.png) no-repeat;
+      background-size: 100% auto;
+      min-height: 95px;
+    }
     .header {
       &-top {
         padding: 15vw 0 7vw 0;
+      }
+      &-tit {
+        max-width: 100%;
+        width: 100%;
       }
       &-coming-logo {
         top: 30%;
@@ -677,11 +739,16 @@ $yellow-color: #edf700;
         width: 85%;
       }
       &-title {
-        font-size: 11vw;
+        font-size: 12vw;
       }
 
       &-title-second {
-        font-size: 4vw;
+        font-size: 7vw;
+      }
+      &-result-logo {
+        top: 0%;
+        left: 15%;
+        width: 20%;
       }
     }
 
@@ -697,58 +764,70 @@ $yellow-color: #edf700;
     .btn {
       font-size: 3.5vw;
     }
+    .btn-play {
+      width: 60%;
+      line-height: 25px;
+      margin: 0.5vw 0 1vw 0;
+    }
     .btn-see-more {
       width: 70%;
       margin: 0 0 1em;
       line-height: calc(2.5em - 2px);
       border-radius: 1.5em;
+      line-height: 25px;
       font-size: 4vw;
     }
     .on-going {
       padding-bottom: 9vw;
       &__card {
+        border: 2.5vw solid #f45680;
+        margin-top: 10vw;
+        .ranking-img {
+          width: 78%;
+        }
         .rank-content {
-          padding: 1vw 1.5vw;
+          padding: 0 1.5vw 1vw 1.5vw;
           .rank-cup {
             &-list {
-              min-height: 230px;
+              min-height: 54vw;
             }
             &-item {
               &--1st {
+                justify-content: start;
                 .numerical {
-                  font-size: 4vw;
+                  font-size: 6vw !important;
                   color: #bf9214;
+                }
+                .point {
+                  font-size: 4vw !important;
                 }
               }
 
               &--2nd {
                 .numerical {
+                  font-size: 3.5vw;
                   color: #787878;
-                }
-
-                img {
-                  width: 50%;
                 }
               }
 
               &--3rd {
                 .numerical {
+                  font-size: 3.5vw;
                   color: #9d684a;
-                }
-
-                img {
-                  width: 50%;
                 }
               }
 
-              .name,
-              .numerical {
-                overflow: hidden;
-                font-weight: bold;
+              .name {
                 line-height: 1.25;
+                font-size: 3.3vw;
+              }
+              .numerical {
+                line-height: 1.25;
+                font-size: 4vw;
               }
 
               .point {
+                font-size: 3.3vw;
                 line-height: 1.25;
               }
             }
@@ -771,7 +850,7 @@ $yellow-color: #edf700;
               }
 
               .name {
-                padding: 1vw;
+                padding: 1.5vw 1vw;
               }
 
               .point {
@@ -784,7 +863,7 @@ $yellow-color: #edf700;
             margin-bottom: 1vw;
             &-img {
               .title {
-                min-height: 5vw;
+                min-height: 6vw;
               }
             }
 
@@ -799,16 +878,8 @@ $yellow-color: #edf700;
                 img {
                   width: 90%;
                 }
-
                 .v-point {
-                  position: absolute;
-                  top: 50%;
-                  left: 2%;
                   font-size: 3.5vw;
-
-                  .thumbnail-point {
-                    width: 12%;
-                  }
                 }
               }
             }
@@ -884,22 +955,16 @@ $yellow-color: #edf700;
               .point img {
                 width: 20%;
               }
-
-              &--2nd,
-              &--3rd {
-                .cup-img {
-                  width: 80%;
-                }
-              }
-
               .name,
               .numerical {
+                font-size: 3.4vw;
                 overflow: hidden;
                 font-weight: bold;
                 line-height: 1.25;
               }
 
               .point {
+                font-size: 3.4vw;
                 overflow: hidden;
                 color: $pink-color;
               }
@@ -912,27 +977,16 @@ $yellow-color: #edf700;
 
           .rank-tour {
             &-item {
-              display: grid;
-              grid-template-columns: 10% 40% 25% 25%;
-              align-content: center;
-              background-color: $pink-color;
-              color: $white-color;
-              width: 100%;
-              min-height: 6vw;
+              min-height: 7vw;
               border-radius: 7px;
-              padding: 0.5 0;
+              padding: 0.5vw 0;
               margin-bottom: 1vw;
-
               .numerical {
-                text-align: center;
-                font-weight: bold;
                 font-size: 3.5vw;
               }
 
               .name {
-                background-color: $white-color;
-                color: $black-color;
-                padding: 1vw;
+                padding: 1.5vw 1vw;
                 font-size: 3.5vw;
               }
 
@@ -956,6 +1010,11 @@ $yellow-color: #edf700;
 
 @media (max-width: 540px) {
   .tournament {
+    &-background {
+      &--1 {
+        background-size: 100% auto;
+      }
+    }
     .btn-close,
     .btn-more-rank {
       line-height: 20px;
@@ -972,24 +1031,225 @@ $yellow-color: #edf700;
       }
       &-coming-logo {
         display: contents !important;
+        img {
+          width: 30%;
+        }
       }
+ 
     }
 
+    .slick-prev,
+    .slick-next {
+      min-height: 24vw;
+    }
+    .slick-prev{
+      left: -4%;
+    }
+    .slick-next{
+      right: -4%;
+    }
     .on-going {
       padding-bottom: 2vw;
       &__card {
         .rank-content {
           .rank-cup {
-            &-list {
-              min-height: 177px;
-            }
             &-item {
+              &--1st {
+                .point {
+                  font-size: 4vw !important;
+                }
+              }
               &--2nd,
               &--3rd {
                 img {
-                  width: 80%;
+                  width: 75%;
                 }
               }
+              .name,
+              .point {
+                font-size: 3.2vw;
+              }
+            }
+          }
+
+          .rank-tour {
+            &-item {
+              .name {
+                padding: 1vw 2vw;
+              }
+
+              .point {
+                text-align: center;
+              }
+            }
+          }
+          .rank-game {
+            &-img {
+              .title {
+                min-height: 8vw;
+              }
+            }
+          }
+        }
+        .rank-prize {
+          &-list {
+            padding: 0 1vw;
+            width: 100%;
+          }
+
+          &-item {
+            .number {
+              .thumbnail-numerical {
+                width: 45%;
+              }
+
+              &-text {
+                font-size: 5vw;
+              }
+            }
+
+            .money {
+              .thumbnail-money {
+                width: 15%;
+              }
+              &-text {
+                font-size: 5vw;
+              }
+            }
+          }
+        }
+      }
+    }
+    .result {
+      &-item {
+        .rank-content {
+          .rank-cup {
+            &-item {
+              .name,
+              .point {
+                font-size: 3.2vw;
+              }
+              .point img {
+                width: 18%;
+              }
+            }
+          }
+          .rank-tour {
+            &-item {
+              .name {
+                padding: 1vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .tournament {
+    .btn-more-rank {
+      margin-top: 4px;
+    }
+    .on-going {
+      &__card {
+        .rank-content {
+          .rank-tour {
+            &-item {
+              min-height: 6vw;
+              .name {
+                padding: 0.5vw 2vw;
+              }
+
+              .point {
+                text-align: center;
+              }
+            }
+          }
+          .rank-game {
+            &-list {
+              grid-column-gap: 5px;
+            }
+            &-item {
+              .game-year {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .result {
+      &-item {
+        .rank-content {
+          .rank-tour {
+            &-item {
+              min-height: 6vw;
+              .name {
+                padding: 0.5vw;
+              }
+            }
+          }
+          .tag-border {
+            margin: -5vw 0 2vw 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .tournament {
+    .on-going {
+      &__card {
+        .rank-content {
+          .rank-tour {
+            &-item {
+              min-height: 7vw;
+            }
+          }
+        }
+      }
+    }
+    .result {
+      &-item {
+        .rank-content {
+          .rank-tour {
+            &-item {
+              min-height: 7vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .tournament {
+    .slick-prev,
+    .slick-next {
+      min-height: 74px;
+    }
+    .on-going {
+      &__card {
+        .rank-content {
+          .rank-tour {
+            &-item {
+              min-height: 8vw;
+            }
+          }
+        }
+      }
+    }
+    .result {
+      &-item {
+        .rank-content {
+          .rank-tour {
+            &-item {
+              min-height: 8vw;
             }
           }
         }

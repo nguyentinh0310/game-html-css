@@ -3395,3 +3395,49 @@ a.month-select.active {
 	}
 	
 }
+
+.only_smart,
+.only_smart_i,
+.only_smart_f{
+	display:none !important;
+}
+@media screen and (max-width:768px){
+	.only_pc{
+		display:none !important;
+	}
+	.only_smart{
+		display:block !important;
+	}
+	.only_smart_i{
+		display:inline-block !important;
+	}
+	.only_smart_f{
+		display: -webkit-flex !important;
+		display: flex !important;
+	}
+}
+
+.slick-prev:focus,
+.slick-next:focus {
+	outline: none;
+}
+
+@media screen and (max-width:768px){
+.slick-prev {
+	background: url(../images/common/btn-icon-prev.png) no-repeat;
+	background-size: 100% auto;
+	min-height: 95px;
+  }
+  .slick-next {
+	background: url(../images/common/btn-icon-next.png) no-repeat;
+	background-size: 100% auto;
+	min-height: 95px;
+  }
+}
+
+@media screen and (max-width:540px){
+	.slick-prev,
+    .slick-next {
+      min-height: 26vw;
+    }
+}

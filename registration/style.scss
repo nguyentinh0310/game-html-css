@@ -15,9 +15,19 @@ $white-color: #ffffff;
   background: url(../images/common/bg_kyc.png) no-repeat center 140px,
     url(../images/common/bg1.png) repeat-y center top;
   background-size: 1474px auto, auto;
-  padding-bottom: 20rem;
+  padding-bottom: 150px;
   font-size: 16px;
 
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 4rem;
+    li {
+      line-height: 1.8;
+      font-size: 21px;
+      color: $gray-text-primary;
+    }
+  }
   label {
     font-size: 18px;
     font-weight: bold;
@@ -92,7 +102,6 @@ $white-color: #ffffff;
     }
     &-button {
       min-width: 206px;
-      margin: 40px auto 0;
       padding: 0 2.5em;
       line-height: 50px;
       font-size: 21px;
@@ -138,6 +147,7 @@ $white-color: #ffffff;
     background: url(../images/common/bg_kyc_s.png) no-repeat center 50px,
       url(../images/common/bg1.png) repeat-y center top;
     background-size: 100% auto;
+    padding-bottom: 15%;
     label {
       font-size: 3.5vw !important;
     }

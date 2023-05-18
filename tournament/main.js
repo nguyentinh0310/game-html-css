@@ -17,10 +17,10 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 800,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
       {
@@ -45,13 +45,13 @@ $(document).ready(function () {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

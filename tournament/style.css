@@ -7,9 +7,12 @@
   min-height: 100vh;
   font-size: 16px;
 }
+ *::selection {
+     color: white;
+     background-color: #85eb7d;
+ }
 .tournament-background--1 {
   background: url(../images/tournament/bg-noicon-tour.jpg) no-repeat;
-  background-size: cover;
   padding-bottom: 80px;
 }
 .tournament-background--2 {
@@ -30,6 +33,10 @@
 }
 .tournament span {
   color: inherit;
+}
+.tournament .slick-prev:focus,
+.tournament .slick-next:focus {
+  outline: none;
 }
 .tournament figcaption {
   font-size: 20px;
@@ -54,10 +61,19 @@
   text-align: center;
   color: #ffffff;
   padding: 80px 0 30px 0;
+  user-select: none;
+}
+.tournament .header-top {
+  padding: 180px 0 30px 0;
 }
 .tournament .header-text {
   position: relative;
   user-select: none;
+}
+.tournament .header-tit {
+  max-width: 490px;
+  width: 70%;
+  margin: auto;
 }
 .tournament .header-img {
   position: absolute;
@@ -79,7 +95,7 @@
   position: relative;
   z-index: 2;
   font-family: "Bebas Neue", cursive;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -132,10 +148,12 @@
   display: block;
   width: 80%;
   line-height: 40px;
+  margin: 10px 0;
 }
 .tournament .btn-play {
   width: 60%;
   line-height: 40px;
+  margin: 0.5rem 0;
 }
 .tournament .btn-more-rank {
   width: 90%;
@@ -155,23 +173,24 @@
 }
 .tournament .on-going__card {
   position: relative;
-  border: 5px solid #f45680;
+  border: 11px solid #f45680;
   border-radius: 20px;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 .tournament .on-going__card .ranking-img {
   position: absolute;
   top: 0%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 320px;
 }
 .tournament .on-going__card .rank-content {
-  padding: 10px 15px;
+  padding: 0 15px 10px 15px;
 }
 .tournament .on-going__card .rank-content .rank-cup-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  min-height: 210px;
+  min-height: 236px;
 }
 .tournament .on-going__card .rank-content .rank-cup-item {
   display: flex;
@@ -180,31 +199,34 @@
   justify-content: end;
 }
 .tournament .on-going__card .rank-content .rank-cup-item--1st .numerical {
-  font-size: 18px;
+  font-size: 26px;
   color: #bf9214;
 }
+.tournament .on-going__card .rank-content .rank-cup-item--1st .point {
+  font-size: 22px !important;
+}
 .tournament .on-going__card .rank-content .rank-cup-item--2nd .numerical {
+  font-size: 20px;
   color: #787878;
 }
-.tournament .on-going__card .rank-content .rank-cup-item--2nd img {
-  width: 65%;
-}
 .tournament .on-going__card .rank-content .rank-cup-item--3rd .numerical {
+  font-size: 18px;
   color: #9d684a;
-}
-.tournament .on-going__card .rank-content .rank-cup-item--3rd img {
-  width: 65%;
 }
 .tournament .on-going__card .rank-content .rank-cup-item .name,
 .tournament .on-going__card .rank-content .rank-cup-item .numerical {
   overflow: hidden;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.25;
+}
+.tournament .on-going__card .rank-content .rank-cup-item .name {
+  margin: 4px 0;
 }
 .tournament .on-going__card .rank-content .rank-cup-item .point {
   overflow: hidden;
   color: #f45680;
-  line-height: 1.5;
+  line-height: 1.25;
+  font-size: 18px;
 }
 .tournament .on-going__card .rank-content .border-accordion {
   border: 2px solid #f45680;
@@ -250,6 +272,7 @@
   color: #ffffff;
   text-align: center;
   min-height: 35px;
+  padding-top: 8px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -273,15 +296,16 @@
 .tournament .on-going__card .rank-content .rank-game-item .st-rank .v-point {
   position: absolute;
   top: 50%;
-  left: 0%;
+  left: 30%;
   transform: translateY(-50%);
+  text-align: start;
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
 }
 .tournament .on-going__card .rank-content .rank-game-item .st-rank .v-point .thumbnail-point {
   display: inline-block;
-  width: 12%;
+  width: 20%;
 }
 .tournament .on-going__card-img {
   padding: 1rem;
@@ -309,9 +333,10 @@
   grid-template-columns: 30% 70%;
   align-items: center;
   padding: 5px 0;
-}
-.tournament .on-going__card .rank-prize-item:not(:last-child) {
   border-bottom: 1px solid brown;
+}
+.tournament .on-going__card .rank-prize-item:nth-child(10) {
+  border: none;
 }
 .tournament .on-going__card .rank-prize-item .number {
   text-align: center;
@@ -379,8 +404,8 @@
 .tournament .result-item .rank-content .rank-cup-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: -10px;
-  min-height: 235px;
+  margin-top: -15px;
+  min-height: 260px;
   text-align: center;
 }
 .tournament .result-item .rank-content .rank-cup-item {
@@ -393,14 +418,17 @@
   width: 20%;
 }
 .tournament .result-item .rank-content .rank-cup-item--2nd .cup-img, .tournament .result-item .rank-content .rank-cup-item--3rd .cup-img {
-  width: 80%;
+  width: 75%;
 }
 .tournament .result-item .rank-content .rank-cup-item .name,
 .tournament .result-item .rank-content .rank-cup-item .numerical {
+  font-size: 14px;
+  margin: 4px 0;
   overflow: hidden;
   font-weight: bold;
 }
 .tournament .result-item .rank-content .rank-cup-item .point {
+  font-size: 14px;
   overflow: hidden;
   color: #f45680;
 }
@@ -410,7 +438,7 @@
 .tournament .result-item .rank-content .rank-tour-item {
   display: grid;
   grid-template-columns: 10% 40% 25% 25%;
-  align-content: center;
+  align-items: center;
   background-color: #f45680;
   color: #ffffff;
   width: 100%;
@@ -442,6 +470,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .tournament .header-coming-logo {
+    right: 0%;
+  }
   .tournament .result-item .rank-content .rank-tour-item .name {
     font-size: 14px;
   }
@@ -467,14 +498,26 @@
   .tournament .header-title-second {
     font-size: 21px;
   }
+  .tournament .btn-more-rank {
+    margin-top: 5px;
+  }
   .tournament .on-going__card {
     margin-top: 5vw;
   }
+  .tournament .on-going__card .rank-content .rank-game-img {
+    justify-content: center;
+  }
+  .tournament .on-going__card .rank-content .rank-game-list {
+    grid-column-gap: 3px;
+  }
+  .tournament .on-going__card .rank-content .game-year {
+    margin-bottom: 3px;
+  }
+  .tournament .result-item .rank-content .rank-cup-list {
+    min-height: 22vw;
+  }
   .tournament .result-item .rank-content .rank-date .time {
     font-size: 1.7vw;
-  }
-  .tournament .result-item .rank-content .rank-tour-item {
-    min-height: 30px;
   }
   .tournament .result-item .rank-content .rank-tour-item .numerical {
     text-align: center;
@@ -494,20 +537,36 @@
 }
 @media screen and (max-width: 768px) {
   .tournament {
-    background: url(../images/tournament/bg-noicon.jpg);
-    background-size: cover;
     font-size: 3.5vw;
   }
+  .tournament-background--1 {
+    background: url(../images/tournament/bg_tournament_sm.jpg) no-repeat;
+    background-size: cover;
+  }
   .tournament figcaption {
-    font-size: 3vw;
+    font-size: 3.5vw;
     line-height: 1.25;
   }
   .tournament hr {
     border: 1px solid #f45680;
     margin: 2vw 0;
   }
+  .tournament .slick-prev {
+    background: url(../images/tournament/btn-icon-prev.png) no-repeat;
+    background-size: 100% auto;
+    min-height: 95px;
+  }
+  .tournament .slick-next {
+    background: url(../images/tournament/btn-icon-next.png) no-repeat;
+    background-size: 100% auto;
+    min-height: 95px;
+  }
   .tournament .header-top {
     padding: 15vw 0 7vw 0;
+  }
+  .tournament .header-tit {
+    max-width: 100%;
+    width: 100%;
   }
   .tournament .header-coming-logo {
     top: 30%;
@@ -518,10 +577,15 @@
     width: 85%;
   }
   .tournament .header-title {
-    font-size: 11vw;
+    font-size: 12vw;
   }
   .tournament .header-title-second {
-    font-size: 4vw;
+    font-size: 7vw;
+  }
+  .tournament .header-result-logo {
+    top: 0%;
+    left: 15%;
+    width: 20%;
   }
   .tournament .main-container {
     width: 90%;
@@ -535,45 +599,63 @@
   .tournament .btn {
     font-size: 3.5vw;
   }
+  .tournament .btn-play {
+    width: 60%;
+    line-height: 25px;
+    margin: 0.5vw 0 1vw 0;
+  }
   .tournament .btn-see-more {
     width: 70%;
     margin: 0 0 1em;
     line-height: calc(2.5em - 2px);
     border-radius: 1.5em;
+    line-height: 25px;
     font-size: 4vw;
   }
   .tournament .on-going {
     padding-bottom: 9vw;
   }
+  .tournament .on-going__card {
+    border: 2.5vw solid #f45680;
+    margin-top: 10vw;
+  }
+  .tournament .on-going__card .ranking-img {
+    width: 78%;
+  }
   .tournament .on-going__card .rank-content {
-    padding: 1vw 1.5vw;
+    padding: 0 1.5vw 1vw 1.5vw;
   }
   .tournament .on-going__card .rank-content .rank-cup-list {
-    min-height: 230px;
+    min-height: 54vw;
+  }
+  .tournament .on-going__card .rank-content .rank-cup-item--1st {
+    justify-content: start;
   }
   .tournament .on-going__card .rank-content .rank-cup-item--1st .numerical {
-    font-size: 4vw;
+    font-size: 6vw !important;
     color: #bf9214;
   }
+  .tournament .on-going__card .rank-content .rank-cup-item--1st .point {
+    font-size: 4vw !important;
+  }
   .tournament .on-going__card .rank-content .rank-cup-item--2nd .numerical {
+    font-size: 3.5vw;
     color: #787878;
   }
-  .tournament .on-going__card .rank-content .rank-cup-item--2nd img {
-    width: 50%;
-  }
   .tournament .on-going__card .rank-content .rank-cup-item--3rd .numerical {
+    font-size: 3.5vw;
     color: #9d684a;
   }
-  .tournament .on-going__card .rank-content .rank-cup-item--3rd img {
-    width: 50%;
-  }
-  .tournament .on-going__card .rank-content .rank-cup-item .name,
-  .tournament .on-going__card .rank-content .rank-cup-item .numerical {
-    overflow: hidden;
-    font-weight: bold;
+  .tournament .on-going__card .rank-content .rank-cup-item .name {
     line-height: 1.25;
+    font-size: 3.3vw;
+  }
+  .tournament .on-going__card .rank-content .rank-cup-item .numerical {
+    line-height: 1.25;
+    font-size: 4vw;
   }
   .tournament .on-going__card .rank-content .rank-cup-item .point {
+    font-size: 3.3vw;
     line-height: 1.25;
   }
   .tournament .on-going__card .rank-content .border-accordion {
@@ -590,7 +672,7 @@
     font-size: 3.5vw;
   }
   .tournament .on-going__card .rank-content .rank-tour-item .name {
-    padding: 1vw;
+    padding: 1.5vw 1vw;
   }
   .tournament .on-going__card .rank-content .rank-tour-item .point {
     text-align: center;
@@ -599,7 +681,7 @@
     margin-bottom: 1vw;
   }
   .tournament .on-going__card .rank-content .rank-game-img .title {
-    min-height: 5vw;
+    min-height: 6vw;
   }
   .tournament .on-going__card .rank-content .rank-game-item .game-year {
     display: inline-block;
@@ -612,13 +694,7 @@
     width: 90%;
   }
   .tournament .on-going__card .rank-content .rank-game-item .st-rank .v-point {
-    position: absolute;
-    top: 50%;
-    left: 2%;
     font-size: 3.5vw;
-  }
-  .tournament .on-going__card .rank-content .rank-game-item .st-rank .v-point .thumbnail-point {
-    width: 12%;
   }
   .tournament .on-going__card-img {
     padding: 1vw;
@@ -667,16 +743,15 @@
   .tournament .result-item .rank-content .rank-cup-item .point img {
     width: 20%;
   }
-  .tournament .result-item .rank-content .rank-cup-item--2nd .cup-img, .tournament .result-item .rank-content .rank-cup-item--3rd .cup-img {
-    width: 80%;
-  }
   .tournament .result-item .rank-content .rank-cup-item .name,
   .tournament .result-item .rank-content .rank-cup-item .numerical {
+    font-size: 3.4vw;
     overflow: hidden;
     font-weight: bold;
     line-height: 1.25;
   }
   .tournament .result-item .rank-content .rank-cup-item .point {
+    font-size: 3.4vw;
     overflow: hidden;
     color: #f45680;
   }
@@ -684,26 +759,16 @@
     margin: -5vw 0 2vw 0px;
   }
   .tournament .result-item .rank-content .rank-tour-item {
-    display: grid;
-    grid-template-columns: 10% 40% 25% 25%;
-    align-content: center;
-    background-color: #f45680;
-    color: #ffffff;
-    width: 100%;
-    min-height: 6vw;
+    min-height: 7vw;
     border-radius: 7px;
-    padding: 0.5 0;
+    padding: 0.5vw 0;
     margin-bottom: 1vw;
   }
   .tournament .result-item .rank-content .rank-tour-item .numerical {
-    text-align: center;
-    font-weight: bold;
     font-size: 3.5vw;
   }
   .tournament .result-item .rank-content .rank-tour-item .name {
-    background-color: #ffffff;
-    color: #292929;
-    padding: 1vw;
+    padding: 1.5vw 1vw;
     font-size: 3.5vw;
   }
   .tournament .result-item .rank-content .rank-tour-item .point {
@@ -718,6 +783,9 @@
   }
 }
 @media (max-width: 540px) {
+  .tournament-background--1 {
+    background-size: 100% auto;
+  }
   .tournament .btn-close,
   .tournament .btn-more-rank {
     line-height: 20px;
@@ -734,14 +802,115 @@
   .tournament .header-coming-logo {
     display: contents !important;
   }
+  .tournament .header-coming-logo img {
+    width: 30%;
+  }
+  .tournament .slick-prev,
+  .tournament .slick-next {
+    min-height: 24vw;
+  }
+  .tournament .slick-prev {
+    left: -4%;
+  }
+  .tournament .slick-next {
+    right: -4%;
+  }
   .tournament .on-going {
     padding-bottom: 2vw;
   }
-  .tournament .on-going__card .rank-content .rank-cup-list {
-    min-height: 177px;
+  .tournament .on-going__card .rank-content .rank-cup-item--1st .point {
+    font-size: 4vw !important;
   }
   .tournament .on-going__card .rank-content .rank-cup-item--2nd img, .tournament .on-going__card .rank-content .rank-cup-item--3rd img {
-    width: 80%;
+    width: 75%;
+  }
+  .tournament .on-going__card .rank-content .rank-cup-item .name,
+  .tournament .on-going__card .rank-content .rank-cup-item .point {
+    font-size: 3.2vw;
+  }
+  .tournament .on-going__card .rank-content .rank-tour-item .name {
+    padding: 1vw 2vw;
+  }
+  .tournament .on-going__card .rank-content .rank-tour-item .point {
+    text-align: center;
+  }
+  .tournament .on-going__card .rank-content .rank-game-img .title {
+    min-height: 8vw;
+  }
+  .tournament .on-going__card .rank-prize-list {
+    padding: 0 1vw;
+    width: 100%;
+  }
+  .tournament .on-going__card .rank-prize-item .number .thumbnail-numerical {
+    width: 45%;
+  }
+  .tournament .on-going__card .rank-prize-item .number-text {
+    font-size: 5vw;
+  }
+  .tournament .on-going__card .rank-prize-item .money .thumbnail-money {
+    width: 15%;
+  }
+  .tournament .on-going__card .rank-prize-item .money-text {
+    font-size: 5vw;
+  }
+  .tournament .result-item .rank-content .rank-cup-item .name,
+  .tournament .result-item .rank-content .rank-cup-item .point {
+    font-size: 3.2vw;
+  }
+  .tournament .result-item .rank-content .rank-cup-item .point img {
+    width: 18%;
+  }
+  .tournament .result-item .rank-content .rank-tour-item .name {
+    padding: 1vw;
+  }
+}
+@media (max-width: 480px) {
+  .tournament .btn-more-rank {
+    margin-top: 4px;
+  }
+  .tournament .on-going__card .rank-content .rank-tour-item {
+    min-height: 6vw;
+  }
+  .tournament .on-going__card .rank-content .rank-tour-item .name {
+    padding: 0.5vw 2vw;
+  }
+  .tournament .on-going__card .rank-content .rank-tour-item .point {
+    text-align: center;
+  }
+  .tournament .on-going__card .rank-content .rank-game-list {
+    grid-column-gap: 5px;
+  }
+  .tournament .on-going__card .rank-content .rank-game-item .game-year {
+    margin-bottom: 0;
+  }
+  .tournament .result-item .rank-content .rank-tour-item {
+    min-height: 6vw;
+  }
+  .tournament .result-item .rank-content .rank-tour-item .name {
+    padding: 0.5vw;
+  }
+  .tournament .result-item .rank-content .tag-border {
+    margin: -5vw 0 2vw 0px;
+  }
+}
+@media (max-width: 400px) {
+  .tournament .on-going__card .rank-content .rank-tour-item {
+    min-height: 7vw;
+  }
+  .tournament .result-item .rank-content .rank-tour-item {
+    min-height: 7vw;
+  }
+}
+@media (max-width: 320px) {
+  .tournament .slick-prev,
+  .tournament .slick-next {
+    min-height: 74px;
+  }
+  .tournament .on-going__card .rank-content .rank-tour-item {
+    min-height: 8vw;
+  }
+  .tournament .result-item .rank-content .rank-tour-item {
+    min-height: 8vw;
   }
 }
 
