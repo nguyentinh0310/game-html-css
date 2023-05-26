@@ -59,6 +59,8 @@ $white-color: #ffffff;
 
   &-container {
     position: relative;
+    display: flex;
+    align-items: center;
     max-width: 980px;
     width: 90%;
     height: 400px;
@@ -69,10 +71,7 @@ $white-color: #ffffff;
   }
 
   &-notify {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    justify-content: center;
   }
 
   &__text-title {
@@ -100,6 +99,18 @@ $white-color: #ffffff;
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .verification__header {
+    padding: 18vw 0 7vw 0;
+  }
+  .verification__header-title {
+    font-size: 53px;
+  }
+  .verification__header-title-second {
+    font-size: 21px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .verification {
     background: url(../images/common/bg_kyc_s.png) no-repeat center 50px,
@@ -114,7 +125,7 @@ $white-color: #ffffff;
       }
     }
     &__header {
-      padding: 15vw 0 7vw 0;
+      padding: 8vw 0 7vw 0;
       &-title {
         font-size: 11vw;
       }
@@ -133,22 +144,6 @@ $white-color: #ffffff;
         font-weight: bold;
         font-size: 4vw;
       }
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .verification {
-    &__header {
-      padding: 20vw 0 8vw 0;
-    }
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .verification {
-    &__header {
-      padding: 25vw 0 8vw 0;
     }
   }
 }

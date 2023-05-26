@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap");
+$pink-color: #e82a75;
+$orange-color: #f59154;
+$gray-text-primary: #707070;
+$gray-text: #b3b3b3;
+$red-text: #b10606;
+$red-text-normal: #ff5555;
+$white-color: #ffffff;
+
+.transactions-history {
+  position: relative;
+  font-family: "Noto Sans JP", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background: url(../images/common/bg_kyc.png) no-repeat center 140px,
+    url(../images/common/bg1.png) repeat-y center top;
+  background-size: 1474px auto, auto;
+  padding-bottom: 150px;
+  font-size: 16px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      line-height: 1.8;
+      color: $gray-text-primary;
+    }
+  }
+  label {
+    margin: 0;
+  }
+  .link {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  input,
+  select {
+    font-size: 16px;
+    height: 50px !important;
+    border: 1px solid black;
+  }
+  input {
+    padding: 0 10px;
+  }
+  select {
+    width: 100px !important;
+    text-align: center;
+  }
+  table {
+    color: #707070;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  tr {
+    line-height: 40px;
+  }
+  tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.075);
+  }
+  tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .img-thumbnail {
+    border: none !important;
+  }
+  &__header {
+    text-align: center;
+    color: $white-color;
+    padding: 180px 0 78px 0;
+    &-title {
+      font-family: "Raleway", sans-serif;
+      font-style: italic;
+      font-size: 60px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    &-title-second {
+      font-family: "Raleway", sans-serif;
+      font-size: 23px;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+  }
+
+  &-container {
+    position: relative;
+    max-width: 980px;
+    width: 90%;
+    margin: auto;
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 1rem;
+  }
+  &-filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .transactions-history {
+    .form-inline .form-group {
+      width: 100%;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+    }
+    thead tr th {
+      line-height: 1.25;
+    }
+    .table-responsive{
+      width: 100%;
+      overflow-x: auto;
+    }
+    &__header {
+      padding: 18vw 0 9vw 0;
+      &-title {
+        font-size: 53px;
+      }
+      &-title-second {
+        font-size: 21px;
+      }
+    }
+    &-filter {
+      grid-template-columns: 30% 70%;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .transactions-history {
+    background: url(../images/common/bg_kyc_s.png) no-repeat center 50px,
+      url(../images/common/bg1.png) repeat-y center top;
+    background-size: 100% auto;
+    padding: 50px 0 15%;
+
+      li {
+        font-size: 3.5vw;
+        line-height: 1.5;
+      }
+    &__header {
+      padding: 8vw 0 9vw 0;
+      &-title {
+        font-size: 11vw;
+      }
+      &-title-second {
+        font-size: 4vw;
+      }
+    }
+    &-container {
+      max-width: 90%;
+      padding: 10% 5%;
+    }
+    &-filter {
+      grid-template-columns: 50% 50%;
+      width: 100%;
+    }
+  }
+}

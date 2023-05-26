@@ -48,6 +48,8 @@
 }
 .verification-container {
   position: relative;
+  display: flex;
+  align-items: center;
   max-width: 980px;
   width: 90%;
   height: 400px;
@@ -57,10 +59,7 @@
   border-radius: 1rem;
 }
 .verification-notify {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: center;
 }
 .verification__text-title {
   color: #707070;
@@ -86,6 +85,17 @@
   text-decoration: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .verification__header {
+    padding: 18vw 0 7vw 0;
+  }
+  .verification__header-title {
+    font-size: 53px;
+  }
+  .verification__header-title-second {
+    font-size: 21px;
+  }
+}
 @media screen and (max-width: 768px) {
   .verification {
     background: url(../images/common/bg_kyc_s.png) no-repeat center 50px, url(../images/common/bg1.png) repeat-y center top;
@@ -97,7 +107,7 @@
     line-height: 1.5;
   }
   .verification__header {
-    padding: 15vw 0 7vw 0;
+    padding: 8vw 0 7vw 0;
   }
   .verification__header-title {
     font-size: 11vw;
@@ -116,16 +126,6 @@
   .verification-service__subject {
     font-weight: bold;
     font-size: 4vw;
-  }
-}
-@media screen and (max-width: 480px) {
-  .verification__header {
-    padding: 20vw 0 8vw 0;
-  }
-}
-@media screen and (max-width: 320px) {
-  .verification__header {
-    padding: 25vw 0 8vw 0;
   }
 }
 
